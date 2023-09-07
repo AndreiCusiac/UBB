@@ -1,0 +1,240 @@
+19 . 
+Scrieti un program C care primeste oricate argumente la linia de comanda. 
+Programul creeaza doua procese fiu care mostenesc argumentele de la linia de comanda primite de parinte 
+(pentru aceasta problema nu e necesar sa se trimita argumentele prin pipe). 
+Fiecare proces fiu creeaza cate un thread pentru fiecare argument de la linia de comanda. 
+Fiecare thread creat de primul proces fiu extrage vocalele din argumentul sau si le concateneaza la un string accesibil de catre toate thread-urile primului proces fiu. 
+Fiecare thread creat de al doilea proces fiu extrage cifrele din argumentul sau si le aduna la o variabila suma accesibila de catre toate thread-urile celui de-al doilea proces fiu. 
+Ambele procese fiu asteapta ca thread-urile proprii sa se incheie, 
+apoi trimit rezultatul catre procesul parinte prin pipe.
+
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<pthread.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+typedef struct{
+  char* string;
+  char* rez;
+  pthread_mutex_t* mtx;
+}data1;
+
+typedef struct{
+  char* string;
+  int* nr;
+  pthread_mutex_t* mtx;
+}data2;
+
+void* pth1(void* a){
+ data1* d = (data1*)a;
+   int i;
+   for(i=0;i< strlen(d->string);i++){
+   if (d->string[i] == 'a' ||  d->string[i] == 'a' || d->string[i] == 'E' || d->string[i] == 'e' ||d->string[i] == 'i' ||  d->string[i] == 'i' || d->string[i] == 'o' || d->string[i] == 'u' || d->string[i] == 'U' )
+    {  pthread_mutex_lock(d->mtx);
+       strncpy(&d->rez[strlen(d->rez)],&d->string[i],1);
+       pthread_mutex_unlock(d->mtx);
+     }
+     }
+   return NULL;
+}
+
+void* pth2(void* a){
+   data2* d = (data2*)a;
+   int i;
+   char c= '\0';
+   for(i=0;i< strlen(d->string);i++){
+     if (d->string[i] >='0' && d->string[i]<='9'){
+              pthread_mutex_lock(d->mtx);
+              strncpy(&c,&d->string[i],1);
+              *d->nr= *d->nr+ atoi(&c);
+              pthread_mutex_unlock(d->mtx);
+      }
+   }
+   return NULL;
+}
+
+int main(int argc,char* argv[]) {
+  if(argc==1 ){
+     printf("Introduceti minim un argument!!\n");
+     exit(1);
+  }
+  int N = argc-1,i;
+  int p1[2],p2[2];
+  pipe(p1);
+
+  int l=0;
+  for(i = 1;i<argc;i++){
+        l+=strlen(argv[i]);
+      }
+  if(fork()==0){
+      close(p1[0]);
+      pthread_t t1[N];
+      pthread_mutex_t* mtx1 = malloc(sizeof(pthread_mutex_t));
+      pthread_mutex_init(mtx1,NULL);
+      char* sir = malloc(sizeof(char)*l);
+       memset(sir,'\0',sizeof(char)*l);
+
+      data1* d1 = malloc(sizeof(data1)*N);
+      for (i = 0; i < N; i++) {
+         d1[i].string = argv[i+1];
+         d1[i].rez = sir;
+         d1[i].mtx = mtx1;
+         pthread_create(&t1[i],NULL,pth1,&d1[i]);
+      }
+        for (i = 0; i < N; i++){
+         if(pthread_join(t1[i], NULL)!=0)
+             exit(1);
+        }
+      int len =strlen(sir);
+      write(p1[1],&len,sizeof(int));
+      char rez[len];
+      strcpy(rez,sir);
+      write(p1[1],&rez,len);
+      close(p1[1]);
+      pthread_mutex_destroy(mtx1);
+      free(mtx1);
+      free(d1);
+      free(sir);
+      exit(0);
+ }
+ 
+close(p1[1]);
+  pipe(p2);
+  if(fork()==0){
+      close(p1[0]);
+      close(p2[0]);
+      pthread_t t2[N];
+      pthread_mutex_t* mtx2 = malloc(sizeof(pthread_mutex_t));
+      pthread_mutex_init(mtx2,NULL);
+      data2* d2 = malloc(sizeof(data2)*N);
+      int* s= malloc(sizeof(int));
+      *s=0;
+      for (i = 0; i < N; i++) {
+          d2[i].string = argv[i+1];
+          d2[i].nr= s;
+          d2[i].mtx = mtx2;
+          pthread_create(&t2[i],NULL,pth2,&d2[i]);
+      }
+      for (i = 0; i < N; i++){
+        if(pthread_join(t2[i],NULL)!=0)
+         exit(1);
+      }
+     int suma  = *s;
+     write(p2[1],&suma,sizeof(int));
+     close(p2[1]);
+     pthread_mutex_destroy(mtx2);
+     free(mtx2);
+     free(d2);
+     free(s);
+     exit(0);
+ }
+  close(p2[1]);
+  wait(0);
+  wait(0);
+  int suma;
+  int len=100;
+  read(p1[0],&len,sizeof(int));
+  char rez[100];
+  memset(rez,'\0',sizeof(char)*100);
+  read(p1[0],&rez,sizeof(char)*100);
+  printf(" Siiiiiir %s \n",rez);
+  close(p1[0]);
+  read(p2[0],&suma,sizeof(int));
+  close(p2[0]);
+  printf(" Suma = %d \n",suma);
+  return 0;
+}
+
+
+
+
+20
+Scrieti un program C care creeaza N thread-uri si un proces fiu (N dat ca argument la linia de comanda).
+ Fiecare thread va primi un id unic de la procesul parinte. Fiecare thread va genera 2 numere aleatoare intre 1 si 100 si le va afisa impreuna cu id-ul sau. 
+Thread-urile vor trimite numerele generate catre procesul fiu prin pipe. 
+Procesul fiu va calcula media fiecarei perechi de numere primita de la fiecare thread si va afisa rezultatul alaturi de id-ul thread-ului.
+ Folositi mecanisme de sincronizare eficienta.
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<pthread.h>
+#include<string.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+typedef struct{
+  pthread_mutex_t* mtx;
+  int* p;
+  int id;
+}data;
+typedef struct{
+  int n1;
+  int n2;
+  int id;
+}rez;
+void* f(void* a){
+  data d =*((data*)a);
+  rez r ;
+  r.id = d.id;
+  r.n1 = random()%100;
+  r.n2  = random()%100;
+  printf("Numar thread %d - Numere generate :  %d %d  \n",r.id,r.n1,r.n2);
+  pthread_mutex_lock(d.mtx);
+  write(d.p[1],&r,sizeof(rez));
+  pthread_mutex_unlock(d.mtx);
+  return NULL;
+}
+
+int main(int argc,char* argv[]) {
+  if(argc!=2){
+     printf("Introduceti un arguement!\n");
+     exit(1);
+  }
+  int N = atoi(argv[1]);
+  int i;
+  srandom(time(NULL));
+  int p[2];
+  pipe(p);
+  int F =fork();
+  if(F==-1){
+     perror("Eroare fork!!\n");
+  }
+  else if(F==0){
+    close(p[1]);
+    for(i =0 ;i<N;i++){
+       rez r;
+       r.id = 111;
+       r.n1 = 0;
+       r.n2 = 0;
+       read(p[0],&r,sizeof(rez));
+       printf("Numar thread %d -  medie :  %d\n",r.id,(r.n1+r.n2)/2);
+  }
+  close(p[0]);
+  exit(0);
+ }
+  data* a= malloc(sizeof(data)*N);
+  pthread_t* t= malloc(sizeof(pthread_mutex_t) * N);
+  pthread_mutex_t* mtx= malloc(sizeof(pthread_mutex_t));
+  pthread_mutex_init(mtx,NULL);
+  for(i=0;i<N;i++){
+     a[i].id = i;
+     a[i].p = p;
+     a[i].mtx = mtx;
+    if( pthread_create(&t[i],NULL,f,&a[i]) !=0){
+        perror("Eroare pthread_create!!\n");
+    }
+  }
+  for(i=0;i<N;i++){
+    pthread_join(t[i],NULL);
+  }
+  close(p[0]);
+  close(p[1]);
+  pthread_mutex_destroy(mtx);
+  wait(0);
+  free(t);
+  free(a);
+  free(mtx);
+return 0;
+}

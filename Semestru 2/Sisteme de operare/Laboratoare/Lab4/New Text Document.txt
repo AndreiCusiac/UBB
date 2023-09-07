@@ -1,0 +1,10 @@
+sed 's/[0-9]/AAA/g' /etc/passwd
+- toate aparitiile de cifre inlocuite cu A?
+
+sed 'y/abcd/wert/' /etc/passwd
+- transliterare, toate aparitiile lui a sunt inlocuite de w
+toate aparitiile lui b -> e etc.
+
+awk -F: '{print $5}' /etc/passwd
+- al cincelea continut delimitat de :
+

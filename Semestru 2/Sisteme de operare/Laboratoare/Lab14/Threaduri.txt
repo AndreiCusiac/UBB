@@ -1,0 +1,207 @@
+--------------------> 1. Erori <--------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+void *print_message_function( void *ptr );
+
+int main()
+{
+         pthread_t thread1, thread2;
+         const char *message1 = "Thread 1";
+         const char *message2 = "Thread 2";
+         int  iret1, iret2;
+
+         /* Create independent threads each of which will execute function */
+
+         iret1 = pthread_create( &thread1, NULL, print_message_function, (void*) message1);
+
+         if(iret1)
+         {
+                 fprintf(stderr,"Error - pthread_create() return code: %d\n",iret1);
+                 exit(EXIT_FAILURE);
+         }
+
+         iret2 = pthread_create( &thread2, NULL, print_message_function, (void*) message2);
+
+         if(iret2)
+         {
+                 fprintf(stderr,"Error - pthread_create() return code: %d\n",iret2);
+                 exit(EXIT_FAILURE);
+         }
+
+         printf("pthread_create() for thread 1 returns: %d\n",iret1);
+         printf("pthread_create() for thread 2 returns: %d\n",iret2);
+
+         /* Wait till threads are complete before main continues. Unless we  */
+         /* wait we run the risk of executing an exit which will terminate   */
+         /* the process and all threads before the threads have completed.   */
+
+         pthread_join( thread1, NULL);
+         pthread_join( thread2, NULL);
+         exit(EXIT_SUCCESS);
+
+        return 0;
+}
+
+void *print_message_function( void *ptr )
+{
+         char *message;
+         message = (char *) ptr;
+         printf("%s \n", message);
+
+        return 0;
+}
+
+
+
+
+
+--------------------> 2. Mutex <--------------------
+
+#include <stdio.h>
+#include <pthread.h>
+
+#define NTHREADS 10
+
+void *thread_function(void *);
+
+pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
+
+int  counter = 0;
+
+int main()
+{
+           pthread_t thread_id[NTHREADS];
+
+           int i, j;
+
+           for(i=0; i < NTHREADS; i++)
+           {
+                  pthread_create( &thread_id[i], NULL, thread_function, NULL );
+           }
+
+           for(j=0; j < NTHREADS; j++)
+           {
+                  pthread_join( thread_id[j], NULL);
+           }
+
+           /* Now that all threads are complete I can print the final result.     */
+
+           /* Without the join I could be printing a value before all the threads */
+
+           /* have been completed.                                                */
+
+           printf("Final counter value: %d\n", counter);
+
+        return 0;
+}
+
+void *thread_function(void *dummyPtr)
+{
+           printf("Thread number %ld\n", pthread_self());
+
+           pthread_mutex_lock( &mutex1 );
+
+           counter++;
+
+           pthread_mutex_unlock( &mutex1 );
+
+        return 0;
+}
+
+
+
+
+
+--------------------> 3. Problema <--------------------
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+pthread_mutex_t mut;
+
+int sir[199];
+
+int k=0;
+
+void* gen (void* param)
+{
+        int x = random()%1000;
+        int y = random()%1000;
+
+        int id = *(int*)param;
+
+        printf("Thread-ul curent %d a generat: x=%d, y=%d\n", id, x, y);
+
+        if (x%2 != y%2)
+        {
+                pthread_mutex_lock(&mut);
+
+                sir[k] = x;
+
+                k++;
+
+                sir[k] = y;
+
+                k++;
+
+                pthread_mutex_unlock(&mut);
+        }
+
+        return 0;
+}
+
+int main(int argc, char ** argv)
+{
+        if (argc != 2)
+        {
+                printf("Eroare!\n");
+                return 0;
+        }
+
+        srandom(time(NULL));
+
+        int N = atoi(argv[1]);
+
+        if (N <= 0)
+        {
+                printf("Argument invalid!\n");
+                return 0;
+        }
+
+        pthread_t t[N];
+        int param[N];
+
+        int i=0;
+
+        pthread_mutex_init(&mut, NULL);
+
+        for (i=0; i<N; i++)
+        {
+                param[i] = i;
+                pthread_create(&t[i], NULL, gen, (void*)&param[i]);
+        }
+
+        for (i=0; i<N; i++)
+        {
+                pthread_join(t[i], NULL);
+        }
+
+        pthread_mutex_destroy(&mut);
+
+        printf("\nNumerele generate de paritate diferita sunt:");
+
+        for (i=0; i<k; i=i+2)
+        {
+                printf("\n");
+
+                printf("%d %d", sir[i], sir[i+1]);
+        }
+
+        printf("\n");
+
+        return 0;
+}

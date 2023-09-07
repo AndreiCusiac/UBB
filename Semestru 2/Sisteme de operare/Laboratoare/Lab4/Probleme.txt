@@ -1,0 +1,24 @@
+http://www.cs.ubbcluj.ro/~daniel/so/lab4/#sed
+
+2) sed: - nu salveaza in fisier, doar afiseaza
+
+1. sed 's/^/abc/' ran.txt
+
+- unde sed 's/abc//' ran.txt face undo
+
+2. sed 's/^$/empty/' ran.txt
+
+unde ^$ refera o linie goala
+
+3. sed 's/\t/   /' ran.txt
+
+- unde \t este echivalentul pentru tab
+
+4. 
+
+
+
+3) awk
+
+1. awk -F: 'NR==FNR {a[$1] = $1;next}{b[$1]=$5}END{for (id in a) print id,b[id] }' 
+users_lab4.txt /etc/passwd

@@ -1,0 +1,44 @@
+less /etc/passwd
+
+grep -E " [A-Z]\.?[A-Z]\.?[A-Z]\.? " /etc/passwd :
+
+-E - expresie in sintaxa estinsa
+\. - cauta in linia text de intrare caracterul '.'
+? - caracterul/ expresia imediat de dinainte poate sa apara (o data sau deloc)
+
+echivalent cu grep -E " ([A-Z]\.?){3,} " /etc/passwd :
+() - grupeaza, ce e in interiorul lor e expresia grupului
+{a,b} - minim de a ori, maxim de b ori
+
+Linkuri:
+
+http://www.cs.ubbcluj.ro/~daniel/so/lab4/
+https://regex101.com/
+
+Expresii:
+
+\w\d - orice litera urmata de orice cifra
+
+^\w - orice litera de la inceput de linie
+
+grep -E "\<Dan\> " /etc/passwd vs grep -E "Dan" /etc/passwd :
+
+Doar "Dan" versus "Dan"/ "Daniel"/ etc
+
+^.*$ - tot ce e pe linie
+
+^n - primul caracter de pe linie e n 
+[^n] - fara n
+
+n$ - ultimul caracter de pe linie e n
+
+\$ - caracterul dolar (ca la \.)
+
+grep -Ev = tot ceea ce NU se afla in expresie
+grep -Ei = case sensitive
+^[^i]  (a doua '^' are rolul negatiei aici) - tot ceea ce NU e intre [in acest caz, 'i'] primul caracter pe linie
+^[i] - tot ceea ce exista intre []
+
+" \<Dan\>" vs "\<Dan\>"
+cu spatiu inainte de Dan vs fara
+

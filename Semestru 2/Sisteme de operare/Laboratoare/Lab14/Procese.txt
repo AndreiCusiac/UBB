@@ -1,0 +1,513 @@
+--------------------> 1. Eenie Meenie <--------------------
+
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+
+int main(int argc, char**argv)
+{
+   int p2a[2], a2b[2], b2p[2], n;
+   pipe(p2a); pipe(a2b); pipe(b2p);
+   if(fork() == 0)
+   { // A
+        close(p2a[1]); close(a2b[0]);
+        close(b2p[0]); close(b2p[1]);
+        while(1)
+        {
+                if(read(p2a[0], &n, sizeof(int)) <= 0)
+                {
+                        break;
+                }
+                if(n <= 0)
+                {
+                        break;
+                }
+                printf("A: %d -> %d\n", n, n-1);
+                n--;
+                write(a2b[1], &n, sizeof(int));
+        }
+        close(p2a[0]); close(a2b[1]);
+        exit(0);
+   }
+   if(fork() == 0)
+   { // B
+        close(p2a[0]); close(p2a[1]);
+        close(a2b[1]); close(b2p[0]);
+        while(1)
+        {
+        if(read(a2b[0], &n, sizeof(int)) <= 0)
+        {
+                break;
+        }
+        if(n <= 0)
+        {
+                break;
+        }
+        printf("B: %d -> %d\n", n, n-1);
+        n--;
+        write(b2p[1], &n, sizeof(int));
+        }
+        close(a2b[0]); close(b2p[1]);
+        exit(0);
+   }
+   close(p2a[0]); close(b2p[1]);
+   close(a2b[0]); close(a2b[1]);
+   n = 20;
+   write(p2a[1], &n, sizeof(int));
+   while(1)
+   {
+        if(read(b2p[0], &n, sizeof(int)) <= 0)
+        {
+                break;
+        }
+        if(n <= 0)
+        {
+                break;
+        }
+        printf("P: %d -> %d\n", n, n-1);
+        n--;
+        write(p2a[1], &n, sizeof(int));
+   }
+   close(p2a[1]); close(b2p[0]);
+   wait(0); wait(0);
+   return 0;
+}
+
+
+
+
+
+
+
+--------------------> 2. Ex 5 - Lab 6 <--------------------
+
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <sys/types.h>
+
+int s=0;
+
+int main()
+{
+        int n;
+        int v[1000];
+
+        int p[2];
+
+        printf("Dati valoarea lui n\nn=");
+        scanf("%d", &n);
+
+        printf("S-a citit: %d\n", n);
+
+        int i=1;
+        while (i<=n)
+        {
+                v[i]=i;
+                i++;
+        }
+
+        pipe(p);
+
+        int pid =fork();
+
+        if (pid == 0)
+        {
+                close(p[0]);
+                int si=0;
+                int i=1;
+                while (i<=n)
+                {
+                        if (i%2==1)
+                                si+=v[i];
+                        i++;
+                }
+
+                printf("Suma impara e: %d\n", si);
+                s+=si;
+                printf("Suma este: %d\n", s);
+                write(p[1], &si, sizeof(int));
+                close(p[1]);
+                exit(si);
+        }
+        close(p[1]);
+
+        read(p[0], &s, sizeof(int));
+        close(p[0]);
+
+        int status;
+
+        wait(&status);
+
+        status = WEXITSTATUS(status);
+
+        printf("Statusul e: %d\n", status);
+
+        printf("Suma este: %d\n", s);
+
+        int sp=0;
+        i=1;
+        while (i<=n)
+        {
+               if (i%2==0)
+                       sp+=v[i];
+               i++;
+        }
+
+        printf("Suma para e: %d\n", sp);
+        s+=sp;
+
+        printf("Suma totala este: %d\n", s);
+
+        return 0;
+}
+
+
+
+
+
+--------------------> 3. Ex 6 - Lab 6 <--------------------
+
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{
+
+        int N;
+
+        int prim[100000];
+
+        for (N=1; N<=100000; N++)
+                prim[N] = 0;
+
+        printf("Dati un numar N\nN=");
+        scanf("%d", &N);
+
+        int pid;
+
+        int status;
+
+        int i=2;
+
+        printf("Numerele prime pana la %d sunt:\n", N);
+
+        for (i=2; i<=N;i++)
+        {
+
+                pid = fork();
+
+                if (pid == 0)
+                {
+                        int j=2;
+
+                        for (j=2; j<i; j++)
+                        {
+                                if (i % j == 0)
+                                {
+                                        exit(0);
+                                }
+                        }
+
+                        exit(1);
+                }
+                else
+                {
+                        wait(&status);
+
+                        status = WEXITSTATUS(status);
+
+                        if (status == 1)
+                        {
+                                prim[i] = 1;
+                        }
+                }
+        }
+
+        for (i=2; i<=N;i++)
+        {
+                if (prim[i] == 1)
+                        printf("%d ", i);
+        }
+
+        int p[2];
+
+        pipe(p);
+
+        printf("\n");
+
+        return 0;
+}
+
+
+
+
+
+--------------------> 4. Ex 4 - Lab 6 <--------------------
+
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+
+void recursie()
+{
+        int pid = fork();
+
+        if (pid ==0)
+        {
+                int p = getpid();
+                printf("PID actual %d\n", p);
+                if (p%2 == 0)
+                        recursie();
+                else
+                {
+                        printf("PID impar!\n");
+                        exit(0);
+                }
+        }
+        wait(0);
+}
+
+int main()
+{
+        recursie();
+        return 0;
+}
+
+
+
+
+--------------------> 5. child1.c <--------------------
+
+#include<stdio.h>
+#include<unistd.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include<sys/wait.h>
+int main(int argc, char** argv)
+{
+   int pid;
+   pid = fork();
+   if(pid == 0)
+   {
+      printf("Child-only code\n");
+      exit(0);
+   }
+        wait(0);
+ printf("Parent-only code\n");
+   //wait(0);
+   return 0;
+}
+
+
+
+
+
+--------------------> 6. wexit.c <--------------------
+
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <stdlib.h>
+
+    int main()
+
+    {
+
+        int pid, state;
+
+        printf(" The parent: before the fork()\n");
+
+        if ((pid = fork()) != 0)
+
+        {
+                printf("Wow!\n");
+            wait(&state);
+                printf("Uou!\n");
+
+        }
+
+        else
+
+        {
+
+            int pid;
+
+            printf("The child: begins the execution \n");
+
+            pid=getpid();
+
+            printf("The son: %d terminates\n", pid);
+
+            exit(10);
+
+        }
+
+
+
+        printf("The parent: after fork()\n");
+
+        state = WEXITSTATUS(state);
+
+        printf("PID child=%d; terminated with the code %d=%x\n", pid, state, state);
+
+        return 0;
+    }
+
+
+
+
+
+
+--------------------> 7. Problema random <--------------------
+
+#include <sys/wait.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <time.h>
+
+int main()
+{
+
+        int a2p[2], b2p[2], p2a[2], p2b[2];
+
+        int n;
+
+        int n1, n2;
+
+        srandom(time(NULL));
+
+        pipe(a2p); pipe(b2p);
+        pipe(p2a); pipe(p2b);
+
+
+        if (fork() == 0)
+        {
+                close(b2p[1]);
+                close(b2p[0]);
+                close(p2b[1]);
+                close(p2b[0]);
+
+                close(p2a[1]);
+                close(a2p[0]);
+
+                while (1)
+                {
+                        if (read(p2a[0], &n, sizeof(int)) <= 0)
+                                break;
+
+                        n1 = random() % 100 + 1;
+
+                        printf("Procesul A: %d\n", n1);
+
+                        write(a2p[1], &n1, sizeof(int));
+
+                        if (n1 > n)
+                                break;
+                }
+
+                close(p2a[0]);
+                close(a2p[1]);
+
+                exit(0);
+        }
+
+        if (fork() == 0)
+        {
+                close(a2p[1]);
+                close(a2p[0]);
+                close(p2a[1]);
+                close(p2a[0]);
+
+                close(p2b[1]);
+                close(b2p[0]);
+
+                while (1)
+                {
+                        if (read(p2b[0], &n, sizeof(int)) <= 0)
+                                break;
+
+                        n2 = random() % 100 + 1;
+
+                       printf("Procesul B: %d\n", n2);
+
+                        write(b2p[1], &n2, sizeof(int));
+
+                        if (n2 > n)
+                                break;
+                }
+
+                close(p2b[0]);
+                close(b2p[1]);
+
+                exit(0);
+        }
+
+        close(p2a[0]);
+        close(p2b[0]);
+        close(a2p[1]);
+        close(b2p[1]);
+
+        n = random() % 1000;
+
+        if (n < 100)
+        {
+                n = n + 100;
+        }
+
+        printf("N=%d\n", n);
+
+        write(p2a[1], &n, sizeof(int));
+        //write(b2p[1], &x, sizeof(int));
+
+        while (1)
+        {
+                if (read(a2p[0], &n1, sizeof(int)) <= 0)
+                        break;
+
+                printf("De la procesul A: %d\n", n1);
+
+                if (n - n1 < 0)
+                        break;
+
+                n = n - n1;
+
+                printf("N actual este: %d\n\n", n);
+
+                write(p2b[1], &n, sizeof(int));
+
+                if (read(b2p[0], &n2, sizeof(int)) <= 0)
+                        break;
+
+                printf("De la procesul B: %d\n", n2);
+
+                if (n - n2 < 0)
+                       break;
+
+                n = n - n2;
+
+                printf("N actual este: %d\n\n", n);
+
+                write(p2a[1], &n, sizeof(int));
+
+        }
+
+        close(a2p[0]); close(b2p[0]);
+        close(p2a[1]); close(p2b[1]);
+
+        wait(0);
+        wait(0);
+
+        printf("\nGata! N = %d\n", n);
+
+        return 0;
+}

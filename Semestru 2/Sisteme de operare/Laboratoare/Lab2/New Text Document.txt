@@ -1,0 +1,35 @@
+drwxr-xr-x = permisiuni, in grupuri de cate 3
+r - read
+x - execute
+w - write?
+
+chmod - schimba drepturi
+chmod -x alabal.txt (scoate dreptul de executie) (x dispare pentru toti userii)
+ - reprezentarea in baza 8 a drepturilor (3 biti --> baza 8)
+
+rw- --> valoarea 6
+
+chmod 666 alabal.txt --> rw- *3 (rw-rw-rw-)
+
+
+Mod de adresare: relativa (la sistemul de fisiere) sau absoluta
+
+pwd - directorul curent
+
+adresare absoluta - toate entitatile de la radacina (cu slash la inceput)
+ex> ls -l /home/scs/licenta/an1/gr212/cair2909
+
+Compilare: gcc -Wall -Werror -g -o nume_program nume.c
+Rulare: ./nume_fisier
+
+Segmentation fault (core dumped)/ probleme la memorie ==> 
+==> !! gdb ./nume_fisier, apoi r(un) / bt(backtrace)/ print variabila/ frame 1 (muta contextul curent)
+
+valgrind ./nume_fisier, apoi valgrind --leak-check=full ./nume_fisier
+
+./nume_fisier nume.txt
+
+man fopen/ read/ fread
+
+%3d - dimensiune de reprezentare 3 caractere
+
