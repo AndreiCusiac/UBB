@@ -1,0 +1,2 @@
+1,Stephen Curry,point_guard,178
+2,Stephen Curry,point_guard,178

@@ -1,0 +1,198 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, scanf, printf   ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll
+     9                                  
+    10                                  import scanf msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  
+    13                                  extern sufix
+    14                                  
+    15                                      ; exit is a function that ends the calling process. It is defined in msvcrt.dll 
+    16                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    17                                  
+    18                                  ; our data is declared here (the variables needed by our program)
+    19                                  segment data use32
+    20                                      ; ...
+    21                                      
+    22 00000000 6561626300                  s1 db 'eabc', 0
+    23                                      parc1 equ $-s1-2
+    24                                      ls1 equ $-s1-1
+    25                                      
+    26 00000005 6561626300                  s2 db 'eabc', 0
+    27                                      parc2 equ $-s2-2
+    28                                      ls2 equ $-s2-1
+    29                                          
+    30 0000000A 6761626563646400            s3 db 'gabecdd', 0
+    31                                      parc3 equ $-s2-2
+    32                                      ls3 equ $-s3-1
+    33                                      
+    34 00000012 00000000                    ls dd 0
+    35                                      
+    36 00000016 256400                      fdec db '%d', 0
+    37 00000019 256300                      fcar db '%c', 0
+    38                                      
+    39 0000001C 00000000                    a dd 0
+    40 00000020 00000000                    b dd 0
+    41 00000024 00000000                    k dd 0
+    42                                      
+    43 00000028 00000000                    var1 dd 0
+    44 0000002C 00000000                    var2 dd 0
+    45                                      
+    46 00000030 63722025632000              mesaj db 'cr %c ', 0
+    47                                      
+    48 00000037 74727900                    msj db 'try', 0
+    49                                      
+    50 0000003B 636F6E746F72206573-         beste db 'contor este %d', 0
+    50 00000044 746520256400       
+    51                                      
+    52 0000004A 4E7520732D61206761-         mesajNePareRau db 'Nu s-a gasit un sufix comun', 0
+    52 00000053 73697420756E207375-
+    52 0000005C 66697820636F6D756E-
+    52 00000065 00                 
+    53                                      
+    54 00000066 546F7420637576616E-         mesajTot db 'Tot cuvantul', 0
+    54 0000006F 74756C00           
+    55                                      
+    56 00000073 0A00                        linie_noua db 10, 0
+    57                                      
+    58                                  ; our code starts here
+    59                                  segment code use32 public code
+    60                                      start:
+    61                                          
+    62                                          ; Se dau (direct in segmentul de date) trei siruri de caractere. Sa se afiseze cel mai lung sufix comun 
+    63                                          ; pentru fiecare din cele trei perechi de cate doua siruri ce se pot forma.
+    64                                          
+    65 00000000 C705[20000000]0000-             mov [b], dword 0
+    65 00000008 0000               
+    66 0000000A BE[00000000]                    mov esi, s1
+    67 0000000F BF[05000000]                    mov edi, s2
+    68                                          
+    69 00000014 C705[28000000]0300-             mov dword [var1], parc1
+    69 0000001C 0000               
+    70 0000001E C705[2C000000]0300-             mov dword [var2], parc2
+    70 00000026 0000               
+    71                                          
+    72 00000028 B004                            mov al, ls1
+    73 0000002A B304                            mov bl, ls2
+    74                                          
+    75 0000002C 38D8                            cmp al, bl
+    76 0000002E 7F02                            jg Primul
+    77 00000030 7E0C                            jng Doilea
+    78                                          
+    79                                          Primul:
+    80 00000032 C705[12000000]0400-                 mov [ls], dword ls2
+    80 0000003A 0000               
+    81 0000003C EB0A                                jmp MaiDeparte
+    82                                          
+    83                                          Doilea:
+    84 0000003E C705[12000000]0400-                 mov [ls], dword ls1
+    84 00000046 0000               
+    85                                          
+    86                                          MaiDeparte:
+    87 00000048 8B0D[12000000]                      mov ecx, [ls]
+    88                                          
+    89 0000004E 56                              push esi
+    90 0000004F 57                              push edi
+    91                                          
+    92                                          
+    93                                          Repeta:
+    94 00000050 890D[24000000]                      mov [k], ecx
+    95                                              
+    96 00000056 B800000000                          mov eax, 0
+    97 0000005B BB00000000                          mov ebx, 0
+    98                                              
+    99 00000060 8B15[28000000]                      mov edx, [var1]
+   100                                  
+   101 00000066 8A0416                              mov al, [esi+edx]
+   102                                              
+   103 00000069 8B15[2C000000]                      mov edx, [var2]
+   104                                              
+   105 0000006F 8A1C17                              mov bl, [edi+edx]
+   106                                              
+   107 00000072 38D8                                cmp al, bl
+   108                                              
+   109 00000074 7402                                je Crestem  
+   110 00000076 7514                                jne Iesim
+   111                                              
+   112                                              Crestem:
+   113 00000078 FF05[20000000]                          inc dword [b]
+   114 0000007E FF0D[28000000]                          dec dword [var1]
+   115 00000084 FF0D[2C000000]                          dec dword [var2]
+   116 0000008A EB0D                                    jmp Continuam
+   117                                                  
+   118                                              Iesim:
+   119 0000008C 8B1D[20000000]                          mov ebx, [b]
+   120 00000092 83FB00                                  cmp ebx, 0
+   121 00000095 7477                                    je NePareRau
+   122 00000097 7508                                    jne Afisam
+   123                                              
+   124                                              Continuam:
+   125                                              
+   126 00000099 8B0D[24000000]                      mov ecx, [k]
+   127                                          
+   128 0000009F E2AF                            loop Repeta
+   129                                          
+   130                                          Afisam:
+   131                                              
+   132 000000A1 A1[12000000]                        mov eax, dword [ls]
+   133 000000A6 8B1D[20000000]                      mov ebx, [b]
+   134                                              
+   135 000000AC 39D8                                cmp eax, ebx
+   136 000000AE 7402                                je Tot  
+   137 000000B0 750E                                jne NuTot
+   138                                              
+   139                                              Tot:
+   140                                              
+   141 000000B2 68[66000000]                        push dword mesajTot
+   142 000000B7 FF15[00000000]                      call [printf]
+   143 000000BD 83C404                              add esp, 4
+   144                                              
+   145                                              NuTot:
+   146                                              
+   147 000000C0 B800000000                          mov eax, 0
+   148 000000C5 B803000000                          mov eax, parc1
+   149 000000CA 2B05[20000000]                      sub eax, [b]
+   150 000000D0 89C6                                mov esi, eax
+   151 000000D2 46                                  inc esi
+   152                                              
+   153 000000D3 8B0D[20000000]                      mov ecx, [b]
+   154                                              
+   155                                              Tiparim:
+   156 000000D9 890D[24000000]                          mov [k], ecx
+   157                                              
+   158 000000DF B800000000                              mov eax, 0
+   159 000000E4 8A86[00000000]                          mov al, [s1+esi]
+   160 000000EA 46                                      inc esi
+   161 000000EB A3[1C000000]                            mov [a], eax
+   162                                                  
+   163 000000F0 FF35[1C000000]                          push dword [a]
+   164 000000F6 68[19000000]                            push dword fcar
+   165 000000FB FF15[00000000]                          call [printf]
+   166 00000101 83C408                                  add esp, 4*2
+   167                                                      
+   168 00000104 8B0D[24000000]                          mov ecx, [k]
+   169                                              
+   170 0000010A E2CD                                loop Tiparim
+   171 0000010C EB10                                jmp Final
+   172                                              
+   173                                          NePareRau:
+   174 0000010E 68[4A000000]                        push dword mesajNePareRau
+   175 00000113 FF15[00000000]                      call [printf]
+   176 00000119 83C404                              add esp, 4
+   177                                              
+   178 0000011C EB00                                jmp Final
+   179                                          
+   180                                          Final:
+   181                                          
+   182 0000011E 68[73000000]                    push dword linie_noua
+   183 00000123 FF15[00000000]                  call [printf]
+   184 00000129 83C404                          add esp, 4
+   185                                          
+   186                                          ; exit(0)
+   187 0000012C 6A00                            push dword 0      ; push the parameter for exit onto the stack
+   188 0000012E FF15[00000000]                  call [exit]       ; call exit to terminate the program

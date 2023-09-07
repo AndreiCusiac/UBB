@@ -1,0 +1,216 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, scanf, printf   ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll
+     9                                  
+    10                                  import scanf msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  
+    13                                  extern sufix
+    14                                  
+    15                                      ; exit is a function that ends the calling process. It is defined in msvcrt.dll 
+    16                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    17                                  
+    18                                  ; our data is declared here (the variables needed by our program)
+    19                                  segment data use32 class=data
+    20                                      ; ...
+    21                                      
+    22 00000000 616162636300                s1 db 'aabcc', 0
+    23                                      ls1 equ $-s1-2
+    24                                      parc1 equ $-s1-1
+    25                                      
+    26 00000006 61616162636300              s2 db 'aaabcc', 0
+    27                                      ls2 equ $-s2-2
+    28                                      parc2 equ $-s2-1
+    29                                          
+    30 0000000D 63646400                    s3 db 'cdd', 0
+    31                                      ls3 equ $-s3-2
+    32                                      parc3 equ $-s3-1
+    33                                      
+    34 00000011 00000000                    ls dd 0
+    35                                      
+    36 00000015 256400                      fdec db '%d', 0
+    37 00000018 256300                      fcar db '%c', 0
+    38                                      
+    39 0000001B 00000000                    b dd 0
+    40 0000001F 00000000                    k dd 0
+    41                                      
+    42 00000023 4E7520732D61206761-         mesajNePareRau db 'Nu s-a gasit un sufix comun', 0
+    42 0000002C 73697420756E207375-
+    42 00000035 66697820636F6D756E-
+    42 0000003E 00                 
+    43                                      
+    44 0000003F 0A00                        linie_noua db 10, 0
+    45                                      
+    46                                  ; our code starts here
+    47                                  segment code use32 class=code
+    48                                      start:
+    49                                          
+    50                                          ; Se dau (direct in segmentul de date) trei siruri de caractere. Sa se afiseze cel mai lung sufix comun 
+    51                                          ; pentru fiecare din cele trei perechi de cate doua siruri ce se pot forma.
+    52                                          
+    53                                          ; primul si al doilea sir
+    54                                          
+    55 00000000 6A06                            push dword parc2
+    56 00000002 6A05                            push dword parc1
+    57 00000004 6A05                            push dword ls2
+    58 00000006 6A04                            push dword ls1
+    59 00000008 68[06000000]                    push dword s2
+    60 0000000D 68[00000000]                    push dword s1
+    61                                          
+    62 00000012 E8(00000000)                    call sufix ; trimitem parametrii in functie
+    63                                          
+    64 00000017 83FB00                          cmp ebx, 0 ; verificam daca exista un sufix de afisat
+    65 0000001A 7434                            je NePareRau1 ; daca nu, afisam un mesaj de eroare
+    66 0000001C 7500                            jne Afisam1 ; daca da, afisam sufixul
+    67                                          
+    68                                          Afisam1:
+    69                                              
+    70 0000001E FC                                  cld
+    71                                              
+    72 0000001F BE[00000000]                        mov esi, s1
+    73 00000024 83C605                              add esi, parc1
+    74 00000027 29DE                                sub esi, ebx ; ne pozitionam intr-unul din cele 2 siruri, pe pozitia la care a fost gasit ultimul caracter comum
+    75                                              
+    76 00000029 89D9                                mov ecx, ebx
+    77                                              
+    78                                              Tiparim1:
+    79 0000002B 890D[1F000000]                          mov [k], ecx
+    80                                              
+    81 00000031 B800000000                              mov eax, 0
+    82 00000036 AC                                      lodsb ; incarcam in eax caracterul curent 
+    83                                                  
+    84 00000037 50                                      push dword eax ; si il afisam
+    85 00000038 68[18000000]                            push dword fcar
+    86 0000003D FF15[00000000]                          call [printf]
+    87 00000043 83C408                                  add esp, 4*2
+    88                                                      
+    89 00000046 8B0D[1F000000]                          mov ecx, [k]
+    90                                              
+    91 0000004C E2DD                                loop Tiparim1
+    92 0000004E EB10                                jmp Final1
+    93                                              
+    94                                          NePareRau1:
+    95 00000050 68[23000000]                        push dword mesajNePareRau
+    96 00000055 FF15[00000000]                      call [printf]
+    97 0000005B 83C404                              add esp, 4
+    98                                              
+    99 0000005E EB00                                jmp Final1
+   100                                          
+   101                                          Final1:
+   102                                          
+   103 00000060 68[3F000000]                    push dword linie_noua
+   104 00000065 FF15[00000000]                  call [printf]
+   105 0000006B 83C404                          add esp, 4
+   106                                          
+   107                                          ; primul si al treilea sir
+   108                                          
+   109 0000006E 6A03                            push dword parc3
+   110 00000070 6A05                            push dword parc1
+   111 00000072 6A02                            push dword ls3
+   112 00000074 6A04                            push dword ls1
+   113 00000076 68[0D000000]                    push dword s3
+   114 0000007B 68[00000000]                    push dword s1
+   115                                          
+   116 00000080 E8(00000000)                    call sufix ; trimitem parametrii in functie
+   117                                          
+   118 00000085 83FB00                          cmp ebx, 0 ; verificam daca exista un sufix de afisat
+   119 00000088 7434                            je NePareRau2 ; daca nu, afisam un mesaj de eroare
+   120 0000008A 7500                            jne Afisam2 ; daca da, afisam sufixul
+   121                                          
+   122                                          Afisam2:
+   123                                              
+   124 0000008C FC                                  cld
+   125                                              
+   126 0000008D BE[00000000]                        mov esi, s1
+   127 00000092 83C605                              add esi, parc1
+   128 00000095 29DE                                sub esi, ebx ; ne pozitionam intr-unul din cele 2 siruri, pe pozitia la care a fost gasit ultimul caracter comum
+   129                                              
+   130 00000097 89D9                                mov ecx, ebx
+   131                                              
+   132                                              Tiparim2:
+   133 00000099 890D[1F000000]                          mov [k], ecx
+   134                                              
+   135 0000009F B800000000                              mov eax, 0
+   136 000000A4 AC                                      lodsb ; incarcam in eax caracterul curent 
+   137                                                  
+   138 000000A5 50                                      push dword eax ; si il afisam
+   139 000000A6 68[18000000]                            push dword fcar
+   140 000000AB FF15[00000000]                          call [printf]
+   141 000000B1 83C408                                  add esp, 4*2
+   142                                                      
+   143 000000B4 8B0D[1F000000]                          mov ecx, [k]
+   144                                              
+   145 000000BA E2DD                                loop Tiparim2
+   146 000000BC EB10                                jmp Final2
+   147                                              
+   148                                          NePareRau2:
+   149 000000BE 68[23000000]                        push dword mesajNePareRau
+   150 000000C3 FF15[00000000]                      call [printf]
+   151 000000C9 83C404                              add esp, 4
+   152                                              
+   153 000000CC EB00                                jmp Final2
+   154                                          
+   155                                          Final2:
+   156                                          
+   157 000000CE 68[3F000000]                    push dword linie_noua
+   158 000000D3 FF15[00000000]                  call [printf]
+   159 000000D9 83C404                          add esp, 4
+   160                                          
+   161                                          ; al doilea si al treilea sir
+   162                                          
+   163 000000DC 6A06                            push dword parc2
+   164 000000DE 6A03                            push dword parc3
+   165 000000E0 6A05                            push dword ls2
+   166 000000E2 6A02                            push dword ls3
+   167 000000E4 68[06000000]                    push dword s2
+   168 000000E9 68[0D000000]                    push dword s3
+   169                                          
+   170 000000EE E8(00000000)                    call sufix ; trimitem parametrii in functie
+   171                                          
+   172 000000F3 83FB00                          cmp ebx, 0 ; verificam daca exista un sufix de afisat
+   173 000000F6 7434                            je NePareRau3 ; daca nu, afisam un mesaj de eroare
+   174 000000F8 7500                            jne Afisam3 ; daca da, afisam sufixul
+   175                                          
+   176                                          Afisam3:
+   177                                              
+   178 000000FA FC                                  cld
+   179                                              
+   180 000000FB BE[0D000000]                        mov esi, s3
+   181 00000100 83C603                              add esi, parc3
+   182 00000103 29DE                                sub esi, ebx ; ne pozitionam intr-unul din cele 2 siruri, pe pozitia la care a fost gasit ultimul caracter comum
+   183                                              
+   184 00000105 89D9                                mov ecx, ebx
+   185                                              
+   186                                              Tiparim3:
+   187 00000107 890D[1F000000]                          mov [k], ecx
+   188                                              
+   189 0000010D B800000000                              mov eax, 0
+   190 00000112 AC                                      lodsb ; incarcam in eax caracterul curent 
+   191                                                  
+   192 00000113 50                                      push dword eax ; si il afisam
+   193 00000114 68[18000000]                            push dword fcar
+   194 00000119 FF15[00000000]                          call [printf]
+   195 0000011F 83C408                                  add esp, 4*2
+   196                                                      
+   197 00000122 8B0D[1F000000]                          mov ecx, [k]
+   198                                              
+   199 00000128 E2DD                                loop Tiparim3
+   200 0000012A EB10                                jmp Final3
+   201                                              
+   202                                          NePareRau3:
+   203 0000012C 68[23000000]                        push dword mesajNePareRau
+   204 00000131 FF15[00000000]                      call [printf]
+   205 00000137 83C404                              add esp, 4
+   206                                              
+   207 0000013A EB00                                jmp Final3
+   208                                          
+   209                                          Final3:
+   210                                          
+   211                                          ; exit(0)
+   212 0000013C 6A00                            push dword 0      ; push the parameter for exit onto the stack
+   213 0000013E FF15[00000000]                  call [exit]       ; call exit to terminate the program

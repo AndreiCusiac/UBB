@@ -1,0 +1,93 @@
+bits 32 ; assembling for the 32 bits architecture
+
+; declare the EntryPoint (a label defining the very first instruction of the program)
+global start        
+
+; declare external functions needed by our program
+extern exit, scanf, printf   ; tell nasm that exit exists even if we won't be defining it
+import exit msvcrt.dll
+
+import scanf msvcrt.dll
+import printf msvcrt.dll
+
+extern sufix
+
+    ; exit is a function that ends the calling process. It is defined in msvcrt.dll 
+                          ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+
+; our data is declared here (the variables needed by our program)
+segment data use32 class=data
+    ; ...
+    
+; our code starts here
+segment code use32 class=code
+    start:
+        
+        push dword 0      ; push the parameter for exit onto the stack
+        call [exit]       ; call exit to terminate the program
+
+
+;cod pentru 13sec.asm (stabilirea sufixului comun)
+
+bits 32                         
+
+segment code use32 class=code public
+
+global sufix  ; eticheta
+    
+
+sufix:
+	
+	mov esi, [esp + 4] ; accesam primul sir
+	
+    mov edi, [esp + 8] ; accesam al doiea sir
+    
+    mov eax, [esp + 12] ; accesam lungimea primului sir
+    
+    mov ebx, [esp + 16] ; accesam lungimea celui de-al doilea sir
+    
+    mov ecx, [esp + 20] ; parc1
+    
+    mov edx, [esp + 24] ; parc2
+    
+    
+    add esi, eax ; ne pozitionam pe ultimul element din primul sir
+    
+    add edi, ebx ; ne pozitionam pe cel de-al doilea element din primul sir
+    
+    cmp ecx, edx ; verificam care dintre cele 2 siruri este mai scurt
+    jg AlDoileaSirEMaiScurt
+    jng PrimulSirEMaiScurt
+    
+    AlDoileaSirEMaiScurt:
+        mov ecx, edx
+    
+    PrimulSirEMaiScurt:
+    
+    std ; stabilim parcurgerea in ordine inversa a sirurilor, in vederea gasirii sufixului comun
+    
+    mov ebx, 0 ; facem din ebx un contor in care numaram caracterele din sufixul comun
+    
+    Repeta:
+  
+        cmpsb ; verificam daca caracterul actual este comun 
+            
+        je Crestem ; daca da, incrementam contorul
+        jne Iesim ; daca nu, iesim din lup
+            
+        Crestem:
+            inc ebx
+        
+    loop Repeta
+    
+    Iesim:
+    
+    ; ebx va contine numarul de caractere din sufix dorit
+    
+    Returnam:    
+  
+    ret 4*6 ; in acest caz 24 reprezinta 
+	;numarul de octeti ce trebuie eliberati de pe stiva 
+	;(parametrii pasati procedurii - adica cei 6 pusi pe stiva*4)
+	
+	

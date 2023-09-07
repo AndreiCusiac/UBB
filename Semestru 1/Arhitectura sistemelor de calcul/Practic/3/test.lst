@@ -1,0 +1,247 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, scanf, printf, fprintf, fopen, fclose   ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll
+     9                                  
+    10                                  import scanf msvcrt.dll
+    11                                  import printf msvcrt.dll
+    12                                  import fprintf msvcrt.dll
+    13                                  import fopen msvcrt.dll
+    14                                  import fclose msvcrt.dll
+    15                                  
+    16                                      ; exit is a function that ends the calling process. It is defined in msvcrt.dll 
+    17                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 class=data
+    21                                      ; ...
+    22                                      
+    23 00000000 00000000                    a dd 0
+    24                                      
+    25 00000004 08000000                    cifra dd 8
+    26                                      
+    27 00000008 3800000000000000            cifra8 dd '8', 0
+    28 00000010 3600000000000000            cifra6 dd '6', 0
+    29 00000018 3400000000000000            cifra4 dd '4', 0
+    30 00000020 3200000000000000            cifra2 dd '2', 0
+    31 00000028 3000000000000000            cifra0 dd '0', 0
+    32                                      
+    33 00000030 256300                      form db '%c', 0
+    34                                      
+    35 00000033 7700                        writ db 'w', 0
+    36                                      
+    37 00000035 6E756D61722E747874-         nume_fis db 'numar.txt', 0
+    37 0000003E 00                 
+    38                                      
+    39 0000003F FFFFFFFF                    desc1 dd -1
+    40 00000043 00000000                    k dd 0
+    41                                      
+    42 00000047 00000000                    c0 dd 0
+    43 0000004B 00000000                    c2 dd 0
+    44 0000004F 00000000                    c4 dd 0
+    45 00000053 00000000                    c6 dd 0
+    46 00000057 00000000                    c8 dd 0
+    47                                      
+    48                                  ; our code starts here
+    49                                  segment code use32 class=code
+    50                                      start:
+    51                                          
+    52 00000000 68[33000000]                    push dword writ
+    53 00000005 68[35000000]                    push dword nume_fis
+    54 0000000A FF15[00000000]                  call [fopen]
+    55 00000010 83C408                          add esp, 4*2
+    56                                          
+    57 00000013 A3[3F000000]                    mov [desc1], eax
+    58                                          
+    59 00000018 83F800                          cmp eax, 0
+    60 0000001B 0F84B8010000                    je final
+    61                                          
+    62                                          Citim:
+    63 00000021 68[00000000]                        push dword a
+    64 00000026 68[30000000]                        push dword form
+    65 0000002B FF15[00000000]                      call [scanf]
+    66 00000031 83C408                              add esp, 4*2
+    67                                              
+    68 00000034 833D[00000000]21                    cmp dword [a], '!'
+    69 0000003B 7459                                je Iesim
+    70                                              
+    71                                              Verif:
+    72 0000003D 833D[00000000]30                        cmp dword [a], 48
+    73 00000044 7426                                    je Add0
+    74                                                  
+    75 00000046 833D[00000000]32                        cmp dword [a], 50
+    76 0000004D 7425                                    je Add2
+    77                                                  
+    78 0000004F 833D[00000000]34                        cmp dword [a], 52
+    79 00000056 7424                                    je Add4
+    80                                                      
+    81 00000058 833D[00000000]36                        cmp dword [a], 54
+    82 0000005F 7423                                    je Add6
+    83                                                      
+    84 00000061 833D[00000000]38                        cmp dword [a], 56
+    85 00000068 7422                                    je Add8
+    86                                                  
+    87 0000006A EB28                                    jmp Gata
+    88                                                  
+    89                                                  Add0:
+    90 0000006C FF05[47000000]                              inc dword [c0]
+    91 00000072 EB20                                        jmp Gata
+    92                                                  
+    93                                                  Add2:
+    94 00000074 FF05[4B000000]                              inc dword [c2]
+    95 0000007A EB18                                        jmp Gata
+    96                                                  
+    97                                                  Add4:
+    98 0000007C FF05[4F000000]                              inc dword [c4]
+    99 00000082 EB10                                        jmp Gata
+   100                                                  
+   101                                                  Add6:
+   102 00000084 FF05[53000000]                              inc dword [c6]
+   103 0000008A EB08                                        jmp Gata
+   104                                                  
+   105                                                  Add8:
+   106 0000008C FF05[57000000]                              inc dword [c8]
+   107 00000092 EB00                                        jmp Gata
+   108                                                  
+   109                                              Gata:
+   110                                              
+   111                                                  
+   112 00000094 EB8B                            jmp Citim
+   113                                          
+   114                                          Iesim:
+   115                                              
+   116 00000096 8B0D[57000000]                      mov ecx, [c8]
+   117                                              
+   118 0000009C E330                                jecxz MaiDeparte1
+   119                                              
+   120                                              Repeta1:
+   121                                                  
+   122 0000009E 890D[43000000]                          mov dword[k], ecx
+   123                                                  
+   124 000000A4 B8[04000000]                            mov eax, cifra
+   125 000000A9 83C030                                  add eax, 48
+   126                                                  
+   127 000000AC FF35[08000000]                          push dword [cifra8]
+   128 000000B2 68[30000000]                            push dword form
+   129 000000B7 FF35[3F000000]                          push dword [desc1]
+   130 000000BD FF15[00000000]                          call [fprintf]
+   131 000000C3 83C40C                                  add esp, 4*3
+   132                                              
+   133 000000C6 8B0D[43000000]                          mov ecx, dword[k]
+   134                                              
+   135 000000CC E2D0                                loop Repeta1
+   136                                              
+   137                                              MaiDeparte1:
+   138 000000CE 832D[04000000]02                        sub dword[cifra], 2
+   139                                                  
+   140 000000D5 8B0D[53000000]                      mov ecx, [c6]
+   141                                              
+   142 000000DB E330                                jecxz MaiDeparte2
+   143                                              
+   144                                              Repeta2:
+   145                                                  
+   146 000000DD 890D[43000000]                          mov dword[k], ecx
+   147                                                  
+   148 000000E3 B8[04000000]                            mov eax, cifra
+   149 000000E8 83C030                                  add eax, 48
+   150                                                  
+   151 000000EB FF35[10000000]                          push dword [cifra6]
+   152 000000F1 68[30000000]                            push dword form
+   153 000000F6 FF35[3F000000]                          push dword [desc1]
+   154 000000FC FF15[00000000]                          call [fprintf]
+   155 00000102 83C40C                                  add esp, 4*3
+   156                                              
+   157 00000105 8B0D[43000000]                          mov ecx, dword[k]
+   158                                              
+   159 0000010B E2D0                                loop Repeta2
+   160                                              
+   161                                              MaiDeparte2:
+   162 0000010D 832D[04000000]02                        sub dword[cifra], 2
+   163                                              
+   164 00000114 8B0D[4F000000]                      mov ecx, [c4]
+   165                                              
+   166 0000011A E330                                jecxz MaiDeparte3
+   167                                              
+   168                                              Repeta3:
+   169                                                  
+   170 0000011C 890D[43000000]                          mov dword[k], ecx
+   171                                                  
+   172 00000122 B8[04000000]                            mov eax, cifra
+   173 00000127 83C030                                  add eax, 48
+   174                                                  
+   175 0000012A FF35[18000000]                          push dword [cifra4]
+   176 00000130 68[30000000]                            push dword form
+   177 00000135 FF35[3F000000]                          push dword [desc1]
+   178 0000013B FF15[00000000]                          call [fprintf]
+   179 00000141 83C40C                                  add esp, 4*3
+   180                                              
+   181 00000144 8B0D[43000000]                          mov ecx, dword[k]
+   182                                              
+   183 0000014A E2D0                                loop Repeta3
+   184                                              
+   185                                              MaiDeparte3:
+   186 0000014C 832D[04000000]02                        sub dword[cifra], 2
+   187                                              
+   188 00000153 8B0D[4B000000]                      mov ecx, [c2]
+   189                                              
+   190 00000159 E330                                jecxz MaiDeparte4
+   191                                              
+   192                                              Repeta4:
+   193                                                  
+   194 0000015B 890D[43000000]                          mov dword[k], ecx
+   195                                                  
+   196 00000161 B8[04000000]                            mov eax, cifra
+   197 00000166 83C030                                  add eax, 48
+   198                                                  
+   199 00000169 FF35[20000000]                          push dword [cifra2]
+   200 0000016F 68[30000000]                            push dword form
+   201 00000174 FF35[3F000000]                          push dword [desc1]
+   202 0000017A FF15[00000000]                          call [fprintf]
+   203 00000180 83C40C                                  add esp, 4*3
+   204                                              
+   205 00000183 8B0D[43000000]                          mov ecx, dword[k]
+   206                                              
+   207 00000189 E2D0                                loop Repeta4
+   208                                              
+   209                                              MaiDeparte4:
+   210 0000018B 832D[04000000]02                        sub dword[cifra], 2
+   211                                              
+   212 00000192 8B0D[47000000]                      mov ecx, [c0]
+   213                                              
+   214 00000198 E330                                jecxz MaiDeparte5
+   215                                              
+   216                                              Repeta5:
+   217                                                  
+   218 0000019A 890D[43000000]                          mov dword[k], ecx
+   219                                                  
+   220 000001A0 B8[04000000]                            mov eax, cifra
+   221 000001A5 83C030                                  add eax, 48
+   222                                                  
+   223 000001A8 FF35[28000000]                          push dword [cifra0]
+   224 000001AE 68[30000000]                            push dword form
+   225 000001B3 FF35[3F000000]                          push dword [desc1]
+   226 000001B9 FF15[00000000]                          call [fprintf]
+   227 000001BF 83C40C                                  add esp, 4*3
+   228                                              
+   229 000001C2 8B0D[43000000]                          mov ecx, dword[k]
+   230                                              
+   231 000001C8 E2D0                                loop Repeta5
+   232                                              
+   233                                              MaiDeparte5:
+   234                                              
+   235                                          
+   236                                              GataCuPrintatul:
+   237                                              
+   238 000001CA FF35[3F000000]                          push dword [desc1]
+   239 000001D0 FF15[00000000]                          call [fclose]
+   240 000001D6 83C404                                  add esp, 4
+   241                                          
+   242                                          final:
+   243                                          
+   244                                          ; exit(0)
+   245 000001D9 6A00                            push dword 0      ; push the parameter for exit onto the stack
+   246 000001DB FF15[00000000]                  call [exit]       ; call exit to terminate the program

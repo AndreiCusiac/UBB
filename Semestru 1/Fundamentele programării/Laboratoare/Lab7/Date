@@ -1,0 +1,13 @@
+from datetime import date, datetime
+
+today = date.today()
+
+z = "2020-18-12"
+
+z = datetime.strptime(z, '%Y-%m-%d').date()
+
+print(today)
+print(z)
+
+if z>today: print("Da")
+else: print("Nu")

@@ -1,0 +1,2 @@
+Nota = 20% * (activitate la seminar / Lucrare de control (seminar 7 - sapt 8) 50/50) +
+	80% * examen sesiune 

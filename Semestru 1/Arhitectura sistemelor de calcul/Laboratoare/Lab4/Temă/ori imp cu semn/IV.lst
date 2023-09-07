@@ -1,0 +1,118 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14                                      
+    15 00000000 66                          a db 102
+    16 00000001 03                          b db 3
+    17 00000002 0400                        c dw 4
+    18 00000004 05000000                    e dd 5
+    19 00000008 CC00000000000000            x dq 204
+    20 00000010 0000                        auxx dw 0
+    21 00000012 00000000                    aux1 dd 0
+    22 00000016 00000000                    rez dd 0
+    23                                      
+    24                                  ; our code starts here
+    25                                  segment code use32 class=code
+    26                                      start:
+    27                                          ; (100+a+b*c)/(a-100)+e+x/a
+    28                                          
+    29                                          ; b*c
+    30                                          
+    31 00000000 A0[01000000]                    mov al, [b]
+    32 00000005 6698                            cbw 
+    33 00000007 66F72D[02000000]                imul word[c] ; dx:ax = b*c
+    34                                          
+    35 0000000E 6689C3                          mov bx, ax
+    36 00000011 6689D1                          mov cx, dx ; cx:bx = b*c
+    37                                          
+    38                                          ; 100+a
+    39                                          
+    40 00000014 A0[00000000]                    mov al, [a]
+    41 00000019 6698                            cbw
+    42 0000001B 6683C064                        add ax, 100 ; ax = 100+a
+    43 0000001F 6699                            cwd ; dx:ax = 100+a
+    44                                          
+    45                                          ; 100+a+b*c
+    46                                          
+    47 00000021 F8                              clc
+    48                                          
+    49                                          ;???
+    50                                          ;add ax, bx
+    51                                          ;adc dx, cx
+    52                                          ;mov bx, [a]
+    53                                          ;sub bx, 100
+    54                                          ;idiv bx
+    55                                          ;???
+    56                                          
+    57 00000022 6601C3                          add bx, ax
+    58 00000025 6611D1                          adc cx, dx ; cx:bx = 100+a+b*c
+    59                                          
+    60 00000028 A0[00000000]                    mov al, [a]
+    61 0000002D 6698                            cbw 
+    62 0000002F 6683E864                        sub ax, 100 ; ax = a-100
+    63                                          
+    64 00000033 66A3[10000000]                  mov [auxx], ax ; auxx = a-100
+    65                                          
+    66 00000039 6689D8                          mov ax, bx
+    67 0000003C 6689CA                          mov dx, cx ; dx:ax = 100+a+b*c
+    68                                          
+    69                                          ;???
+    70                                          ;idiv word[auxx] ; ax = catul (100+a+b*c)/(a-100)
+    71                                          ;???
+    72                                          
+    73 0000003F 668B1D[10000000]                mov bx, [auxx]
+    74 00000046 66F7FB                          idiv bx ; ax = catul lui (100+a+b*c)/(a-100)
+    75                                          
+    76 00000049 6699                            cwd ; dx:ax = (100+a+b*c)/(a-100)
+    77                                          
+    78                                          ; (100+a+b*c)/(a-100)+e
+    79                                          
+    80 0000004B F8                              clc
+    81                                          
+    82 0000004C 660305[04000000]                add ax, word[e+0]
+    83 00000053 661315[06000000]                adc dx, word[e+2] ; dx:ax = (100+a+b*c)/(a-100)+e
+    84                                          
+    85 0000005A 6652                            push dx
+    86 0000005C 6650                            push ax
+    87 0000005E 5B                              pop ebx 
+    88 0000005F 891D[12000000]                  mov [aux1], ebx ; aux1 = (100+a+b*c)/(a-100)+e
+    89                                          
+    90                                          ; x/a
+    91                                          
+    92 00000065 A0[00000000]                    mov al, [a]
+    93 0000006A 6698                            cbw
+    94 0000006C 98                              cwde ; eax = a
+    95                                          
+    96 0000006D 89C3                            mov ebx, eax ; ebx = a
+    97                                          
+    98 0000006F A1[08000000]                    mov eax, dword[x+0]
+    99 00000074 8B15[0C000000]                  mov edx, dword[x+4] ; edx:eax = x
+   100                                          
+   101                                          ;???
+   102                                          ;idiv dword[a] sau 
+   103                                          ;mov ebx, dword[a]
+   104                                          ;???
+   105                                          
+   106 0000007A F7FB                            idiv ebx ; eax = catul lui x/a
+   107                                          
+   108                                          ; (100+a+b*c)/(a-100)+e+x/a
+   109                                          
+   110 0000007C 8B1D[12000000]                  mov ebx, [aux1]
+   111                                          
+   112 00000082 01D8                            add eax, ebx ; eax = (100+a+b*c)/(a-100)+e+x/a
+   113                                          
+   114                                          ;mov [rez], eax 
+   115                                  
+   116                                          ; exit(0)
+   117 00000084 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   118 00000086 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

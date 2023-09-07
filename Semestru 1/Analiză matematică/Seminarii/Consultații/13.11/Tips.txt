@@ -1,0 +1,3 @@
+Stolz Cesaro = LHospital pt siruri
+Cateva serii (e la x) trebuie stiute
+Serie de puteri convergenta si la capetele intervalului (cu t. Abel)

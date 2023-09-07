@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&cmid=153 -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc'Clusky: Attempt review</title>
+    <link rel="shortcut icon" href="https://moodle.cs.ubbcluj.ro/theme/image.php/classic/theme/1600868715/favicon">
+    
+<meta name="keywords" content="moodle, Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky: Attempt review">
+<link rel="stylesheet" type="text/css" href="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1610920481931_8" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1610920481931_19" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript.php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1610920481931_79" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(1).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1610920481931_80" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(2).php" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1610920481931_81" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/combo(2)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1610920481931_82" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(3).php" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.cs.ubbcluj.ro","sesskey":"zr0lBoLNtX","sessiontimeout":"7200","themerev":"1600868715","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1600868613","admin":"admin","svgicons":true,"usertimezone":"Europe\/Bucharest","contextid":1255,"langrev":1600868613,"templaterev":"1600868707"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/yui_combo.php?m\/1600868613\/","combine":true,"comboBase":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/yui_combo.php?","ext":false,"root":"m\/1600868613\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1600868613\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/requirejs.php"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(4).php"></script></head>
+<body id="page-mod-quiz-review" class="format-weeks path-mod path-mod-quiz chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam moodle-cs-ubbcluj-ro pagelayout-incourse course-11 context-1255 cmid-153 category-2 jsenabled scrolled" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#maincontent">Skip to main content</a>
+</div><script src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(5).php"></script>
+<script src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(6).php"></script>
+<script src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/combo(3)"></script><script src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(7).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex">
+    
+            <a href="https://moodle.cs.ubbcluj.ro/" class="navbar-brand aalink 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">moodleubb</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="d-none d-lg-block">
+                    
+                </li>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="7003" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-6004b2219da0a6004b2219bae84" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container " data-region="count-container" aria-label="There are 2 unread notifications">2</div>
+
+    </div>
+    <div id="popover-region-container-6004b2219da0a6004b2219bae84" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" title="Mark all as read" data-action="mark-all-read" role="button" aria-label="Mark all as read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://moodle.cs.ubbcluj.ro/message/notificationpreferences.php?userid=7003" title="Notification preferences" aria-label="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.cs.ubbcluj.ro/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-6004b2219e4b36004b2219bae85" class="nav-link d-inline-block popover-region-toggle position-relative" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" role="button">
+        <i class="icon fa fa-comment fa-fw " title="Toggle messaging drawer" aria-label="Toggle messaging drawer"></i>
+        <div class="count-container hidden" data-region="count-container" aria-label="There are 0 unread conversations">0</div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-0" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Andrei Cusiac</span><span class="avatars"><span class="avatar current"><img src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/f2.png" class="userpicture defaultuserpic" width="35" height="35" aria-hidden="true"></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br">
+                                                                <a href="https://moodle.cs.ubbcluj.ro/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-1">Dashboard</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://moodle.cs.ubbcluj.ro/user/profile.php?id=7003" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                <i class="icon fa fa-user fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-2">Profile</span>
+                        </a>
+                                                                <a href="https://moodle.cs.ubbcluj.ro/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                <i class="icon fa fa-table fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-3">Grades</span>
+                        </a>
+                                                                <a href="https://moodle.cs.ubbcluj.ro/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                <i class="icon fa fa-comment fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-4">Messages</span>
+                        </a>
+                                                                <a href="https://moodle.cs.ubbcluj.ro/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-5">Preferences</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://moodle.cs.ubbcluj.ro/login/logout.php?sesskey=zr0lBoLNtX" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"></i>
+                                <span class="menu-action-text" id="actionmenuaction-6">Log out</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                    <div class="page-context-header"><div class="page-header-headings"><h1>Logică computațională</h1></div></div>
+                    </div>
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Navigation bar">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.cs.ubbcluj.ro/">Home</a>
+                </li>
+        
+                <li class="breadcrumb-item">My courses</li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.cs.ubbcluj.ro/course/view.php?id=11" title="Logică computațională">LC</a>
+                </li>
+        
+                <li class="breadcrumb-item">General</li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/view.php?id=153" aria-current="page" title="Quiz">Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc'Clusky</a>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row  blocks-pre   d-print-block">
+            <div id="region-main-box" class="region-main">
+                <section id="region-main" class="region-main-content" aria-label="Content">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">Started on</th><td class="cell">Sunday, 17 January 2021, 11:43 PM</td></tr><tr><th class="cell" scope="row">State</th><td class="cell">Finished</td></tr><tr><th class="cell" scope="row">Completed on</th><td class="cell">Sunday, 17 January 2021, 11:54 PM</td></tr><tr><th class="cell" scope="row">Time taken</th><td class="cell">11 mins 21 secs</td></tr><tr><th class="cell" scope="row">Marks</th><td class="cell">60.00/190.00</td></tr><tr><th class="cell" scope="row">Grade</th><td class="cell"><b>3.16</b> out of 10.00 (<b>32</b>%)</td></tr><tr><th class="cell" scope="row">Feedback</th><td class="cell"><p>Vă rog să mai studiați.</p></td></tr></tbody></table><form action="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153" method="post" class="questionflagsaveform" autocomplete="off" id="yui_3_17_2_1_1610920481931_515"><div><div id="question-243296-1" class="que match deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Correct</div><div class="grade">Mark 30.00 out of 30.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_25"><input type="hidden" name="q243296:1_:flagged" value="0"><input type="hidden" value="qaid=2427527&amp;qubaid=243296&amp;qid=4511&amp;slot=1&amp;checksum=a58e881ee894d636a9fc828386269a9f&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:1_:flaggedcheckbox" name="q243296:1_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:1_:sequencecheck" value="3"><div class="qtext"><p><span>Ordonați pașii de aplicare a metodei de simplificare a lui Quine-Mc</span><span lang="EN-US">’</span><span>Clusky:&nbsp;</span></p></div><div class="ablock"><table class="answer"><tbody><tr class="r0"><td class="text"><p>Se hașurează coloanele monoamelor centrale (cele cu ”*” încercuite).</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub0">Answer 1</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub0" name="q243296:1_sub0"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option selected="selected" value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p>Se completează cel de al doilea tabel, în care se marchează prin intermediul unor ”*” corespondența dintre mintermi și monoame maximale, tabel în care se vor completa pe linii mintermii iar pe coloane monoamele maximale.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub1">Answer 2</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub1" name="q243296:1_sub1"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option selected="selected" value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r0"><td class="text"><p>Se repetă procesul până când nu se mai identifică factori noi.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub2">Answer 3</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub2" name="q243296:1_sub2"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option selected="selected" value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p>Dacă se identifică cazul nr. 2 al algoritmului de simplificare, se poate utiliza cea de a doua tabelă pentru a identifica soluția utilizând următorii 3 pași:</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub3">Answer 4</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub3" name="q243296:1_sub3"><option value="0">Choose...</option><option selected="selected" value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r0"><td class="text"><p>Toate liniile nebifate corespund monoamelor maximale ale funcției.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub4">Answer 5</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub4" name="q243296:1_sub4"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option selected="selected" value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p>Se hașurează liniile cu ”*” hașurate.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub5">Answer 6</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub5" name="q243296:1_sub5"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option selected="selected" value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r0"><td class="text"><p>Toate monoamele maximale care au pe coloana lor cel puțin o ”*” încercuită sunt centrale.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub6">Answer 7</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub6" name="q243296:1_sub6"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option selected="selected" value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p>Se încercuiesc steluțele singure pe linii.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub7">Answer 8</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub7" name="q243296:1_sub7"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option selected="selected" value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r0"><td class="text"><p>Se vor căuta <em>n</em>-uple în grupuri vecine care diferă printr-o singură cifră, cifra respectivă se simplifică înlocuindu-se cu ”-”. Liniile implicate în procesul de factorizare se bifează.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub8">Answer 9</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub8" name="q243296:1_sub8"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option selected="selected" value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p><span>Se ordonează <em>n</em>-uplele din suportul funcției crescător sau descrescător după numărul de valori de 1 conținut.</span></p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub9">Answer 10</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub9" name="q243296:1_sub9"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option selected="selected" value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r0"><td class="text"><p>Se acoperă liniile nehașurate utilizând cât mai puține monoame maximale.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub10">Answer 11</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub10" name="q243296:1_sub10"><option value="0">Choose...</option><option value="1">9</option><option value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option selected="selected" value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr><tr class="r1"><td class="text"><p>Se completează <em>n</em>-uplele grup după grup în prima tabelă, în care se va realiza procesul de factorizare.</p></td><td class="control correct"><label class="accesshide" for="menuq243296:1_sub11">Answer 12</label><select disabled="disabled" class="select custom-select custom-select ml-1" id="menuq243296:1_sub11" name="q243296:1_sub11"><option value="0">Choose...</option><option value="1">9</option><option selected="selected" value="2">2</option><option value="3">1</option><option value="4">8</option><option value="5">11</option><option value="6">10</option><option value="7">7</option><option value="8">5</option><option value="9">4</option><option value="10">6</option><option value="11">3</option><option value="12">12</option></select> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></td></tr></tbody></table></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="rightanswer">The correct answer is: Se hașurează coloanele monoamelor centrale (cele cu ”*” încercuite). → 10, Se completează cel de al doilea tabel, în care se marchează prin intermediul unor ”*” corespondența dintre mintermi și monoame maximale, tabel în care se vor completa pe linii mintermii iar pe coloane monoamele maximale. → 6, Se repetă procesul până când nu se mai identifică factori noi. → 4, Dacă se identifică cazul nr. 2 al algoritmului de simplificare, se poate utiliza cea de a doua tabelă pentru a identifica soluția utilizând următorii 3 pași: → 9, Toate liniile nebifate corespund monoamelor maximale ale funcției. → 5, Se hașurează liniile cu ”*” hașurate. → 11, Toate monoamele maximale care au pe coloana lor cel puțin o ”*” încercuită sunt centrale. → 8, Se încercuiesc steluțele singure pe linii. → 7, Se vor căuta <em>n</em>-uple în grupuri vecine care diferă printr-o singură cifră, cifra respectivă se simplifică înlocuindu-se cu ”-”. Liniile implicate în procesul de factorizare se bifează. → 3, <span>Se ordonează <em>n</em>-uplele din suportul funcției crescător sau descrescător după numărul de valori de 1 conținut.</span> → 1, Se acoperă liniile nehașurate utilizând cât mai puține monoame maximale. → 12, Se completează <em>n</em>-uplele grup după grup în prima tabelă, în care se va realiza procesul de factorizare. → 2</div></div></div></div></div><div id="question-243296-2" class="que multichoice deferredfeedback notanswered"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Not answered</div><div class="grade">Marked out of 30.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_34"><input type="hidden" name="q243296:2_:flagged" value="0"><input type="hidden" value="qaid=2427528&amp;qubaid=243296&amp;qid=4652&amp;slot=2&amp;checksum=7afc87610b85a227d9ec0ae45eb0101e&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:2_:flaggedcheckbox" name="q243296:2_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:2_:sequencecheck" value="2"><div class="qtext"><p>Selectați tripletele care formează suportul funcției:&nbsp;</p>
+<p><em>f&nbsp;</em>(&nbsp;<em>x</em><sub>1</sub>,&nbsp;<em>x</em><sub>2</sub>,&nbsp;<em>x</em><sub>3</sub>&nbsp;) = (&nbsp;<em>x</em><sub>1</sub>&nbsp;↑<em>&nbsp;<span><span style="text-decoration: overline;">x</span></span></em><sub>2</sub>&nbsp;)&nbsp;⊕&nbsp;(&nbsp;<em><span>x</span></em><sub>1</sub><span>&nbsp;</span><span>↓&nbsp;<em>x</em><sub>3</sub>&nbsp;)&nbsp; &nbsp;</span></p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q243296:2_choice0" disabled="disabled" value="1" id="q243296:2_choice0"><label for="q243296:2_choice0" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 0, 0)</span></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:2_choice1" disabled="disabled" value="1" id="q243296:2_choice1"><label for="q243296:2_choice1" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 0, 1)</span></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:2_choice2" disabled="disabled" value="1" id="q243296:2_choice2"><label for="q243296:2_choice2" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 1, 0)</span></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:2_choice3" disabled="disabled" value="1" id="q243296:2_choice3"><label for="q243296:2_choice3" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 1, 1)</span></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:2_choice4" disabled="disabled" value="1" id="q243296:2_choice4"><label for="q243296:2_choice4" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 0, 0)</span></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:2_choice5" disabled="disabled" value="1" id="q243296:2_choice5"><label for="q243296:2_choice5" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 0, 1)</span></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:2_choice6" disabled="disabled" value="1" id="q243296:2_choice6"><label for="q243296:2_choice6" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 1, 0)</span></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:2_choice7" disabled="disabled" value="1" id="q243296:2_choice7"><label for="q243296:2_choice7" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 1, 1)</span></p></div></label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="rightanswer">The correct answers are: <span>(0, 0, 1)</span>, <span>(0, 1, 1)</span>, <span>(1, 1, 0)</span>, <span>(1, 1, 1)</span></div></div></div></div></div><div id="question-243296-3" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Correct</div><div class="grade">Mark 10.00 out of 10.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_43"><input type="hidden" name="q243296:3_:flagged" value="0"><input type="hidden" value="qaid=2427529&amp;qubaid=243296&amp;qid=4642&amp;slot=3&amp;checksum=e68dc0f7a3fe8afdb58ea78b9b2551eb&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:3_:flaggedcheckbox" name="q243296:3_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:3_:sequencecheck" value="3"><div class="qtext"><p><span>Selectați toate tripletele care formează același grup cu <span>(1, 0, 1) (inclusiv acest triplet)</span>&nbsp;știind că suportul funcției este:</span></p>
+<p><em>S<sub>f</sub></em> =&nbsp;<span lang="EN-US">{ </span><span>(0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 0, 1), (1, 1, 0), (1, 1, 1)</span><span lang="EN-US"> }&nbsp;</span></p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q243296:3_choice0" disabled="disabled" value="1" id="q243296:3_choice0"><label for="q243296:3_choice0" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 0, 0)</span></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:3_choice1" disabled="disabled" value="1" id="q243296:3_choice1"><label for="q243296:3_choice1" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 0, 1)</span></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:3_choice2" disabled="disabled" value="1" id="q243296:3_choice2"><label for="q243296:3_choice2" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 1, 0)</span></p></div></label> </div>
+<div class="r1 correct"><input type="checkbox" name="q243296:3_choice3" disabled="disabled" value="1" id="q243296:3_choice3" checked="checked"><label for="q243296:3_choice3" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(0, 1, 1)</span></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="checkbox" name="q243296:3_choice4" disabled="disabled" value="1" id="q243296:3_choice4"><label for="q243296:3_choice4" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 0, 0)</span></p></div></label> </div>
+<div class="r1 correct"><input type="checkbox" name="q243296:3_choice5" disabled="disabled" value="1" id="q243296:3_choice5" checked="checked"><label for="q243296:3_choice5" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 0, 1)</span></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0 correct"><input type="checkbox" name="q243296:3_choice6" disabled="disabled" value="1" id="q243296:3_choice6" checked="checked"><label for="q243296:3_choice6" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 1, 0)</span></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r1"><input type="checkbox" name="q243296:3_choice7" disabled="disabled" value="1" id="q243296:3_choice7"><label for="q243296:3_choice7" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><span>(1, 1, 1)</span></p></div></label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="rightanswer">The correct answers are: <span>(0, 1, 1)</span>, <span>(1, 0, 1)</span>, <span>(1, 1, 0)</span></div></div></div></div></div><div id="question-243296-4" class="que truefalse deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Correct</div><div class="grade">Mark 10.00 out of 10.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_52"><input type="hidden" name="q243296:4_:flagged" value="0"><input type="hidden" value="qaid=2427530&amp;qubaid=243296&amp;qid=4634&amp;slot=4&amp;checksum=73fcde1a2b9c5fb8f40c847fefd53689&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:4_:flaggedcheckbox" name="q243296:4_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:4_:sequencecheck" value="3"><div class="qtext"><p><span>Factorizează următoarele două linii din primul tabel Quine-Mc</span><span lang="EN-US">’</span><span>Clusky?&nbsp;</span></p>
+<p>0 1 0 și<br><span style="line-height: 1.4;">0 1 1</span></p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0 correct"><input type="radio" name="q243296:4_answer" value="1" id="q243296:4_answertrue" disabled="disabled" checked="checked"><label for="q243296:4_answertrue" class="ml-1">True</label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div><div class="r1"><input type="radio" name="q243296:4_answer" value="0" id="q243296:4_answerfalse" disabled="disabled"><label for="q243296:4_answerfalse" class="ml-1">False</label> </div></div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="specificfeedback"><p>Foarte bine!</p></div><div class="generalfeedback"><p>Da</p></div><div class="rightanswer">The correct answer is 'True'.</div></div></div></div></div><div id="question-243296-5" class="que multichoice deferredfeedback correct"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Correct</div><div class="grade">Mark 10.00 out of 10.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_61"><input type="hidden" name="q243296:5_:flagged" value="0"><input type="hidden" value="qaid=2427531&amp;qubaid=243296&amp;qid=4626&amp;slot=5&amp;checksum=16e45b6bd49645cd91bb53b63648e0cf&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:5_:flaggedcheckbox" name="q243296:5_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:5_:sequencecheck" value="3"><div class="qtext"><p><span>Selectați toți mintermii în dreptul cărora se va pune ”*” în cel de al doilea tabel Quine-Mc</span><span lang="EN-US">’</span><span>Clusky pentru monomul maximal:&nbsp;</span></p>
+<p><em>max</em><sub>1</sub> =&nbsp;<em><span>m</span></em><sub><span>13</span></sub></p></div><div class="ablock"><div class="prompt">Select one or more:</div><div class="answer"><div class="r0"><input type="checkbox" name="q243296:5_choice0" disabled="disabled" value="1" id="q243296:5_choice0"><label for="q243296:5_choice0" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>1</span></sub></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:5_choice1" disabled="disabled" value="1" id="q243296:5_choice1"><label for="q243296:5_choice1" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>2</span></sub></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:5_choice2" disabled="disabled" value="1" id="q243296:5_choice2"><label for="q243296:5_choice2" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>3</span></sub></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:5_choice3" disabled="disabled" value="1" id="q243296:5_choice3"><label for="q243296:5_choice3" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>4</span></sub></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:5_choice4" disabled="disabled" value="1" id="q243296:5_choice4"><label for="q243296:5_choice4" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>7</span></sub></p></div></label> </div>
+<div class="r1"><input type="checkbox" name="q243296:5_choice5" disabled="disabled" value="1" id="q243296:5_choice5"><label for="q243296:5_choice5" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>8</span></sub></p></div></label> </div>
+<div class="r0"><input type="checkbox" name="q243296:5_choice6" disabled="disabled" value="1" id="q243296:5_choice6"><label for="q243296:5_choice6" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em><span>m</span></em><sub><span>11</span></sub></p></div></label> </div>
+<div class="r1 correct"><input type="checkbox" name="q243296:5_choice7" disabled="disabled" value="1" id="q243296:5_choice7" checked="checked"><label for="q243296:5_choice7" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em>m</em><sub>13</sub></p></div></label> <i class="icon fa fa-check text-success fa-fw " title="Correct" aria-label="Correct"></i></div>
+<div class="r0"><input type="checkbox" name="q243296:5_choice8" disabled="disabled" value="1" id="q243296:5_choice8"><label for="q243296:5_choice8" class="d-flex w-100"><span class="answernumber"></span><div class="flex-fill ml-1"><p><em>m</em><sub>14</sub></p></div></label> </div>
+</div></div></div><div class="outcome clearfix"><h4 class="accesshide">Feedback</h4><div class="feedback"><div class="rightanswer">The correct answer is: <em>m</em><sub>13</sub></div></div></div></div></div><div id="question-243296-6" class="que multianswer deferredfeedback notanswered"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Not answered</div><div class="grade">Marked out of 100.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive" id="yui_3_17_2_1_1610920481931_70"><input type="hidden" name="q243296:6_:flagged" value="0"><input type="hidden" value="qaid=2427532&amp;qubaid=243296&amp;qid=4597&amp;slot=6&amp;checksum=1d3baf16a4bf8ea15efc5b971e839351&amp;sesskey=zr0lBoLNtX&amp;newstate=" class="questionflagpostdata">
+<input type="hidden" class="questionflagvalue" id="q243296:6_:flaggedcheckbox" name="q243296:6_:flagged" value="0"><input type="image" class="questionflagimage" src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/unflagged.svg" title="Flag this question for future reference" alt="Not flagged"><span class="questionflagtext" title="Flag this question for future reference">Flag question</span></div></div><div class="content" id="yui_3_17_2_1_1610920481931_91"><div class="formulation clearfix" id="yui_3_17_2_1_1610920481931_90"><h4 class="accesshide">Question text</h4><input type="hidden" name="q243296:6_:sequencecheck" value="2"><p><span>Completați numărul liniilor din primul tabel Quine-</span><span lang="EN-US">Mc’Clusky, numărul de monoame maximale, numărul de </span><span>”*” din cel de al doilea tabel, al monoamelor centrale, al cazului din algoritmul de simplificare și respectiv a numărului de forme simplificate ale funcției de mai jos date prin intermediul Formei sale Canonice Disjunctive:</span></p>
+<p><span><em><span>f </span></em><span>( <em>x</em></span><sub><span>1</span></sub><span>, <em>x</em><sub>2</sub>, <em>x</em><sub>3</sub>&nbsp;) =&nbsp;<em><span>m</span></em><sub><span>0</span></sub><span>∨</span><em><span> m</span></em><sub><span>1</span></sub><span>∨</span><em><span> m</span></em><sub><span>5</span></sub><span>∨</span><em><span> m</span></em><sub><span>6</span></sub><span>∨</span><em><span> m</span></em><sub><span>7</span></sub></span></span></p>
+<p>&nbsp;</p>
+<p id="yui_3_17_2_1_1610920481931_89"><span id="yui_3_17_2_1_1610920481931_88">Numărul total al liniilor (distincte) din primul tabel Quine-<span lang="EN-US">Mc’Clusky este:&nbsp;</span><span style="line-height: 1.5; white-space: pre;" id="yui_3_17_2_1_1610920481931_87"><span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_85"><label class="subq accesshide" for="q243296:6_sub1_answer">Answer</label><input type="text" name="q243296:6_sub1_answer" id="q243296:6_sub1_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_95" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 463.5px; top: 150px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_96">Not answered<br>The correct answer is: 9<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></p>
+<p id="yui_3_17_2_1_1610920481931_167"><span id="yui_3_17_2_1_1610920481931_166"><span style="line-height: 1.5; white-space: pre;" id="yui_3_17_2_1_1610920481931_165"><span style="line-height: 1.5;">Numărul monoamelor maximale este:</span><span style="line-height: 19.889999389648438px;" id="yui_3_17_2_1_1610920481931_164"> <span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_162"><label class="subq accesshide" for="q243296:6_sub2_answer">Answer</label><input type="text" name="q243296:6_sub2_answer" id="q243296:6_sub2_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_171" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 316.5px; top: 198px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_172">Not answered<br>The correct answer is: 4<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></span></p>
+<p id="yui_3_17_2_1_1610920481931_225"><span style="white-space: pre;" id="yui_3_17_2_1_1610920481931_224"><span style="line-height: 19.889999389648438px;" id="yui_3_17_2_1_1610920481931_223">Numărul total de ”*” din cel de al doilea tabel Quine-<span lang="EN-US" id="yui_3_17_2_1_1610920481931_222">Mc’Clusky este: <span lang="EN-US">&nbsp;</span><span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_220"><label class="subq accesshide" for="q243296:6_sub3_answer">Answer</label><input type="text" name="q243296:6_sub3_answer" id="q243296:6_sub3_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_229" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 522.5px; top: 246px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_230">Not answered<br>The correct answer is: 8<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></span></p>
+<p id="yui_3_17_2_1_1610920481931_283"><span style="white-space: pre;" id="yui_3_17_2_1_1610920481931_282"><span style="line-height: 19.889999389648438px;" id="yui_3_17_2_1_1610920481931_281"><span lang="EN-US" id="yui_3_17_2_1_1610920481931_280">Numărul de ”*” încercuite este: <span lang="EN-US">&nbsp;</span><span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_278"><label class="subq accesshide" for="q243296:6_sub4_answer">Answer</label><input type="text" name="q243296:6_sub4_answer" id="q243296:6_sub4_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_287" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 274.5px; top: 294px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_288">Not answered<br>The correct answer is: 2<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></span></p>
+<p id="yui_3_17_2_1_1610920481931_341"><span style="white-space: pre;" id="yui_3_17_2_1_1610920481931_340"><span style="line-height: 19.889999389648438px;" id="yui_3_17_2_1_1610920481931_339"><span lang="EN-US" id="yui_3_17_2_1_1610920481931_338">Numărul monoamelor centrale este: <span lang="EN-US">&nbsp;</span><span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_336"><label class="subq accesshide" for="q243296:6_sub5_answer">Answer</label><input type="text" name="q243296:6_sub5_answer" id="q243296:6_sub5_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_345" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 309.5px; top: 342px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_346">Not answered<br>The correct answer is: 2<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></span></p>
+<p id="yui_3_17_2_1_1610920481931_398"><span id="yui_3_17_2_1_1610920481931_397"><span style="white-space: pre;"><span style="line-height: 19.889999389648438px;"><span lang="EN-US">Cazul algoritmului de simplificare este: </span></span></span><span style="line-height: 1.5; white-space: pre;" id="yui_3_17_2_1_1610920481931_396"><span class="subquestion" id="yui_3_17_2_1_1610920481931_394"><label class="subq accesshide" for="q243296:6_sub6_answer">Answer</label><select id="q243296:6_sub6_answer" disabled="disabled" class="select custom-select incorrect" name="q243296:6_sub6_answer"><option value=""></option><option value="0">1</option><option value="1">2</option><option value="2">3</option></select><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_402" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 314.5px; top: 390px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_403">Not answered<br>The correct answer is: 2<br>Mark 0.00 out of 10.00</span></div></span></span><span style="line-height: 19.889999389648438px; white-space: pre;">.</span></span></p>
+<p id="yui_3_17_2_1_1610920481931_456"><span style="white-space: pre;" id="yui_3_17_2_1_1610920481931_455"><span style="line-height: 19.889999389648438px;" id="yui_3_17_2_1_1610920481931_454"><span lang="EN-US" id="yui_3_17_2_1_1610920481931_453">Nr. de forme simplificate ale funcției este: <span lang="EN-US">&nbsp;</span><span class="subquestion form-inline d-inline" id="yui_3_17_2_1_1610920481931_451"><label class="subq accesshide" for="q243296:6_sub7_answer">Answer</label><input type="text" name="q243296:6_sub7_answer" id="q243296:6_sub7_answer" size="1" class="form-control mb-1 incorrect" readonly="readonly"><i class="icon fa fa-remove text-danger fa-fw " title="Incorrect" aria-label="Incorrect"></i><div id="yui_3_17_2_1_1610920481931_460" class="yui3-widget yui3-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-hidden" style="left: 345.5px; top: 434px; z-index: 1;"><span class="feedbackspan yui3-overlay-content yui3-widget-stdmod" id="yui_3_17_2_1_1610920481931_461">Not answered<br>The correct answer is: 2<br>Mark 0.00 out of 10.00</span></div></span>.</span></span></span></p></div></div></div><input type="hidden" name="sesskey" value="zr0lBoLNtX"><div class="submitbtns"></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="https://moodle.cs.ubbcluj.ro/mod/quiz/view.php?id=153">Finish review</a></div></div>
+                    <div class="mt-5 mb-1 activity-navigation container-fluid">
+<div class="row">
+    <div class="col-md-4">        <div class="float-left">
+                <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/view.php?id=155&amp;forceview=1" id="prev-activity-link" class="btn btn-link" title="Test obligatoriu corespunzător sem14 - Circuite logice">◄ Test obligatoriu corespunzător sem14 - Circuite logice</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://moodle.cs.ubbcluj.ro/course/jumpto.php" class="form-inline" id="url_select_f6004b2219bae814">
+        <input type="hidden" name="sesskey" value="zr0lBoLNtX">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Jump to...</option>
+                    <option value="/mod/quiz/view.php?id=2796&amp;forceview=1">Partial'</option>
+                    <option value="/mod/forum/view.php?id=81&amp;forceview=1">News forum</option>
+                    <option value="/mod/resource/view.php?id=146&amp;forceview=1">Subiecte examen</option>
+                    <option value="/mod/quiz/view.php?id=174&amp;forceview=1">Set1-Test facultativ recapitulativ Logica propozitiilor, Logica predicatelor, Algebre booleene, Funcții boolene și Circuite logice</option>
+                    <option value="/mod/quiz/view.php?id=535&amp;forceview=1">Set2-Test facultativ recapitulativ Logica propozitiilor, Logica predicatelor, Algebre booleene, Funcții boolene și Circuite logice</option>
+                    <option value="/mod/quiz/view.php?id=534&amp;forceview=1">Set3-Test facultativ recapitulativ Logica propozitiilor, Logica predicatelor, Algebre booleene, Funcții boolene și Circuite logice</option>
+                    <option value="/mod/resource/view.php?id=430&amp;forceview=1">Cursul 13</option>
+                    <option value="/mod/quiz/view.php?id=155&amp;forceview=1">Test obligatoriu corespunzător sem14 - Circuite logice</option>
+                    <option value="/mod/quiz/view.php?id=150&amp;forceview=1">Test obligatoriu corespunzător sem12 - Algebre booleene, funcții boolene, simplificarea funcțiilor booleene prin metoda Veitch-Karnaugh</option>
+                    <option value="/mod/quiz/view.php?id=144&amp;forceview=1">Test obligatoriu corespunzător sem11 - Metoda rezoluției în calculul predicatelor</option>
+                    <option value="/mod/quiz/view.php?id=142&amp;forceview=1">Test obligatoriu corespunzător sem10 - Metoda tabelelor semantice în calculul predicatelor, substituții și unificatori</option>
+                    <option value="/mod/quiz/view.php?id=140&amp;forceview=1">Test obligatoriu corespunzător sem9 - Sintactica și semantica logicii predicatelor de ordinul I, forme normale predicative</option>
+                    <option value="/mod/quiz/view.php?id=128&amp;forceview=1">Test obligatoriu corespunzător sem8 - Rezoluția blocării și liniară</option>
+                    <option value="/mod/quiz/view.php?id=109&amp;forceview=1">Test obligatoriu corespunzător sem7 - Rezoluția și strategii de aplicare a rezoluției</option>
+                    <option value="/mod/quiz/view.php?id=104&amp;forceview=1">Test obligatoriu corespunzător sem6 - Metoda tabelelor semantice</option>
+                    <option value="/mod/quiz/view.php?id=538&amp;forceview=1">copien Test obligatoriu corespunzător sem6 - Metoda tabelelor semantice</option>
+                    <option value="/mod/quiz/view.php?id=99&amp;forceview=1">Test obligatoriu corespunzător (sem5) Curs4 - Deducție</option>
+                    <option value="/mod/quiz/view.php?id=715&amp;forceview=1">copien Test obligatoriu corespunzător (sem5) Curs4 - Deducție</option>
+                    <option value="/mod/quiz/view.php?id=98&amp;forceview=1">Test obligatoriu corespunzător sem4 - Tabele de adevăr și Forme normale</option>
+                    <option value="/mod/quiz/view.php?id=503&amp;forceview=1">copien Test obligatoriu corespunzător sem4 - Tabele de adevăr și Forme normale</option>
+                    <option value="/mod/quiz/view.php?id=91&amp;forceview=1">Test obligatoriu corespunzător sem3 - Reprezentări</option>
+                    <option value="/mod/quiz/view.php?id=499&amp;forceview=1">Copien Test obligatoriu corespunzător sem3 - Reprezentări</option>
+                    <option value="/mod/quiz/view.php?id=83&amp;forceview=1">Test obligatoriu corespunzător sem2 - Conversii</option>
+                    <option value="/mod/quiz/view.php?id=494&amp;forceview=1">Copien Test obligatoriu corespunzător sem2 - Conversii</option>
+                    <option value="/mod/quiz/view.php?id=78&amp;forceview=1">Test obligatoriu corespunzător sem1 - Operații aritmetice de bază</option>
+                    <option value="/mod/quiz/view.php?id=496&amp;forceview=1">Copien Test obligatoriu corespunzător sem1 - Operații aritmetice de bază</option>
+                    <option value="/mod/assign/view.php?id=974&amp;forceview=1">Teme facultative</option>
+                    <option value="/mod/resource/view.php?id=89&amp;forceview=1">Teme seminar</option>
+                    <option value="/mod/resource/view.php?id=190&amp;forceview=1">Exemplu Bilete Parțial</option>
+                    <option value="/mod/resource/view.php?id=192&amp;forceview=1">Exerciții reprezentări</option>
+                    <option value="/mod/resource/view.php?id=191&amp;forceview=1">Exerciții conversii</option>
+                    <option value="/mod/resource/view.php?id=79&amp;forceview=1">Exerciții operații</option>
+                    <option value="/mod/resource/view.php?id=491&amp;forceview=1">Introducere</option>
+                    <option value="/mod/url/view.php?id=95&amp;forceview=1">Syllabus</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="float-right">
+                <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/view.php?id=150&amp;forceview=1" id="next-activity-link" class="btn btn-link" title="Test obligatoriu corespunzător sem12 - Algebre booleene, funcții boolene, simplificarea funcțiilor booleene prin metoda Veitch-Karnaugh">Test obligatoriu corespunzător sem12 - Algebre booleene, funcții boolene, simplificarea funcțiilor booleene prin metoda Veitch-Karnaugh ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+                </section>
+            </div>
+            <div class="columnleft blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id="mod_quiz_navblock_title"&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock" class=" block block_fake  card mb-3" role="navigation" data-block="_fake" aria-labelledby="instance-fakeid-6004b2219caa7-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-fakeid-6004b2219caa7-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton1" title="Correct" data-quiz-page="0" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notanswered free btn btn-secondary thispage" id="quiznavbutton2" title="Not answered" data-quiz-page="1" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#question-243296-2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton3" title="Correct" data-quiz-page="2" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#question-243296-3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton4" title="Correct" data-quiz-page="3" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#question-243296-4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton correct free btn btn-secondary thispage" id="quiznavbutton5" title="Correct" data-quiz-page="4" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#question-243296-5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notanswered free btn btn-secondary thispage" id="quiznavbutton6" title="Not answered" data-quiz-page="5" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#question-243296-6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153&amp;showall=0">Show one page at a time</a><a class="mod_quiz-next-nav" href="https://moodle.cs.ubbcluj.ro/mod/quiz/view.php?id=153">Finish review</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+
+            <div class="columnright blockcolumn ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocks">
+                    <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="drawer-6004b221a30b16004b2219bae815" class=" drawer bg-white hidden" aria-expanded="false" aria-hidden="true" data-region="right-hand-drawer" role="region" tabindex="0">
+            <div id="message-drawer-6004b221a30b16004b2219bae815" class="message-app" data-region="message-drawer" role="region">
+            <div class="closewidget bg-light border-bottom text-right">
+                <a class="text-dark" data-action="closedrawer" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#">
+                     <i class="icon fa fa-window-close fa-fw " title="Close" aria-label="Close"></i>
+                </a>
+            </div>
+            <div class="header-container position-relative" data-region="header-container">
+                <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-contacts">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch">
+                            <a class="h-100 d-flex align-items-center mr-2" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route-back="" role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Contacts
+                        </div>
+                        <div class="ml-auto">
+                            <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route="view-search" role="button" aria-label="Search">
+                                <i class="icon fa fa-search fa-fw " aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+                <div class="hidden bg-white position-relative border-bottom p-1 p-sm-2" aria-hidden="true" data-region="view-conversation">
+                    <div class="hidden" data-region="header-content"></div>
+                    <div class="hidden" data-region="header-edit-mode">
+                        
+                        <div class="d-flex p-2 align-items-center">
+                            Messages selected:
+                            <span class="ml-1" data-region="message-selected-court">1</span>
+                            <button type="button" class="ml-auto close" aria-label="Cancel message selection" data-action="cancel-edit-mode">
+                                    <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div data-region="header-placeholder">
+                        <div class="d-flex">
+                            <div class="ml-2 rounded-circle bg-pulse-grey align-self-center" style="height: 38px; width: 38px">
+                            </div>
+                            <div class="ml-2 " style="flex: 1">
+                                <div class="mt-1 bg-pulse-grey w-75" style="height: 16px;">
+                                </div>
+                            </div>
+                            <div class="ml-2 bg-pulse-grey align-self-center" style="height: 16px; width: 20px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden position-absolute" data-region="confirm-dialogue-container" style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"></div>
+                </div>                <div class="border-bottom  p-1 px-sm-2 py-sm-3" aria-hidden="false" data-region="view-overview">
+                    <div class="d-flex align-items-center">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text pr-2 bg-white">
+                                    <i class="icon fa fa-search fa-fw " aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control border-left-0" placeholder="Search" aria-label="Search" data-region="view-overview-search-input">
+                        </div>
+                        <div class="ml-2">
+                            <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route="view-settings" data-route-param="7003" aria-label="Settings" role="button">
+                                <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-right mt-sm-3">
+                        <a href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route="view-contacts" role="button">
+                            <i class="icon fa fa-user fa-fw " aria-hidden="true"></i>
+                            Contacts
+                            <span class="badge badge-primary bg-primary ml-2 hidden" data-region="contact-request-count" aria-label="There are 0 pending contact requests">
+                                0
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden border-bottom px-2 py-3 view-search" aria-hidden="true" data-region="view-search">
+                    <div class="d-flex align-items-center">
+                        <a class="mr-2 align-self-stretch d-flex align-items-center" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route-back="" data-action="cancel-search" role="button">
+                            <div class="icon-back-in-drawer">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"></i></span>
+                                <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i></span>
+                            </div>
+                            <div class="icon-back-in-app">
+                                <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"></i></span>
+                            </div>                        </a>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search" data-region="search-input">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" data-action="search" aria-label="Search">
+                                    <span data-region="search-icon-container">
+                                        <i class="icon fa fa-search fa-fw " aria-hidden="true"></i>
+                                    </span>
+                                    <span class="hidden" data-region="loading-icon-container">
+                                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="hidden border-bottom px-2 py-3" aria-hidden="true" data-region="view-settings">
+                    <div class="d-flex align-items-center">
+                        <div class="align-self-stretch">
+                            <a class="h-100 d-flex mr-2 align-items-center" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#" data-route-back="" role="button">
+                                <div class="icon-back-in-drawer">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"></i></span>
+                                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"></i></span>
+                                </div>
+                                <div class="icon-back-in-app">
+                                    <span class="dir-rtl-hide"><i class="icon fa fa-times fa-fw " aria-hidden="true"></i></span>
+                                </div>                            </a>
+                        </div>
+                        <div>
+                            Settings
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container position-relative" data-region="body-container">
+                
+                <div class="hidden" data-region="view-contact" aria-hidden="true">
+                    <div class="p-2 pt-3" data-region="content-container"></div>
+                </div>                <div class="hidden h-100" data-region="view-contacts" aria-hidden="true" data-user-id="7003">
+                    <div class="d-flex flex-column h-100">
+                        <div class="p-3 border-bottom">
+                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                <li class="nav-item">
+                                    <a id="contacts-tab-6004b221a30b16004b2219bae815" class="nav-link active" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#contacts-tab-panel-6004b221a30b16004b2219bae815" data-toggle="tab" data-action="show-contacts-section" role="tab" aria-controls="contacts-tab-panel-6004b221a30b16004b2219bae815" aria-selected="true">
+                                        Contacts
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="requests-tab-6004b221a30b16004b2219bae815" class="nav-link" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#requests-tab-panel-6004b221a30b16004b2219bae815" data-toggle="tab" data-action="show-requests-section" role="tab" aria-controls="requests-tab-panel-6004b221a30b16004b2219bae815" aria-selected="false">
+                                        Requests
+                                        <span class="badge badge-primary bg-primary ml-2 hidden" data-region="contact-request-count" aria-label="There are 0 pending contact requests">
+                                            0
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content d-flex flex-column h-100">
+                                            <div class="tab-pane fade show active h-100 lazy-load-list" aria-live="polite" data-region="lazy-load-list" data-user-id="7003" id="contacts-tab-panel-6004b221a30b16004b2219bae815" data-section="contacts" role="tabpanel" aria-labelledby="contacts-tab-6004b221a30b16004b2219bae815">
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        No contacts
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container">
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                    </div>
+                </div>
+                
+                                            <div class="tab-pane fade h-100 lazy-load-list" aria-live="polite" data-region="lazy-load-list" data-user-id="7003" id="requests-tab-panel-6004b221a30b16004b2219bae815" data-section="requests" role="tabpanel" aria-labelledby="requests-tab-6004b221a30b16004b2219bae815">
+                    
+                    <div class="hidden text-center p-2" data-region="empty-message-container">
+                        No contact requests
+                    </div>
+                    <div class="hidden list-group" data-region="content-container">
+                        
+                    </div>
+                    <div class="list-group" data-region="placeholder-container">
+                        
+                    </div>
+                    <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container">
+                        <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="view-conversation hidden h-100" aria-hidden="true" data-region="view-conversation" data-user-id="7003" data-midnight="1610834400" data-message-poll-min="10" data-message-poll-max="120" data-message-poll-after-max="300" style="overflow-y: auto; overflow-x: hidden">
+                    <div class="position-relative h-100" data-region="content-container" style="overflow-y: auto; overflow-x: hidden">
+                        <div class="content-message-container hidden h-100 px-2 pt-0" data-region="content-message-container" role="log" style="overflow-y: auto; overflow-x: hidden">
+                            <div class="py-3 sticky-top z-index-1 border-bottom text-center hidden" data-region="contact-request-sent-message-container">
+                                <p class="m-0">Contact request sent</p>
+                                <p class="font-italic font-weight-light" data-region="text"></p>
+                            </div>
+                            <div class="p-3 text-center hidden" data-region="self-conversation-message-container">
+                                <p class="m-0">Personal space</p>
+                                <p class="font-italic font-weight-light" data-region="text">Save draft messages, links, notes etc. to access later.</p>
+                           </div>
+                            <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</div>
+                        </div>
+                        <div class="p-4 w-100 h-100 hidden position-absolute" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                            
+                            <div class="p-3 bg-white" data-region="confirm-dialogue" role="alert">
+                                <p class="text-muted" data-region="dialogue-text"></p>
+                                <div class="mb-2 custom-control custom-checkbox hidden" data-region="delete-messages-for-all-users-toggle-container">
+                                    <input type="checkbox" class="custom-control-input" id="delete-messages-for-all-users" data-region="delete-messages-for-all-users-toggle">
+                                    <label class="custom-control-label text-muted" for="delete-messages-for-all-users">
+                                        Delete for me and for everyone else
+                                    </label>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-block">
+                                    <span data-region="dialogue-button-text">Block</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-unblock">
+                                    <span data-region="dialogue-button-text">Unblock</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-remove-contact">
+                                    <span data-region="dialogue-button-text">Remove</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-add-contact">
+                                    <span data-region="dialogue-button-text">Add</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-selected-messages">
+                                    <span data-region="dialogue-button-text">Delete</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="confirm-delete-conversation">
+                                    <span data-region="dialogue-button-text">Delete</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="request-add-contact">
+                                    <span data-region="dialogue-button-text">Send contact request</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block hidden" data-action="accept-contact-request">
+                                    <span data-region="dialogue-button-text">Accept and add to contacts</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-block hidden" data-action="decline-contact-request">
+                                    <span data-region="dialogue-button-text">Decline</span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-block" data-action="okay-confirm">OK</button>
+                                <button type="button" class="btn btn-secondary btn-block" data-action="cancel-confirm">Cancel</button>
+                            </div>
+                        </div>
+                        <div class="px-2 pb-2 pt-0" data-region="content-placeholder">
+                            <div class="h-100 d-flex flex-column">
+                                <div class="px-2 pb-2 pt-0 bg-light h-100" style="overflow-y: auto">
+                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                    <div class="mt-4">
+                                        <div class="mb-4">
+                                            <div class="mx-auto bg-white" style="height: 25px; width: 100px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                        <div class="d-flex flex-column p-2 bg-white rounded mb-2">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="mr-2">
+                                                    <div class="rounded-circle bg-pulse-grey" style="height: 35px; width: 35px"></div>
+                                                </div>
+                                                <div class="mr-4 w-75 bg-pulse-grey" style="height: 16px"></div>
+                                                <div class="ml-auto bg-pulse-grey" style="width: 35px; height: 16px"></div>
+                                            </div>
+                                            <div class="bg-pulse-grey w-100" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-100 mt-2" style="height: 16px"></div>
+                                            <div class="bg-pulse-grey w-75 mt-2" style="height: 16px"></div>
+                                        </div>
+                                    </div>                                </div>
+                            </div>                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden" aria-hidden="true" data-region="view-group-info">
+                    <div class="pt-3 h-100 d-flex flex-column" data-region="group-info-content-container" style="overflow-y: auto"></div>
+                </div>                <div class="h-100 view-overview-body" aria-hidden="false" data-region="view-overview" data-user-id="7003">
+                    <div id="message-drawer-view-overview-container-6004b221a30b16004b2219bae815" class="d-flex flex-column h-100" style="overflow-y: auto">
+                            
+                            
+                            <div class="section border-0 card" data-region="view-overview-favourites">
+                                <div id="view-overview-favourites-toggle" class="card-header p-0" data-region="toggle">
+                                    <button class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed" data-toggle="collapse" data-target="#view-overview-favourites-target-6004b221a30b16004b2219bae815" aria-expanded="false" aria-controls="view-overview-favourites-target-6004b221a30b16004b2219bae815">
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="font-weight-bold">Starred</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container" aria-label=" total conversations">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div class="collapse border-bottom  lazy-load-list" aria-live="polite" data-region="lazy-load-list" data-user-id="7003" id="view-overview-favourites-target-6004b221a30b16004b2219bae815" aria-labelledby="view-overview-favourites-toggle" data-parent="#message-drawer-view-overview-container-6004b221a30b16004b2219bae815">
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">No starred conversations</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div class="section border-0 card" data-region="view-overview-group-messages">
+                                <div id="view-overview-group-messages-toggle" class="card-header p-0" data-region="toggle">
+                                    <button class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed" data-toggle="collapse" data-target="#view-overview-group-messages-target-6004b221a30b16004b2219bae815" aria-expanded="false" aria-controls="view-overview-group-messages-target-6004b221a30b16004b2219bae815">
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="font-weight-bold">Group</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container" aria-label=" total conversations">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div class="collapse border-bottom  lazy-load-list" aria-live="polite" data-region="lazy-load-list" data-user-id="7003" id="view-overview-group-messages-target-6004b221a30b16004b2219bae815" aria-labelledby="view-overview-group-messages-toggle" data-parent="#message-drawer-view-overview-container-6004b221a30b16004b2219bae815">
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">No group conversations</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div class="section border-0 card" data-region="view-overview-messages">
+                                <div id="view-overview-messages-toggle" class="card-header p-0" data-region="toggle">
+                                    <button class="btn btn-link w-100 text-left p-1 p-sm-2 d-flex align-items-center overview-section-toggle collapsed" data-toggle="collapse" data-target="#view-overview-messages-target-6004b221a30b16004b2219bae815" aria-expanded="false" aria-controls="view-overview-messages-target-6004b221a30b16004b2219bae815">
+                                        <span class="collapsed-icon-container">
+                                            <i class="icon fa fa-caret-right fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="expanded-icon-container">
+                                            <i class="icon fa fa-caret-down fa-fw " aria-hidden="true"></i>
+                                        </span>
+                                        <span class="font-weight-bold">Private</span>
+                                        <small class="hidden ml-1" data-region="section-total-count-container" aria-label=" total conversations">
+                                            (<span data-region="section-total-count"></span>)
+                                        </small>
+                                        <span class="hidden ml-2" data-region="loading-icon-container">
+                                            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                        </span>
+                                        <span class="hidden badge badge-pill badge-primary ml-auto bg-primary" data-region="section-unread-count">
+                                            
+                                        </span>
+                                    </button>
+                                </div>
+                                                            <div class="collapse border-bottom  lazy-load-list" aria-live="polite" data-region="lazy-load-list" data-user-id="7003" id="view-overview-messages-target-6004b221a30b16004b2219bae815" aria-labelledby="view-overview-messages-toggle" data-parent="#message-drawer-view-overview-container-6004b221a30b16004b2219bae815">
+                                
+                                <div class="hidden text-center p-2" data-region="empty-message-container">
+                                            <p class="text-muted mt-2">No private conversations</p>
+
+                                </div>
+                                <div class="hidden list-group" data-region="content-container">
+                                    
+                                </div>
+                                <div class="list-group" data-region="placeholder-container">
+                                            <div class="text-center py-2"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</div>
+
+                                </div>
+                                <div class="w-100 text-center p-3 hidden" data-region="loading-icon-container">
+                                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div data-region="view-search" aria-hidden="true" class="h-100 hidden" data-user-id="7003" data-users-offset="0" data-messages-offset="0" style="overflow-y: auto">
+                    <div class="hidden" data-region="search-results-container" style="overflow-y: auto">
+                        
+                        <div class="d-flex flex-column">
+                            <div class="mb-3 bg-white" data-region="all-contacts-container">
+                                <div data-region="contacts-container" class="pt-2">
+                                    <h4 class="h6 px-2">Contacts</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div data-region="non-contacts-container" class="pt-2 border-top">
+                                    <h4 class="h6 px-2">Non-contacts</h4>
+                                    <div class="list-group" data-region="list"></div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-users">
+                                        <span data-region="button-text">Load more</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-white" data-region="messages-container">
+                                <h4 class="h6 px-2 pt-2">Messages</h4>
+                                <div class="list-group" data-region="list"></div>
+                                <div class="text-right">
+                                    <button class="btn btn-link text-primary" data-action="load-more-messages">
+                                        <span data-region="button-text">Load more</span>
+                                        <span data-region="loading-icon-container" class="hidden"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="hidden p-3 text-center" data-region="no-results-container">No results</p>
+                        </div>                    </div>
+                    <div class="hidden" data-region="loading-placeholder">
+                        <div class="text-center pt-3 icon-size-4"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</div>
+                    </div>
+                    <div class="p-3 text-center" data-region="empty-message-container">
+                        <p>Search people and messages</p>
+                    </div>
+                </div>                
+                <div class="h-100 hidden bg-white" aria-hidden="true" data-region="view-settings">
+                    <div class="hidden" data-region="content-container">
+                        
+                        <div data-region="settings" class="p-3">
+                            <h3 class="h6 font-weight-bold">Privacy</h3>
+                            <p>You can restrict who can message you</p>
+                            <div data-preference="blocknoncontacts" class="mb-3">
+                                <fieldset>
+                                    <legend class="sr-only">Accept messages from:</legend>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" name="message_blocknoncontacts" class="custom-control-input" id="block-noncontacts-6004b221a30b16004b2219bae815-1" value="1">
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6004b221a30b16004b2219bae815-1">
+                                                My contacts only
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" name="message_blocknoncontacts" class="custom-control-input" id="block-noncontacts-6004b221a30b16004b2219bae815-0" value="0">
+                                            <label class="custom-control-label ml-2" for="block-noncontacts-6004b221a30b16004b2219bae815-0">
+                                                My contacts and anyone in my courses
+                                            </label>
+                                        </div>
+                                </fieldset>
+                            </div>
+                        
+                            <div class="hidden" data-region="notification-preference-container">
+                                <h3 class="mb-2 mt-4 h6 font-weight-bold">Notification preferences</h3>
+                            </div>
+                        
+                            <h3 class="mb-2 mt-4 h6 font-weight-bold">General</h3>
+                            <div data-preference="entertosend">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="enter-to-send-6004b221a30b16004b2219bae815">
+                                    <label class="custom-control-label" for="enter-to-send-6004b221a30b16004b2219bae815">
+                                        Use enter to send
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-region="placeholder-container">
+                        
+                        <div class="d-flex flex-column p-3">
+                            <div class="w-25 bg-pulse-grey h6" style="height: 18px"></div>
+                            <div class="w-75 bg-pulse-grey mb-4" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-3">
+                                    <div class="bg-pulse-grey rounded-circle" style="width: 18px; height: 18px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-50 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-4">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-25 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                            <div class="w-25 bg-pulse-grey h6 mb-3 mt-2" style="height: 18px"></div>
+                            <div class="mb-3">
+                                <div class="w-100 d-flex mb-2 align-items-center">
+                                    <div class="bg-pulse-grey w-25" style="width: 18px; height: 27px"></div>
+                                    <div class="bg-pulse-grey w-50 ml-2" style="height: 18px"></div>
+                                </div>
+                            </div>
+                        </div>                    </div>
+                </div>            </div>
+            <div class="footer-container position-relative" data-region="footer-container">
+                
+                <div class="hidden border-top bg-white position-relative" aria-hidden="true" data-region="view-conversation" data-enter-to-send="0">
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-container">
+                        
+                        <div class="d-flex mt-sm-1">
+                            <textarea dir="auto" data-region="send-message-txt" class="form-control bg-light" rows="3" data-auto-rows="" data-min-rows="3" data-max-rows="5" aria-label="Write a message..." placeholder="Write a message..." style="resize: none"></textarea>
+                        
+                            <div class="position-relative d-flex flex-column">
+                                <button class="btn btn-link btn-icon icon-size-3 ml-1 mt-auto" aria-label="Send message" data-action="send-message">
+                                    <span data-region="send-icon-container"><i class="icon fa fa-paper-plane fa-fw " aria-hidden="true"></i></span>
+                                    <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-sm-2" data-region="content-messages-footer-edit-mode-container">
+                        
+                        <div class="d-flex p-3 justify-content-end">
+                            <button class="btn btn-link btn-icon my-1 icon-size-4" data-action="delete-selected-messages" data-toggle="tooltip" data-placement="top" title="Delete selected messages">
+                                <span data-region="icon-container"><i class="icon fa fa-trash fa-fw " aria-hidden="true"></i></span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                                <span class="sr-only">Delete selected messages</span>
+                            </button>
+                        </div>                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-contact-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p data-region="title"></p>
+                            <p class="text-muted" data-region="text"></p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
+                                <span data-region="dialogue-button-text">Send contact request</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-require-unblock-container">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">You have blocked this user.</p>
+                            <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
+                                <span data-region="dialogue-button-text">Unblock user</span>
+                                <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw " title="Loading" aria-label="Loading"></i></span>
+</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hidden bg-secondary p-sm-3" data-region="content-messages-footer-unable-to-message">
+                        
+                        <div class="p-3 bg-white">
+                            <p class="text-muted" data-region="text">You are unable to message this user</p>
+                        </div>
+                    </div>
+                    <div class="p-sm-2" data-region="placeholder-container">
+                        <div class="d-flex">
+                            <div class="bg-pulse-grey w-100" style="height: 80px"></div>
+                            <div class="mx-2 mb-2 align-self-end bg-pulse-grey" style="height: 20px; width: 20px"></div>
+                        </div>                    </div>
+                    <div class="hidden position-absolute" data-region="confirm-dialogue-container" style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"></div>
+                </div>                    <div data-region="view-overview" class="text-center">
+                        <a href="https://moodle.cs.ubbcluj.ro/message/index.php">
+                            See all
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+</div>
+    <div id="goto-top-link">
+        <a class="btn btn-light" role="button" href="https://moodle.cs.ubbcluj.ro/mod/quiz/review.php?attempt=231667&amp;cmid=153#">
+            <i class="icon fa fa-arrow-up fa-fw " title="Go to top" aria-label="Go to top"></i>
+        </a>
+    </div>
+    <footer id="page-footer" class="py-3 bg-dark text-light">
+        <div class="container">
+            <div id="course-footer"></div>
+    
+    
+            <div class="logininfo">You are logged in as <a href="https://moodle.cs.ubbcluj.ro/user/profile.php?id=7003" title="View profile">Andrei Cusiac</a> (<a href="https://moodle.cs.ubbcluj.ro/login/logout.php?sesskey=zr0lBoLNtX">Log out</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://moodle.cs.ubbcluj.ro/course/view.php?id=11">LC</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
+                    <ul class="list-unstyled pt-3">
+                    </ul>
+            </nav>
+            <div class="tool_dataprivacy"><a href="https://moodle.cs.ubbcluj.ro/admin/tool/dataprivacy/summary.php">Data retention summary</a></div>
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.cs.ubbcluj.ro/lib/requirejs.php/1600868613/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.cs.ubbcluj.ro/lib/javascript.php/1600868613/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'https://moodle.cs.ubbcluj.ro/lib/javascript.php/1600868613/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://moodle.cs.ubbcluj.ro/lib/javascript.php/1600868613/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="./Test obligatoriu corespunzător sem13 - simplificarea funcțiilor booleene prin metoda analitică Quine-Mc&#39;Clusky_ Attempt review1_files/javascript(8).php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+require(['core/prefetch']);
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://moodle.cs.ubbcluj.ro/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subtitles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading.",
+  "Exit Picture-in-Picture": "Exit Picture-in-Picture",
+  "Picture-in-Picture": "Picture-in-Picture"
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(
+[
+    'jquery',
+    'core_message/message_popover'
+],
+function(
+    $,
+    Popover
+) {
+    var toggle = $('#message-drawer-toggle-6004b2219e4b36004b2219bae85');
+    Popover.init(toggle);
+});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f6004b2219bae814').submit();
+            });
+        });
+    ;
+
+require(['jquery', 'core_message/message_drawer'], function($, MessageDrawer) {
+    var root = $('#message-drawer-6004b221a30b16004b2219bae815');
+    MessageDrawer.init(root, '6004b221a30b16004b2219bae815', false);
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1255, [], true); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"qtype_multianswer":{"name":"qtype_multianswer","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/question\/type\/multianswer\/module.js","requires":["base","node","event","overlay"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/moodle.cs.ubbcluj.ro\/lib\/javascript.php\/1600868613\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random6004b2219bae81'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/moodle.cs.ubbcluj.ro\/question\/toggleflag.php", [{"src":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/image.php\/classic\/core\/1600868715\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/moodle.cs.ubbcluj.ro\/theme\/image.php\/classic\/core\/1600868715\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random6004b2219bae81'); });
+ M.util.js_pending('random6004b2219bae82'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random6004b2219bae82'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random6004b2219bae816'); Y.use('qtype_multianswer', function(Y) { M.qtype_multianswer.init(Y, "#question-243296-6");  M.util.js_complete('random6004b2219bae816'); });
+ M.util.js_pending('random6004b2219bae817'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random6004b2219bae817'); });
+ M.util.js_pending('random6004b2219bae818'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6004b2219bae818'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+</body></html>

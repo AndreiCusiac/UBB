@@ -1,0 +1,2 @@
+ Cele doua numere citite sunt a= 20 si b=7
+ Rezultatul operatiei 20 / 7 este: catul = 2 si restul = 6

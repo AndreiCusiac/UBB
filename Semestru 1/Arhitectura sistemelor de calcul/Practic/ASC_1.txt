@@ -1,0 +1,37 @@
+a) Sa se scrie o procedura changeChar care primeste la intrare: un caracter c reprezentand o litera mare, un caracter op putand avea valorile '-' sau '^' si un numar n reprezentat pe octet.
+Procedura va efectua operatia specificata de operatorul binar op intre codul ASCII al caracterului c si numarul n si va furniza ca rezultat caracterul obtinut astfel:
+daca op = '-', atunci rezultatul va fi litera aflata cu n pozitii la stanga lui c in alfabet (daca se trece de litera 'A', atunci se continua in mod circular reincepand de la 'Z')
+daca op = '^', atunci valoarea furnizata de procedura va fi caracterul cu codul ASCII egal cu rezultatul operatiei binare c^n 
+
+Exemple:
+Pentru c = 'A', op='-' si n=1 rezultatul va fi 'Z'
+Pentru c = 'Z', op='-' si n=2 rezultatul va fi 'X'
+Pentru c = 'N' (= 78 ), op='^' si n=1 rezultatul va fi caracterul cu codul ASCII 79 ('O').
+Pentru c = 'I' (= 73 ), op='^' si n=21 rezultatul va fi caracterul cu codul ASCII 92 .
+
+b) Se dau sirurile de octeti s1 si s2 avand fiecare cate M elemente si urmatoarele caracteristici:
+s1 contine M cuvinte formate exclusiv din litere mari
+s2 contine M secvente formate exclusiv din operatorii '-' si '^' 
+Fiecarui cuvant din sirul s1 ii corespunde o secventa de operatori din sirul s2 de lungime egala cu lungimea cuvantului asociat din s1. Dimensiunea maxima a sirurilor este de 255 caractere fiecare. 
+
+Sa se construiasca un sir de octeti s3 de lungime identica cu s1 si s2, avand de asemenea M elemente, care contine pe fiecare pozitie p caracterul rezultat prin aplicarea procedurii changeChar definita mai sus, avand ca date de intrare:
+c = caracterul de pe pozitia p din sirul s1
+op = operatorul asociat de pe pozitia p din sirul s2
+n = indexul (pozitia) caracterului c in sirul s1 (numerotarea caracterelor din toate cele 3 siruri incepe de la 0). 
+Pentru fiecare dintre cele 3 siruri continand cate M elemente, separatorul este virgula, rezultand astfel ca procedura changeChar se va aplica NUMAI pentru acele pozitii din s1 si s2 diferite de caracterul virgula. 
+
+Sa se afiseze pe ecran litera cu frecventa minima (dar care apare cel putin odata in sir) din sirul s3. Daca exista mai multe litere cu acelasi numar minim de aparitii, atunci se va afisa prima litera din alfabet cu aceasta proprietate.
+
+De exemplu, pentru sirurile:
+
+s1: 'ANA,ARE,MERE,EU,NU,MAI,AM'
+
+s2: '^^-,^-^,^-^^,--,^^,-^^,--'
+
+se va construi sirul:
+
+s3 = 'AOY,EMC,EVXN,RG,^D,TU\,DO'
+
+Pentru litera cu frecventa minima din s3 pe ecran se va afisa: A .
+
+Explicati si detaliati abordarea algoritmului si mecanismele implicate. Justificati si comentati corespunzator codul sursa.

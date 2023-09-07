@@ -1,0 +1,11 @@
+1,Stephen Curry,point_guard,178
+2,Dwayne Wade,shooting_guard,210
+3,Pau Gasol,center,199
+4,Lebron James,point_guard,300
+5,idk idk,center,160
+6,ratiu iuliu,shooting_guard,240
+7,popescu andrei,shooting_guard,310
+8,viorel iancu,point_guard,120
+9,asta micu,pozitia_lu_asta_micu,500
+12,fq,wfw,10
+123,wdfg,wef,20

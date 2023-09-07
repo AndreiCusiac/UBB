@@ -1,0 +1,74 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14                                      
+    15 00000000 0519377F                    s db 5, 25, 55, 127
+    16                                      
+    17                                      l equ $-s
+    18 00000004 00                          k db 0 ; contor
+    19                                      
+    20 00000005 00<rept>                    d times l db 0
+    21                                      
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          
+    26                                          ; Se da un sir de octeti s. Sa se construiasca sirul de octeti d, care contine pe fiecare pozitie numarul de biti 1 ai octetului de pe pozitia corespunzatoare din s.
+    27                                          ; s: 5, 25, 55, 127
+    28                                          ; 101, 11001,10111,1111111
+    29                                          ; d: 2, 3, 5, 7
+    30                                          
+    31 00000000 BE00000000                      mov esi, 0
+    32 00000005 BF00000000                      mov edi, 0
+    33 0000000A B904000000                      mov ecx, l
+    34                                          
+    35 0000000F E33C                            jecxz final
+    36                                          
+    37                                          ParcurgemS:
+    38 00000011 C605[04000000]00                    mov byte[k], 0 ; contor, numara cifrele de 1 din reprezentarea binara pentru octetul din s curent 
+    39 00000018 8A86[00000000]                      mov al, byte[s+esi]
+    40                                              
+    41 0000001E 3C00                                cmp al, 0
+    42 00000020 7502                                jne Impartim ; daca catul nu este 0, continuam impartirea la 2 
+    43 00000022 7419                                je Culegem ; daca catul este 0, culegem bl 
+    44                                              
+    45                                              Impartim:
+    46 00000024 6698                                    cbw ; ax <-- al
+    47                                                     
+    48 00000026 B302                                    mov bl, 2
+    49 00000028 F6FB                                    idiv bl ; al - catul, ah - restul
+    50                                                  
+    51 0000002A 80FC01                                  cmp ah, 1 
+    52 0000002D 7402                                    je Adunam
+    53 0000002F 7506                                    jne NuAdunam
+    54                                                  Adunam:
+    55 00000031 FE05[04000000]                              inc byte[k] ; daca restul este 1, incrementam contorul
+    56                                                  
+    57                                                  NuAdunam:
+    58 00000037 3C00                                        cmp al, 0 ; verificam daca reluam sau nu procesul de impartire
+    59 00000039 75E9                                        jne Impartim
+    60 0000003B 7400                                        je Culegem
+    61                                                  
+    62                                              Culegem:
+    63 0000003D 8A1D[04000000]                          mov bl, byte[k]
+    64 00000043 889F[05000000]                          mov [d+edi], bl ; ii asignam pozitiei actuale din d numarul cifrelor de 1 din reprezentarea binara a octetului corespunzator din s
+    65 00000049 47                                      inc edi 
+    66 0000004A 46                                      inc esi ; incrementam pozitia curenta din ambele siruri
+    67                                          
+    68 0000004B E2C4                            loop ParcurgemS
+    69                                          
+    70                                          final:
+    71                                          
+    72                                          ; exit(0)
+    73 0000004D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    74 0000004F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

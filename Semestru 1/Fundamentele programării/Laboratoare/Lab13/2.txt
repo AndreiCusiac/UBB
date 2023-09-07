@@ -1,0 +1,4 @@
+2 moduri: iterativ si recursiv
+fara 7-9
+cu metoda de la curs
+exercitiul 2

@@ -1,0 +1,27 @@
+ 8 biti = 1 byte
+16 biti = 2 bytes = 1 word
+32 biti = 4 bytes = 1 doubleword
+64 biti = 8 bytes = 1 qaudword
+
+
+cifra 6
+fara semn: numere naturale 
+	        byte: 00000110
+cu semn:
+	cu semn: pozitive= +6 = nr in repr fara semn = 00000110
+	cu semn: negative=-6 codul complemantar al valorii |6| = 11111010
+
+Alg pt cod complementar:
+
+1. se inverseaza valoarea fiecarui bit din configuratie: 11111001+
+2. se insumenaza valoarea 1 la configuratia din pasul 1: 00000001
+3. rezultatul obtinut este codul complementar:           11111010
+
+numarul 22:
+fara semn: numere naturale: 00010110
+cu semn:
+	cu semn: pozitive= 00010110 = (16)16
+	cu semn: negative= 11101010 = (EA)16
+
+EAEA = 1110.1010.1110.1010
+(000)1.1110 = 1E

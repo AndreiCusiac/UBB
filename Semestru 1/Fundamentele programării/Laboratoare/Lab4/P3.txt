@@ -1,0 +1,4 @@
+enunt
+lista functionalitati
+iteratii
+(scenarii de testare)

@@ -1,0 +1,114 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, scanf, printf               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll
+     9                                  import scanf msvcrt.dll
+    10                                  import printf msvcrt.dll
+    11                                  
+    12                                      ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    13                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    14                                  
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18                                      
+    19 00000000 00                          a db 0
+    20                                      
+    21 00000001 0000                        b dw 0
+    22                                      
+    23 00000003 2564000000000000            fdec1 dd '%d', 0
+    24 0000000B 256400                      fdec2 db '%d', 0
+    25                                      
+    26 0000000E 613D00                      mesaj1 db 'a=', 0
+    27 00000011 623D00                      mesaj2 db 'b=', 0
+    28                                      
+    29 00000014 44412E00                    conf1 db 'DA.', 0
+    30 00000018 4E552E00                    conf2 db 'NU.', 0
+    31                                      
+    32                                  ; our code starts here
+    33                                  segment code use32 class=code
+    34                                      start:
+    35                                          
+    36                                          ; Sa se citeasca de la tastatura un octet si un cuvant. Sa se afiseze pe ecran daca bitii octetului citit se regasesc consecutiv printre bitii cuvantului. Exemplu:
+    37                                          ; a = 10 = 0000 1010b
+    38                                          ; b = 256 = 0000 0001 0000 0000b
+    39                                          ; Pe ecran se va afisa NU.
+    40                                          ; a = 0Ah = 0000 1010b = 10
+    41                                          ; b = 6151h = 0110 0001 0101 0001b = 24913
+    42                                          ; Pe ecran se va afisa DA (bitii se regasesc pe pozitiile 5-12).
+    43                                          
+    44                                          ; a
+    45                                          
+    46                                          ; Se afiseaza: "a="
+    47                                          
+    48 00000000 68[0E000000]                    push dword mesaj1
+    49 00000005 FF15[00000000]                  call [printf]
+    50 0000000B 83C404                          add esp, 4*1
+    51                                          
+    52                                          ; Citeste a (decimal)
+    53                                          
+    54 0000000E 68[00000000]                    push dword a
+    55 00000013 68[03000000]                    push dword fdec1
+    56 00000018 FF15[00000000]                  call [scanf]
+    57 0000001E 83C408                          add esp, 4*2
+    58                                          
+    59                                          ; b
+    60                                          
+    61                                          ; Se afiseaza: "b="
+    62                                          
+    63 00000021 68[11000000]                    push dword mesaj2
+    64 00000026 FF15[00000000]                  call [printf]
+    65 0000002C 83C404                          add esp, 4*1
+    66                                          
+    67                                          ; Citeste b (decimal)
+    68                                          
+    69 0000002F 68[01000000]                    push dword b
+    70 00000034 68[0B000000]                    push dword fdec2
+    71 00000039 FF15[00000000]                  call [scanf]
+    72 0000003F 83C408                          add esp, 4*2
+    73                                          
+    74 00000042 A0[00000000]                    mov al, [a]
+    75 00000047 6698                            cbw ; ax = a
+    76                                          
+    77 00000049 663B05[01000000]                cmp ax, [b] ; verificam daca a si b coincid 
+    78 00000050 742C                            je AfisamDa ; daca da, afisam Da
+    79 00000052 7500                            jne Cautam ; daca nu, incepem sa cautam bitii lui a in cadrul bitilor lui b
+    80                                          
+    81                                          Cautam:
+    82                                              
+    83 00000054 B908000000                          mov ecx, 8
+    84 00000059 A0[00000000]                        mov al, [a] ; al = a
+    85 0000005E 668B1D[01000000]                    mov bx, [b] ; bx = b
+    86                                              
+    87                                              ParcurgemB:
+    88                                                  
+    89 00000065 38C3                                    cmp bl, al ; verificam daca octetul inferior din b coincide cu a 
+    90 00000067 7415                                    je AfisamDa
+    91                                                  
+    92 00000069 66D1EB                                  shr bx, 1 ; mutam bitii lui b cu o pozitie spre stanga 
+    93                                              
+    94 0000006C E2F7                                loop ParcurgemB
+    95                                          
+    96                                          AfisamNu:
+    97                                              
+    98 0000006E 68[18000000]                        push dword conf2
+    99 00000073 FF15[00000000]                      call [printf]
+   100 00000079 83C404                              add esp, 4*1
+   101                                              
+   102 0000007C EB0E                                jmp final
+   103                                          
+   104                                          AfisamDa:
+   105                                              
+   106 0000007E 68[14000000]                        push dword conf1
+   107 00000083 FF15[00000000]                      call [printf]
+   108 00000089 83C404                              add esp, 4*1
+   109                                          
+   110                                          final:
+   111                                          
+   112                                          ; exit(0)
+   113 0000008C 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   114 0000008E FF15[00000000]                  call    [exit]       ; call exit to terminate the program

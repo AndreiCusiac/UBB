@@ -1,0 +1,352 @@
+'''
+Created on 12 ian. 2021
+
+@author: Andrei
+'''
+
+def sumaDeNumerePrime():
+    def consistent(x, v, n):
+        if (len(x)>len(v)):
+            return False
+        
+        s=0
+        for i in range(0, len(x)):
+            if (x[i] == 1):
+                s+=v[i]
+                
+        if (s>n):
+            return False
+        
+        return True
+        
+    def solutie(x, v, n):
+        
+        if (len(x) != len(v)):
+            return False
+        
+        s=0
+        for i in range(0, len(x)):
+            if (x[i] == 1):
+                s+=v[i]
+                
+        if (s==n):
+            return True
+        
+        return False
+        
+    def printeaza(x, n, v, sol):
+        sol.append(1)
+        
+        st = []
+        
+        for i in range(0, len(x)):
+            if (x[i] == 1):
+                st.append(v[i])
+        
+        print(st)
+            
+    def bkt(n, v, sol):
+        
+        x = [-1]
+        
+        while(len(x) != 0):
+            
+            if (x[-1] < 1):
+                x[-1] += 1
+                if (consistent(x, v, n)):
+                    if (solutie(x, v, n)):
+                        printeaza(x, n, v, sol)
+                    else:
+                        x.append(-1)
+            else:
+                x = x[:-1]
+    
+    def estePrim(x):
+        
+        if (x<2):
+            return False
+        
+        for i in range(2, x//2):
+            if (x%i == 0):
+                return False
+        
+        return True
+    
+    def numerePrime(n, v):
+        
+        for i in range(n+1):
+            if (estePrim(i)):
+                v.append(i)
+        
+    def main():
+        n = int(input("Dati un numar natural: "))
+        v = []
+        numerePrime(n, v)
+        print(v)
+        
+        sol = []
+        
+        print("\nSolutiile sunt: \n")
+        
+        bkt(n, v, sol)
+    
+        if (sol == []):
+            print("Nu s-au gasit solutii!")
+    
+    main()
+
+    
+def subsecventeCrescatoare():
+    
+    def consistent(x, n, a):
+        
+        if (len(x)>len(a)):
+            return False
+        
+        try:
+            poz = x.index(1)
+        
+            last = a[poz]
+            
+            for i in range(poz+1, len(x)):
+                if (x[i] == 1):
+                    if (a[i] <= last):
+                        return False
+                    last = a[i]
+        except ValueError:
+            pass
+        
+        return True
+    
+    def solutie(x, n, a):
+        
+        if (len(x) != len(a)):
+            return False
+        
+        try:
+            poz = x.index(1)
+            if (poz!=None):
+                last = a[poz]
+                
+                for i in range(poz+1, len(x)):
+                    if (x[i] == 1):
+                        if (a[i] <= last):
+                            return False
+                        last = a[i]
+        except ValueError:
+            pass
+        
+        return True
+    
+    def printeaza(x, n, a, sol):
+        sol.append(1)
+        
+        p = []
+        
+        for i in range(len(x)):
+            if (x[i] == 1):
+                p.append(a[i])
+        
+        print(p)
+    
+    def bkt(n, a, sol):
+        
+        x = [-1]
+        
+        while (len(x) != 0):
+            if (x[-1] < 1):
+                x[-1] += 1
+                
+                if (consistent(x, n, a)):
+                    if (solutie(x, n, a)):
+                        printeaza(x, n, a, sol)
+                    else:
+                        x.append(-1)
+            else:
+                x = x[:-1]
+            
+    def main():
+        
+        n = int(input("Dati dimensiunea: "))
+        a = []
+        
+        print("Dati lista: ")
+        for i in range(n):
+            x = int(input())
+            a.append(x)
+        
+        print(a)
+        sol = []
+        
+        print("\nSolutiile sunt: \n")
+        
+        bkt(n, a, sol)
+        
+        if (sol == []):
+            print("Nu exista solutii!")
+        
+    main()
+
+
+def Prono():
+    
+    def consistent(x, n,):
+        
+        if (len(x)>n):
+            return False
+        
+        if  (len(x) == n):
+            if (x[-1] == 2):
+                return False
+        contor = 0
+        
+        for i in range(0, len(x)):
+            if (x[i] == 1):
+                contor+=1
+        
+        if contor>2:
+            return False
+        
+        return True
+    
+    def solutie(x, n):
+        
+        if (len(x) != n):
+            return False
+        
+        return True
+    
+    def printeaza(x, n, sol):
+        sol.append(1)
+        
+        p = ""
+        
+        for i in range(len(x)):
+            if (x[i] == 1):
+                p += "1 "
+                
+            elif (x[i] == 2):
+                p += "X "
+            
+            elif (x[i] == 3):
+                p += "2 "
+                
+        p += "\n"
+        print(p)
+    
+    def bkt(n, sol):
+        
+        x = [0]
+        
+        while (len(x) != 0):
+            if (x[-1] < 3):
+                x[-1] += 1
+                
+                if (consistent(x, n,)):
+                    if (solutie(x, n,)):
+                        printeaza(x, n, sol)
+                    else:
+                        x.append(0)
+            else:
+                x = x[:-1]
+            
+    def main():
+        
+        n = int(input("Dati dimensiunea: "))
+        
+        sol = []
+        
+        print("\nSolutiile sunt: \n")
+        
+        bkt(n, sol)
+        
+        if (sol == []):
+            print("Nu exista solutii!")
+        
+    main()
+
+
+def Paranteze():
+    
+    def consistent(x, n):
+        
+        if (len(x)>n):
+            return False
+        
+        s = 0
+        
+        for i in range(0, len(x)):
+            if (x[i] == 0):
+                s+=1
+            else:
+                s-=1
+            
+            if (s<0):
+                return False
+        
+        return True
+    
+    def solutie(x, n):
+        
+        if (len(x) != n):
+            return False
+        
+        s = 0
+        
+        for i in range(0, len(x)):
+            if (x[i] == 0):
+                s+=1
+            else:
+                s-=1
+        
+        if (s!=0):
+            return False
+        
+        return True
+    
+    def printeaza(x, n, sol):
+        sol.append(1)
+        
+        p = ""
+        
+        for i in range(len(x)):
+            if (x[i] == 0):
+                p += "("
+                
+            elif (x[i] == 1):
+                p += ")"
+                
+        p += "\n"
+        print(p)
+    
+    def bkt(n, sol):
+        
+        x = [-1]
+        
+        while (len(x) != 0):
+            if (x[-1] < 1):
+                x[-1] += 1
+                
+                if (consistent(x, n)):
+                    if (solutie(x, n)):
+                        printeaza(x, n, sol)
+                    else:
+                        x.append(-1)
+            else:
+                x = x[:-1]
+            
+    def main():
+        
+        n = int(input("Dati numarul de paranteze: "))
+        
+        sol = []
+        
+        print("\nSolutiile sunt: \n")
+        
+        bkt(n, sol)
+        
+        if (sol == []):
+            print("Nu exista solutii!")
+        
+    main()
+    

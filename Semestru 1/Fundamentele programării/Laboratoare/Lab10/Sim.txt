@@ -1,0 +1,11 @@
+F asmenătător 7-9
+De la 0
+Teste, arhit stratif
+Funcționalități
+Jitsi
+1h 30-35 
+Trimitem codul sursă (.py) în zip pe mail la mihai.andrei@cs.ubbcluj.ro
+Prezentăm după simulare
+Program care R U L E A Z Ă
+ I Funcționalități (Faci funcționalitățile de la cap la coadă, ca să ruleze, apoi treci la altă funcționalitate)
+ II Teste, arhitectură..

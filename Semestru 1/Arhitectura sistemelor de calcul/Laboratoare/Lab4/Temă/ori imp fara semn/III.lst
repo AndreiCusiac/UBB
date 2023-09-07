@@ -1,0 +1,96 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14                                      
+    15 00000000 66                          a db 102
+    16 00000001 03                          b db 3
+    17 00000002 0400                        c dw 4
+    18 00000004 05000000                    e dd 5
+    19 00000008 CC00000000000000            x dq 204
+    20 00000010 00000000                    auxx dd 0
+    21                                      
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          ; (100+a+b*c)/(a-100)+e+x/a
+    26                                          
+    27                                          ; b*c
+    28                                          
+    29 00000000 A0[01000000]                    mov al, [b]
+    30 00000005 B400                            mov ah, 0
+    31 00000007 66F725[02000000]                mul word[c] ; dx:ax = b*c
+    32                                          
+    33 0000000E 6689C3                          mov bx, ax
+    34 00000011 6689D1                          mov cx, dx ; cx:bx = b*c
+    35                                          
+    36                                          ; 100+a
+    37                                          
+    38 00000014 A0[00000000]                    mov al, [a]
+    39 00000019 0464                            add al, 100
+    40                                          
+    41 0000001B B400                            mov ah, 0
+    42 0000001D 66BA0000                        mov dx, 0 ; dx:ax = 100+a
+    43                                          
+    44                                          ; 100+a+b*c
+    45                                          
+    46 00000021 F8                              clc
+    47                                          
+    48 00000022 6601D8                          add ax, bx
+    49 00000025 6611CA                          adc dx, cx ; dx:ax = 100+a+b*c
+    50                                          
+    51                                          ; a-100
+    52                                          
+    53 00000028 8A1D[00000000]                  mov bl, [a]
+    54 0000002E 80EB64                          sub bl, 100
+    55                                          
+    56 00000031 B700                            mov bh, 0 ; bx = a-100
+    57                                          
+    58                                          ; (100+a+b*c)/(a-100)
+    59                                          
+    60 00000033 66F7F3                          div bx ; ax = catul lui (100+a+b*c)/(a-100)
+    61                                          
+    62                                          ; (100+a+b*c)/(a-100)+e
+    63                                          
+    64 00000036 66BA0000                        mov dx, 0 ; dx:ax = catul lui (100+a+b*c)/(a-100)
+    65                                          
+    66 0000003A F8                              clc 
+    67                                          
+    68 0000003B 660305[04000000]                add ax, word[e+0]
+    69 00000042 661315[06000000]                adc dx, word[e+2] ; dx:ax = (100+a+b*c)/(a-100)+e
+    70                                          
+    71 00000049 6652                            push dx
+    72 0000004B 6650                            push ax
+    73 0000004D 5B                              pop ebx
+    74 0000004E 891D[10000000]                  mov [auxx], ebx ; auxx = (100+a+b*c)/(a-100)+e
+    75                                          
+    76                                          ; x/a
+    77                                          
+    78 00000054 A1[08000000]                    mov eax, dword[x+0]
+    79 00000059 8B15[0C000000]                  mov edx, dword[x+4] ; edx:eax = x 
+    80                                          
+    81 0000005F BB00000000                      mov ebx, 0
+    82 00000064 8A1D[00000000]                  mov bl, [a]
+    83                                          
+    84 0000006A F7F3                            div ebx ; eax = catul x/a 
+    85                                          
+    86                                          ;???
+    87                                          ;div dword[a]
+    88                                          ;???
+    89                                          
+    90                                          ; (100+a+b*c)/(a-100)+e+x/a
+    91                                          
+    92 0000006C 0305[10000000]                  add eax, [auxx]
+    93                                       
+    94                                          ; exit(0)
+    95 00000072 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    96 00000074 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

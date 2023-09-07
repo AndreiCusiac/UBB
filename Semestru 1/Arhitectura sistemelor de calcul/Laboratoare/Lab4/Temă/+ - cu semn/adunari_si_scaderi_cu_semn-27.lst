@@ -1,0 +1,90 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14                                      
+    15 00000000 32                          a db 50
+    16 00000001 D3FF                        b dw -45
+    17 00000003 14000000                    c dd 20
+    18 00000007 2800000000000000            d dq 40
+    19 0000000F 0000                        aux1 dw 0
+    20 00000011 0000                        aux2 dw 0
+    21                                  
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          ; (d+d-c)-(c+c-a)+(c+a)
+    26                                          
+    27 00000000 A0[00000000]                    mov al, [a]
+    28 00000005 6698                            cbw ; al -> ax
+    29 00000007 6699                            cwd ; ax -> dx:ax
+    30                                          
+    31                                          ; c+a
+    32                                          
+    33 00000009 660305[03000000]                add ax, word [c+0]
+    34 00000010 661315[05000000]                adc dx, word [c+2]
+    35                                          
+    36 00000017 6689C3                          mov bx, ax
+    37 0000001A 6689D1                          mov cx, dx ; cx:bx = c+a
+    38                                          
+    39                                          ; c+c-a
+    40                                          
+    41 0000001D A0[00000000]                    mov al, [a]
+    42 00000022 F6D8                            neg al
+    43                                          
+    44 00000024 6698                            cbw ; al -> ax
+    45 00000026 6699                            cwd ; ax -> dx:ax
+    46                                          
+    47 00000028 660305[03000000]                add ax, word [c+0]
+    48 0000002F 661315[05000000]                adc dx, word [c+2]
+    49                                          
+    50 00000036 660305[03000000]                add ax, word [c+0]
+    51 0000003D 661315[05000000]                adc dx, word [c+2] ; dx:ax = c+c-a
+    52                                          
+    53                                          ; -(c+c-a)+(c+a)
+    54                                          
+    55 00000044 6629C3                          sub bx, ax
+    56 00000047 6619D1                          sbb cx, dx ; cx:bx = -(c+c-a)+(c+a)
+    57                                          
+    58 0000004A 66891D[0F000000]                mov [aux1], bx
+    59 00000051 66890D[11000000]                mov [aux2], cx
+    60                                          
+    61                                          ; (d+d-c)
+    62                                          
+    63 00000058 A1[03000000]                    mov eax, [c]
+    64                                          neg c
+    64          ******************       error: invalid combination of opcode and operands
+    65                                          
+    66 0000005D 99                              cdq ; edx:eax = c
+    67                                          
+    68 0000005E 0305[07000000]                  add eax, dword [d+0]
+    69 00000064 0315[0B000000]                  add edx, dword [d+4]
+    70                                          
+    71 0000006A 0305[07000000]                  add eax, dword [d+0]
+    72 00000070 0315[0B000000]                  add edx, dword [d+4] ; edx:eax = d+d-c
+    73                                          
+    74 00000076 89C3                            mov ebx, eax
+    75 00000078 89D1                            mov ecx, edx ; ecx:ebx = d+d-c
+    76                                          
+    77 0000007A 66A1[0F000000]                  mov ax, [aux1]
+    78 00000080 98                              cwde
+    79                                          
+    80 00000081 01C3                            add ebx, eax
+    81                                          
+    82 00000083 66A1[11000000]                  mov ax, [aux2]
+    83 00000089 98                              cwde
+    84                                          
+    85 0000008A 11C1                            adc ecx, eax ; ecx:ebx = (d+d-c)-(c+c-a)+(c+a)
+    86                                  
+    87                                          ; exit(0)
+    88 0000008C 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    89 0000008E FF15[00000000]                  call    [exit]       ; call exit to terminate the program

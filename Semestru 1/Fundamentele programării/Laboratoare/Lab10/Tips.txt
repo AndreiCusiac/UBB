@@ -1,0 +1,6 @@
+Teste citire/ scriere in fisier
+Repository din fisier cu mostenire
+din main alegem repo.
+py unit
+get all doar in controller
+Test citire corecta din fisier

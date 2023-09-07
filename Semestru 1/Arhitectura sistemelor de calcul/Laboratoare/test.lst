@@ -1,0 +1,138 @@
+     1                                  ; Codul de mai jos va deschide un fisier numit "ana.txt" din directorul curent si va citi un text de maxim 100 de caractere din acel fisier.
+     2                                  ; Programul va folosi functia fopen pentru deschiderea fisierului, functia fread pentru citirea din fisier si functia fclose pentru inchiderea fisierului deschis.
+     3                                  ; Deoarece in apelul functiei fopen programul foloseste modul de acces "r", daca un fisier cu numele dat nu exista in directorul curent, apelul functiei fopen nu va reusi (eroare). Detalii despre modurile de acces s
+     4                                  
+     5                                  bits 32 
+     6                                  
+     7                                  global start        
+     8                                  
+     9                                  ; declare external functions needed by our program
+    10                                  extern exit, fopen, fread, fclose, printf
+    11                                  import exit msvcrt.dll  
+    12                                  import fopen msvcrt.dll  
+    13                                  import fread msvcrt.dll
+    14                                  import fclose msvcrt.dll
+    15                                  import printf msvcrt.dll
+    16                                  
+    17                                  ; our data is declared here (the variables needed by our program)
+    18                                  segment data use32 class=data
+    19                                      
+    20                                      ; j db 3
+    21                                      
+    22                                      ; k equ $-j
+    23                                      
+    24                                      ; a db 42
+    25                                      
+    26                                      ; var1 dw 7
+    27                                      
+    28                                      ; b dw 0A2B3h
+    29                                      
+    30                                      ; d resw 2
+    31                                      
+    32                                      ; ef times 2*2 dw 1234h
+    33                                      
+    34                                      ; e dd 'abcde', '123', 0
+    35                                  
+    36                                      ; f db 5
+    37                                      
+    38                                      ; g equ $-a
+    39                                      
+    40                                      ; var dd 17, 18, 19, 021A3h, -3
+    41                                      
+    42 00000000 303132333435363738-         TabHexa db '0123456789ABCDEF'
+    42 00000009 39414243444546     
+    43                                      
+    44 00000010 313233                      sir db '123'
+    45                                      l equ $-sir
+    46 00000013 00<rept>                    d times l db 0
+    47                                      
+    48                                  ; our code starts here
+    49                                  segment code use32 class=code
+    50                                      start:
+    51                                          
+    52 00000000 BB[00000000]                  mov ebx, TabHexa
+    53                                        
+    54 00000005 B006                          mov al, 6
+    55                                        
+    56 00000007 D7                            xlat
+    57                                        
+    58                                        
+    59                                        
+    60 00000008 FC                            cld 
+    61 00000009 BE[10000000]                  mov esi, sir
+    62 0000000E BF[13000000]                  mov edi, d
+    63 00000013 B903000000                    mov ecx, l
+    64                                        
+    65                                        Repeta:
+    66                                          
+    67 00000018 B800000000                      mov eax, 0
+    68                                          
+    69 0000001D AC                              lodsb
+    70                                          
+    71 0000001E 83E830                          sub eax, 30h
+    72                                          
+    73 00000021 AA                              stosb 
+    74                                        
+    75 00000022 E2F4                          loop Repeta
+    76                                        
+    77                                        
+    78                                        ; shl ax, 8
+    79                                        
+    80                                        ; mov eax, 10
+    81                                        
+    82                                        ; lea eax, [eax*2]
+    83                                        
+    84                                        ; lea eax, [eax*4 + eax]
+    85                                        
+    86                                        ; stc 
+    87                                        ; pushf
+    88                                        ; pop eax
+    89                                        ; mov ebx, 0
+    90                                        ; mov ecx, 9
+    91                                        
+    92                                        ; stc 
+    93                                        ; mov al, 10110011b
+    94                                        ; rcr al, 2
+    95                                        
+    96                                        ; xlat
+    97                                        
+    98                                        ; std 
+    99                                        
+   100                                        ; pushf
+   101                                        ; popf 
+   102                                        
+   103                                        ; pusha
+   104                                        
+   105                                        ; popa
+   106                                        
+   107                                        ; mov eax, 10010011b
+   108                                        ; mov ebx, g
+   109                                        ; mov ecx, k
+   110                                        
+   111                                        ; mov eax, 2
+   112                                        
+   113                                        ; mov [var], eax
+   114                                        
+   115                                        ; mov eax, dword[j]
+   116                                        
+   117                                        ; push dword eax
+   118                                        ; push word [a]
+   119                                        
+   120                                        ; mov dword[b], 12345h
+   121                                        
+   122                                        ; push dword 12345h
+   123                                        
+   124                                        ; mov eax, 1234h
+   125                                        
+   126                                        ; mov dword[j], a
+   127                                        
+   128                                        
+   129                                        ; mov dword[j], 1234567h
+   130                                        
+   131                                        
+   132                                          
+   133                                        final:
+   134                                          
+   135                                          ; exit(0)
+   136 00000024 6A00                            push    dword 0      
+   137 00000026 FF15[00000000]                  call    [exit]       

@@ -1,0 +1,2 @@
+Numerele citite de la tastatura sunt: 
+Nu s-au introdus valori nenule!
