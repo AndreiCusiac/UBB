@@ -1,0 +1,13 @@
+Lab 1 și lab 2 -> săpt 5 (lab 3) 
+
+Seminarii - pseudocod (pseudocod și la examen)
+
+Laborator - C++
+
+IDE - orice
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRAbcf3Fv9T1xc6VPAoq0mzH7SY3huwW3grQO4X59brcq9YtTjLjuhMATutnGGSBF2oLCT_cc_2zISj/pubhtml?gid=1675021479&single=true
+
+Vezi problema 10
+
+Adu fisiere headere si cpp în proiect.
