@@ -1,0 +1,40 @@
+﻿  Lab 6 - Pr 2 3.cpp
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(105,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(149,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(162,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(173,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(188,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(219,23): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(696,82): error C2512: 'nod::nod': no appropriate default constructor available
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(1532): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,>(_Alloc &,_Objty *const )' being compiled
+          with
+          [
+              _Alloc=std::allocator<nod>,
+              _Ty=nod,
+              _Objty=nod
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(1533): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,>(_Alloc &,_Objty *const )' being compiled
+          with
+          [
+              _Alloc=std::allocator<nod>,
+              _Ty=nod,
+              _Objty=nod
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(1871): message : see reference to function template instantiation 'void std::_Uninitialized_backout_al<_Alloc>::_Emplace_back<>(void)' being compiled
+          with
+          [
+              _Alloc=std::allocator<nod>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xmemory(1871): message : see reference to function template instantiation 'void std::_Uninitialized_backout_al<_Alloc>::_Emplace_back<>(void)' being compiled
+          with
+          [
+              _Alloc=std::allocator<nod>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(1590): message : see reference to function template instantiation 'nod *std::_Uninitialized_value_construct_n<std::allocator<nod>>(nod *,unsigned int,_Alloc &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<nod>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(1588): message : while compiling class template member function 'nod *std::vector<nod,std::allocator<nod>>::_Ufill(nod *,const unsigned int,std::_Value_init_tag)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\vector(1239): message : see reference to function template instantiation 'nod *std::vector<nod,std::allocator<nod>>::_Ufill(nod *,const unsigned int,std::_Value_init_tag)' being compiled
+C:\Users\Andrei\Desktop\UBB\Sem 2\Algoritmica Grafelor\Laboratoare\Lab6\P2\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3\Lab 6 - Pr 2 3.cpp(38): message : see reference to class template instantiation 'std::vector<nod,std::allocator<nod>>' being compiled

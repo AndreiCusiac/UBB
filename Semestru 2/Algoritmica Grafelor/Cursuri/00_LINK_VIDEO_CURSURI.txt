@@ -1,0 +1,12 @@
+Curs 01 - Introducere https://youtu.be/bsnLGUOQTXg
+Curs 02 - Reprezentari, parcurgeri in grafuri https://youtu.be/Hm2Jg4gaj4o
+Curs 03 - Paduri DFS, puncte de articulatie, muchii punti https://youtu.be/vDLWSj1XFyY
+Curs 04 - Drumuri de cost minim in grafuri orientate si ponderate https://youtu.be/p1AE3V-EdEY
+Curs 05 - Algoritmul lui Johnson pentru drum de cost minim intre toate perechile de varfuri https://youtu.be/8snUxcDFx6s, https://youtu.be/BK3tzfzIhSI (partea de intrebari - din ceva motiv Ms Teams a oprit inregistrarea)
+Curs 06 - Arbori, grafuri Euleriene (introducere) https://youtu.be/bDLH8vf9KV8
+Curs 07 - grafuri Euleriene si Hamiltoniene (continuare curs 06) retele de flux https://youtu.be/s5v7ae4E3QM
+Curs 08 - retele de flux (II) https://youtu.be/kVahnxfKrfY
+Curs 09 - grafuri planare, colorarea grafurilor https://youtu.be/xB9lajXd1BY
+Curs 10 - colorarea grafurilor (II), cuplaje in grafuri (introducere) https://youtu.be/6bLpnCL7vpw
+Curs 11 - cuplaje in grafuri bipartite https://youtu.be/stP9rmqmJUA
+Curs 12 - grafuri de activitati, masuri in grafuri https://youtu.be/r_48-DgFB9M

@@ -1,0 +1,7 @@
+Pb pt lab 6 - obligatorii (cu nota)
+Respecta cerintele! (optim spatiu, timp) 
+Reprezentari dinamice, implementari cat mai optime
+Greedy not so good pt 1.
+
+Sapt 13 - test la curs 
+Sapt 14 - colocviu

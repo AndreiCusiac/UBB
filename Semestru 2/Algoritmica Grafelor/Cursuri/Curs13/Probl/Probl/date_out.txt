@@ -1,0 +1,6 @@
+Gradele sunt: 
+Nodul: 0: 2
+Nodul: 1: 2
+Nodul: 2: Varf izolat!
+Nodul: 3: 1
+Nodul: 4: 3
