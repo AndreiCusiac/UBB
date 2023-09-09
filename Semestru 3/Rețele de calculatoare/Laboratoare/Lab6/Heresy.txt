@@ -1,0 +1,16 @@
+Clientul citeste un sir de caractere si un numar si 
+Le trimite serverului.
+Serverul afiseaza sirul si numarul primit, apoi
+Calculeaza suma codurilor ASCII ale fiecarui caracter din sir,
+Afla CMMDC dintre suma calculata si numarul primit, apoi
+Trimite clientului pe un port nou, egal cu suma calculata, valoarea CMMDC.
+Clientul afiseaza CMMDC.
+
+Ex. : 
+Client <- "Input", 36
+Client -> "Input", 36 -> Server
+Server < "Input", 36
+"Input" ==> suma = 073 + 110 + 112 + 117 + 116 = 0528
+CMMMDC (36, 528) = 12
+Server -> PortNou(0528) -> 12 -> Client
+Client < 12 

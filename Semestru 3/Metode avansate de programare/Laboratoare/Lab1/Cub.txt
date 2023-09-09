@@ -1,0 +1,3 @@
+fa clasa patrat
+aplica cub
+calculeaza aria

@@ -1,0 +1,16 @@
+Parole hashuite + checkbox de see-password
+Conturi pentru login (populare aplicatie penru Demo cu date reale) (nu neapărat cu Register/ Sign up)
+Date suficiente pentru paginare
+Event-uri reale
+
+What matters: Cum arată + ce face
+
+GUI contează! Trebuie să arate bine - Template-uri CSS + Java FX / FXML
+
+Mesaje: două instanțe X și Y (Refresh / Thread care actualizeaza din 10 in 10 secunde / Observer)
+- Reply all (Group / ChatRoom)
+
+Notificări!
+
+Rapoarte: Preview al datelor înainte de export PDF (Where to save? sau locație predefinită)
+- Date aranjate frumos (PyChart?)

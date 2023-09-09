@@ -1,0 +1,54 @@
+193.231.20.0 /24 ==> 2 clase /25
+
+193.231.20.0   /25
+193.231.20.128 /25 ==> 4 clase /26
+
+193.231.20.0   /26
+193.231.20.64  /26 (ex. 193.231.20.64 adr. de rețea, 193.231.20.127 adr. de bdcast)
+193.231.20.128 /26 (2 ^ (32-26) = 64 IP-uri din această clasă)
+193.231.20.192 /26 ==> 8 clase /27...
+
+
+
+193.231.20.17 /32 = host only netmask (IP ne-împărțibil)
+
+
+
+
+ADRESA DE REȚEA A CLASEI TREBUIE SĂ ÎNCEAPĂ LA UN MULTIPLU DE DIM. CLASEI! (128 -> 64 64 -> 32 32 64 -> 16 16 32 64)
+Adresă IP fără netmask ==> Nu știm dacă e adresă de rețea/ bdcast!!
+
+
+
+Agregare:
+
+193.231.20.0 /24 }
+193.231.21.0 /24 } ==> 193.231.20.0 /23 (2 ^ 32-23 = 2 ^ 9 = 512 adrese IP în noua clasă)
+
+
+Exerciții:
+
+Cea mai mare clasă care poate începe la 193.231.20.0?
+193.231.00010100.00000000 --> 10 biți 0 la final --> 2^10 adrese IP (193.231.20.0 /22 - 193.231.23.255 /22)
+
+
+Să se exprime intervalul de mai jos sub formă de reuniune de clase de adrese (fill the gap with classes as big as possible):
+81.82.83.84 (adr. de rețea) ... 197.193.231.223 (adr. de bdcast)
+81.82.83.01010100 ==> /30
+
+81.82.83.84  /30
+81.82.83.88  /29
+81.82.83.96  /27
+81.82.83.128 /25
+81.82.84.0   /22
+81.82.88.0   /21
+81.82.96.0   /19
+81.82.128.0  /17
+81.83.0.0    /16
+81.84.0.0    /14
+81.88.0.0    /13
+81.96.0.0    /11
+81.128.0.0   /9
+82.0.0.0     /7
+....
+

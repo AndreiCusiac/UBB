@@ -1,0 +1,33 @@
+PENTRU COMUNICARE INTRE VLAN-uri
+
+pe calculatoare
+    - se seteaza default gateway
+pe router:
+    - se adauga un router
+    - se creeaza legatura TRUNK intre router si switch
+	- se configureaza subinterfetele de retea
+	
+CONECTAM ROUTER LA SWITCH in port 24
+# interface fastethernet 0/24
+# switchport mode trunk
+# switchport trunk allowed vlan all
+
+conf t
+interface fast eth 0/0
+no ip add
+no shut
+exit
+
+int fast 0/0.10
+encapsulation dot1Q 10
+ip address 192.168.10.0 255.255.255.0
+no shut
+exit
+
+int fast 0/0.20
+encapsulation dot1Q 20
+ip address 192.168.20.0 255.255.255.0
+no shut
+exit
+
+do show run

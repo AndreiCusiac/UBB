@@ -1,0 +1,14 @@
+Citeste port si IP de la linia de comanda.
+Vezi:
+int main( int argc, char *argv[] ) {}
+./server 1234
+./client 1234 127.0.0.1
+in server: portul devine atoi(argv[1]);
+in client: portul devine atoi(argv[1]) si ip-ul devine argv[2]
+
+Apoi.
+Server concurent (exemplu: https://www.cs.ubbcluj.ro/~bufny/retele-de-calculatoare/server-concurent-cu-procese/ )
+
+Pornim server si 2 clienti
+Dam a de la primul client, de la al 2-lea
+Apoi b-ul de la primul, b-ul de la al 2-lea. 

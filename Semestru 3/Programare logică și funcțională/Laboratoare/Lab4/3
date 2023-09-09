@@ -1,0 +1,248 @@
+; a) --------------------------------------------------------------------------------------------
+
+; produs_vectori(l1 l2 .. ln, m1 m2 .. mn) = { [], daca n = 0
+;										     { l1 * m1 (+) produs_vector(l2 .. ln, m2 .. ln), altfel
+
+(defun produs_vectori (l1 l2)
+(cond 
+		((null l1) ())
+		(t (cons (* (car l1) (car l2)) (produs_vectori (cdr l1) (cdr l2))))
+)
+)
+
+(write (produs_vectori '(1 2 3) '(2 2 2)))
+(terpri)
+
+
+
+
+; b) --------------------------------------------------------------------------------------------
+
+; ad(l) = { 0, daca l = atom
+;		  { ad(l) + 1, altfel
+
+(defun ad (l)
+(cond
+	((atom l) 0)
+	(t (+ 1 (ad (car l))))
+)
+)
+
+; doar_atomi(l1 l2 .. ln) = { T, daca n = 0
+;							{ doar_atomi(l2 .. ln), daca l1 = atom
+;							{ NIL, altfel
+
+(defun doar_atomi (l)
+(cond
+	((atom l) 0)
+	(t (+ 1 (ad (car l))))
+)
+)
+
+
+; adancime(l1 l2 .. ln, depth, maxim) = { maxim, daca n = 0
+;										{ adancime(l2 .. ln, depth, maxim), daca l1 = atom
+;										{ adancime(l2 .. ln, depth + 1, depth), daca l1 = lista si depth+1 > maxim
+;										{ adancime(l2 .. ln, depth + 1, maxim), altfel
+
+(defun adancime(l d m)
+(cond
+	((null l) m)	
+	((atom (car l)) (adancime (cdr l) d m))
+	((and (listp (car l)) (> (+ d 1) m)) (adancime (cdr l) (+ d 1) (+ d 1)))
+	(t (adancime (cdr l) (+ d 1) m))
+)
+)
+
+; niveluri(l1 l2 .. ln) = { 0, daca n = 0
+;						  { adancime(l1 l2 .. ln, 1, 1)
+
+(defun niveluri (l)
+(cond
+    ((null l) 0)
+	(t (adancime l 1 1))
+)
+)
+
+(write (niveluri '(1 (2 (4 5) 3) (5)) ))
+(terpri)
+
+
+
+; ad_col (col, l1 l2 .. ln) = { col, daca n = 0
+;							  { ad_col(col (+) l1, l2 .. ln), altfel
+
+(defun ad_col (col l)
+(cond
+	((null l) col)
+	(t (ad_col (append col (list (car l))) (cdr l)))
+)
+)
+
+(write (ad_col '(3 (2 3)) '(1 () (3 (() 6)) ) ))
+(terpri)
+
+; depth (l1 l2 .. ln, col, d) = { d, daca n = 0 si col = lista vida
+;								{ depth (col, (), d+1), daca n = 0 si col != lista vida
+;								{ depth (l2 .. ln, col, d), daca l1 = atom
+;								{ depth (l2 .. ln, ad_col(col, l1), d), altfel
+
+(defun depth (l col d)
+(cond
+	((and (null l) (null col)) d)
+	((and (null l) (not (null col))) (depth col () (+ 1 d)))
+	((atom (car l)) (depth (cdr l) col d))
+	(t (depth (cdr l) (ad_col col (car l)) d))
+)
+)
+
+; adanc (l1 l2 .. ln) = { depth(l1 l2 .. ln, (), 1)
+
+(defun adanc (l)
+	(depth l () 1)
+)
+
+(write (adanc '(1 2 (3 4 (5 6 (() 7) )) (6) 7 (8)) ))
+(terpri)
+
+
+; adancime(l1 l2 .. ln, depth, col,0, maxim) = { maxim, daca n = 0
+;											 { adancime(l2 .. ln, depth, col, maxim), daca l1 = atom
+;											 { adancime(l2 .. ln, depth, adancime(l1, depth+1, col+1, maxim), maxim), daca l1 = lista si adancime(l1, depth+1, col+1 maxim) < maxim
+;											 { adancime(l2 .. ln, depth, adancime(l1, depth+1, col+1, maxim), adancime(l1, depth+1, col+1, maxim)), altfel
+
+(defun adancime(l d col m)
+(cond
+	((null l) m)
+	((atom (car l)) (adancime (cdr l) d col m))
+	((and (listp (car l)) (< (adancime (car l) (+ d 1) (+ 1 col) m) m)) (adancime (cdr l) d (adancime (car l) (+ 1 d) (+ 1 col ) m) m))
+	(t (adancime (cdr l) d (adancime (car l) (+ 1 d) (+ 1 col) m) (adancime (car l) (+ 1 d) (+ 1 col) m)))
+)
+)
+
+; c) --------------------------------------------------------------------------------------------
+
+; elimina_all(l1 l2 .. ln, e, col) = { col, daca n = 0
+;									 { elimina_all(l2 .. ln, e, col (+) l1), daca l1 != e
+;									 { elimina_all(l2 .. ln, e, col), altfel
+
+(defun elimina_all (l e col)
+(cond
+	((null l) col)
+	((not(equal (car l) e)) (elimina_all (cdr l) e (append col (list (car l)))))
+	(t (elimina_all (cdr l) e col))
+)
+)
+
+; elimina_all_2(l1 l2 .. ln, e) = { lista vida, daca n = 0
+;								  { l1 (+) elimina_all(l2 .. ln, e), daca l1 != e
+;								  { elimina_all(l2 .. ln, e), altfel
+
+(defun elimina_all_2 (l e)
+(cond
+	((null l) ())
+	((not(equal (car l) e)) (cons (car l) (elimina_all_2 (cdr l) e )))
+	(t (elimina_all_2 (cdr l) e))
+)
+)
+
+; elimina(l1 l2 .. ln, e) = { elimina_all(l1 l2 .. ln, e, ())
+
+(defun elimina (l e)
+	(elimina_all l e ())
+)
+
+; min_aux(l1 l2 .. ln, x) = { x, daca n = 0
+;							{ min_aux(l2 .. ln, l1), daca l1 < x
+;							{ min_aux(l2 .. ln, x), altfel
+
+(defun min_aux (l x)
+(cond
+	((null l) x)
+	((< (car l) x) (min_aux (cdr l) (car l)))
+	(t (min_aux (cdr l) x))
+)
+)
+
+; minim(l1 l2 .. ln) = { lista vida, daca n = 0 
+;					   { min_aux(l1 l2 .. ln, most-positive-double-float)
+
+(defun minim (l)
+(cond
+	((null l) nil)
+	(t (min_aux l most-positive-double-float))
+)
+)
+
+; sortare(l1 l2 .. ln, c) = { c, daca n = 0
+;							{ sortare(elimina(l1 l2 .. ln, minim(l1 l2 .. ln) c (+) minim(l1 l2 .. ln)), altfel
+
+(defun sortare (l c)
+(cond
+	((null l) c)
+	(t (sortare (elimina l (minim l)) (append c (list (minim l)))))
+)
+)
+
+; sorteaza(l1 l2 .. ln) = { sortare(l1 l2 .. ln, ())
+
+(defun sorteaza (l)
+	(sortare l ())
+)
+
+(write (sorteaza '(4 3 8 3 1 4 2 7 3)))
+(terpri)
+
+
+; d) --------------------------------------------------------------------------------------------
+
+; exista (l1 l2 .. ln, e) = { F, daca n = 0
+;							{ T, daca l1 = e
+;							{ exista (l2 .. ln), altfel
+
+(defun exista (l e)
+(cond
+	((null l) nil)
+	((= (car l) e) t)
+	(t (exista (cdr l) e))
+)
+)
+
+(write (exista '(1 5 7 4 2 3) '4))
+(terpri)
+
+(write (exista '() '4))
+(terpri)
+
+
+; intersectie(l1 l2 .. ln, m1 m2 .. mk, col) = { col, daca n = 0 sau k = 0
+;										  	   { intersectie(l2 .. ln, m1 m2 .. mk, col (+) l1), daca exista(m1 m2 .. mk, l1) si !exista(col, l1)
+;										  	   { intersectie(l2 .. ln, m1 m2 .. mk, col), altfel
+
+(defun intersectie (l m c)
+(cond
+	((or (null l) (null m)) c)
+	((and (exista m (car l)) (not (exista c (car l)))) (intersectie (cdr l) m (append c (list (car l)))))
+	(t (intersectie (cdr l) m c))
+)
+)
+
+
+; inter(l1 l2 .. ln, m1 m2 .. mk) = { intersectie(l1 l2 .. ln, m1 m2 .. mk, ())
+
+
+(defun inter (l m)
+	(intersectie l m ())
+)
+
+(write (inter '(1 2 3) '(2 2 2)))
+(terpri)
+
+(write (inter '(1 2 2 3) '(4 8 7)))
+(terpri)
+
+(write (inter '(1 2 3 9 8 2 5 2 3) '(2 2 9 1 0 27 36 2 2)))
+(terpri)
+
+(write (inter '() '(2 2 2)))
+(terpri)

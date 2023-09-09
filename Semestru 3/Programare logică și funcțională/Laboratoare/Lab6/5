@@ -1,0 +1,89 @@
+; ad_col (col, l1 l2 .. ln) = { col, daca n = 0
+;							  { ad_col(col (+) l1, l2 .. ln), altfel
+
+(defun ad_col (col l)
+(cond
+	((null l) col)
+	(t (ad_col (append col (list (car l))) (cdr l)))
+)
+)
+
+; depth (l1 l2 .. ln, col, d) = { d, daca n = 0 si col = lista vida
+;								{ depth (col, (), d+1), daca n = 0 si col != lista vida
+;								{ depth (l2 .. ln, col, d), daca l1 = atom
+;								{ depth (l2 .. ln, ad_col(col, l1), d), altfel
+
+(defun depth (l col d)
+(cond
+	((and (null l) (null col)) d)
+	((and (null l) (not (null col))) (depth col () (+ 1 d)))
+	((atom (car l)) (depth (cdr l) col d))
+	(t (depth (cdr l) (ad_col col (car l)) d))
+)
+)
+
+; adanc (l1 l2 .. ln) = { depth(l1 l2 .. ln, (), 1)
+
+(defun adanc (l)
+	(depth l () 1)
+)
+
+(write (adanc '(a (b) (d) (e)) ))
+(terpri)
+
+; deep (l1 l2 .. ln, col) = { col, daca n = 0
+;							{ deep (l2 .. ln, col), daca l1 = atom
+;							{ deep (l2 .. ln, ad_col(col, l1)), altfel
+
+(defun deep (l col)
+(cond
+	((null l) col)
+	((atom (car l)) (deep (cdr l) col))
+	(t (deep (cdr l) (ad_col col (car l))))
+)
+)
+
+(write (deep '(a (b (c)) (d) (e (f))) '() ))
+(terpri)
+
+(write (deep '(B (C) D E (F)) '() ))
+(terpri)
+
+(write (deep '(C F) '() ))
+(terpri)
+
+((> (F (CAR L)) 0) (+ (CAR L) (F (CAR L)) (F (CDR L))))
+(t (apply '+ (mapcar #'(lambda (a) (noduriPare a (+ 1 nivel))) arb)))
+
+(defun elim (l niv)
+	(cond
+		((and (atom l) (= (mod niv 2) 0)) nil)
+		((atom l) (l))
+		(t (mapcan #'(lambda (x)
+						(elim x (+ 1 niv))	
+					) l
+			)
+		)
+	)
+)
+
+(defun wrapper (l)
+    (elim l 0)
+)
+
+adancime (l1 l2 .. ln) = { 1, daca n = 1
+						 { 1 + max (adancime (l2), adancime (l3), .. , adancime (ln)), altfel
+
+(defun adancime(L)
+(cond
+	((null L) 0)
+	((null (cdr L)) 1)
+	(t (+ 1 (apply #'max (mapcar #'adancime (cdr L)))))
+)
+)
+
+(write (adancime '(a (b (c)) (d) (e (f))) ))
+(terpri)
+(write (adancime '(a (b (c) (d (e))) (f (g))) ))
+(terpri)
+(write (adancime '(A (B () (D (F) (G))) (C () (E (H)))) ))

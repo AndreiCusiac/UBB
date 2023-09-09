@@ -1,0 +1,167 @@
+; ad_col (col, l1 l2 .. ln) = { col, daca n = 0
+;							  { ad_col(col (+) l1, l2 .. ln), altfel
+
+(defun ad_col (col l)
+(cond
+	((null l) col)
+	(t (ad_col (append col (list (car l))) (cdr l)))
+)
+)
+
+(write (ad_col '(3 (2 3)) '(1 () (3 (() 6)) ) ))
+(terpri)
+
+; deep (l1 l2 .. ln, col) = { col, daca n = 0
+;							{ deep (l2 .. ln, col), daca l1 = atom
+;							{ deep (l2 .. ln, ad_col(col, l1)), altfel
+
+(defun deep (l col)
+(cond
+	((null l) col)
+	((atom (car l)) (deep (cdr l) col))
+	(t (deep (cdr l) (ad_col col (car l))))
+)
+)
+
+(write (deep '(a (b) (c)) '() ))
+(terpri)
+
+(write (deep '(B C) '() ))
+(terpri)
+
+(write (deep '(A (B () (D (F) (G))) (C () (E (H))) ) '() ))
+(terpri)
+
+(write (deep '(B NIL (D (F) (G)) C NIL (E (H))) '() ))
+(terpri)
+
+(write (deep '(D (F) (G) E (H))'() ))
+(terpri)
+
+(write (deep '(F G H) '() ))
+(terpri)
+(terpri)
+
+; depth (l1 l2 .. ln, col, d, cur, max, niv) = { niv, daca n = 0 si col = lista vida
+;										  	   { depth (col, (), d+1, 0, max, niv), daca n = 0 si col != lst. vida si cur < max
+;										  	   { depth (col, (), d+1, 0, cur, d), daca n = 0 si col != lst. vida si cur >= max
+;										  	   { depth (l2 .. ln, col, d, cur + 1, max, niv), daca l1 = atom nenul si cur + 1 < max
+;											   { depth (l2 .. ln, col, d, cur + 1, cur + 1, d), daca l1 = atom nenul si cur + 1 >= max
+;										  	   { depth (l2 .. ln, ad_col(col, l1), d, cur, max, niv), altfel
+
+(defun depth (l col d cur max niv)
+(cond
+	((and (null l) (null col)) niv)
+	((and (null l) (not (null col)) (< cur max)) (depth col () (+ 1 d) 0 max niv))
+	((and (null l) (not (null col)) (>= cur max)) (depth col () (+ 1 d) 0 cur d))
+	((and (atom (car l)) (not (null (car l))) (< (+ cur 1) max)) (depth (cdr l) col d (+ cur 1) max niv))
+	((and (atom (car l)) (not (null (car l))) (>= (+ cur 1) max)) (depth (cdr l) col d (+ cur 1) (+ cur 1) d))
+	(t (depth (cdr l) (ad_col col (car l)) d cur max niv))
+)
+)
+
+; asta de jos nu merge
+
+; depth1 (l1 l2 .. ln, col, d, cur, max, niv) = { niv, daca n = 0 si col = lista vida
+;										  	    { depth1 (col, (), d+1, 0, max, niv), daca n = 0 si col != lst. vida si cur <= max
+;										  	    { depth1 (col, (), d+1, 0, cur, d), daca n = 0 si col != lst. vida si cur > max
+;										  	    { depth1 (l2 .. ln, col, d, cur + 1, max, niv), daca l1 = atom nenul
+;												{ depth1 (l2 .. ln, ad_col(col, l1), d, cur, max, niv), altfel
+
+(defun depth1 (l col d cur max niv)
+(cond
+	((and (null l) (null col)) niv)
+	((and (null l) (not (null col)) (<= cur max)) (depth1 col () (+ 1 d) 0 max niv))
+	((and (null l) (not (null col)) (> cur max)) (depth1 col () (+ 1 d) 0 cur d))
+	((and (atom (car l)) (not (null (car l)))) (depth1 (cdr l) col d (+ 1 cur) max niv))
+	(t (depth1 (cdr l) (ad_col col (car l)) d cur max niv))
+)
+)
+
+; adanc (l1 l2 .. ln) = { depth(l1 l2 .. ln, (), 0, 0, 0, 0)
+
+(defun adanc (l)
+	(depth l () 0 0 0 0)
+)
+
+(write '(0 =))
+(write (adanc '(a) ))
+(terpri)
+
+(write '(1 =))
+(write (adanc '(a (b) (c)) ))
+(terpri)
+
+(write '(2 =))
+(write (adanc '(a (b (g) (f)) (d (e))) ))
+(terpri)
+
+(write '(3 =))
+(write (adanc '(A (B () (D (F) (G))) (C () (E (H))) ) ))
+(terpri)
+
+(write '(2 =))
+(write (adanc '(a (b () (f)) (d (e))) ))
+(terpri)
+
+(write '(1 =))
+(write (adanc '(a (b) (d (e))) ))
+(terpri)
+(terpri)
+
+
+
+; de_pe_nivel (l1 l2 .. ln, col, d, x, rez) = { rez, daca n = 0 si d = x
+;											  { de_pe_nivel (col, (), d+1, x, rez), daca n = 0 si d != x
+;											  { de_pe_nivel (l2 .. ln, col, d, x, rez (+) l1, daca l1 = atom si d = x
+;											  { de_pe_nivel (l2 .. ln, ad_col(col, l1), d, x, rez), daca d != x si l1 = lista
+;											  { de_pe_nivel (l2 .. ln, col, d, x, rez), altfel
+
+(defun de_pe_nivel (l col d x rez)
+(cond
+	((and (null l) (equal d x)) rez)
+	((and (null l) (not(equal d x))) (de_pe_nivel col () (+ d 1) x rez))
+	((and (atom (car l)) (equal d x)) (de_pe_nivel (cdr l) col d x (append rez (list (car l)))))
+	((and (listp (car l)) (not(equal d x))) (de_pe_nivel (cdr l) (ad_col col (car l)) d x rez))
+	(t (de_pe_nivel (cdr l) col d x rez))
+)
+)
+
+; adanc_most (l1 l2 .. ln) = { de_pe_nivel(l1 l2 .. ln, (), 0, depth(l1 l2 .. ln, (), 0, 0, 0, 0), ())
+
+(defun adanc_most (l)
+	( de_pe_nivel l () 0 (depth l () 0 0 0 0) ())  
+)
+
+(write '(A =))
+(write (adanc_most '(a) ))
+(terpri)
+
+(write '(B C =))
+(write (adanc_most '(z (b) (c)) ))
+(terpri)
+
+(write '(G F E =))
+(write (adanc_most '(a (b (g) (f)) (d (e))) ))
+(terpri)
+
+(write '(F G H =))
+(write (adanc_most '(A (B () (D (F) (G))) (C () (E (H))) ) ))
+(terpri)
+
+(write '(F E =))
+(write (adanc_most '(a (b () (f)) (d (e))) ))
+(terpri)
+
+(write '(B D =))
+(write (adanc_most '(a (b) (d (e))) ))
+(terpri)
+(terpri)
+
+(write '(F G H =))
+(write (de_pe_nivel '(A (B () (D (F) (G))) (C () (E (H))) ) () 0 3 () ))
+(terpri)
+
+(write '(F G H =))
+(write (adanc_most '(A (B () (D (F) (G))) (C () (E (H))) ) ))
+(terpri)

@@ -1,0 +1,2 @@
+Test săpt 4 TCP
+Orice limbă (preferabil C)

@@ -1,0 +1,87 @@
+1) Care dintre urmatoarele adrese este adresa de retea?
+a) 43.23.87.64/27
+b) 43.23.87.224/26
+c) 43.29.45.240/27
+d) 43.29.45.80/27
+
+2) Care dintre urmatoarele adrese nu este adresa de broadcast?
+a) 87.35.15.7/29
+b) 83.35.15.8 /28
+c) 87.35.15.63 /25
+d) 83.23.17.127 /22
+
+3) Care este netmask-ul retelei de dimensiune maxima cu adresa de retea 108.122.0.0? Justificati raspunsul.
+
+4) Care este netmask-ul retelei de dimensiune maxima cu adresa de broadcast 45.111.255.255? Justificati raspunsul.
+
+5) Determinati elementele cerute pentru adresa IP 188.26.18.151/26
+a) masca retelei
+b) adresa de retea
+c) adresa de broadcast
+d) prima adresa utilizabila din clasa
+e) ultima adresa utilizabila din clasa
+f) numarul total de adrese IP configurabile din clasa
+
+6) Determinati elementele cerute pentru adresa IP 80.81.82.83/25
+a) masca retelei
+b) adresa de retea
+c) adresa de broadcast
+d) prima adresa utilizabila din clasa
+e) ultima adresa utilizabila din clasa
+f) numarul total de adrese IP configurabile din clasa
+
+7) Determinati elementele cerute pentru adresa IP 23.26.18.14/23
+a) masca retelei
+b) adresa de retea
+c) adresa de broadcast
+d) prima adresa utilizabila din clasa
+e) ultima adresa utilizabila din clasa
+f) numarul total de adrese IP configurabile din clasa
+
+8) Determinati elementele cerute pentru adresa IP 120.0.64.64/22
+a) masca retelei
+b) adresa de retea
+c) adresa de broadcast
+d) prima adresa utilizabila din clasa
+e) ultima adresa utilizabila din clasa
+f) numarul total de adrese IP configurabile din clasa
+
+9) Dandu-se adresa IP 73.91.52.33 si stiind ca face parte dintr-o retea cu 8192 adrese IP, determinati adresa de broadcast a retelei din care face parte.
+
+10) Precizati un netmask (masca de retea) pentru care adresele IP 88.23.46.17 si 83.25.48.23 sunt situate in aceeasi retea, iar dimensiunea acestei retele este minima.
+
+11) C1-S1-R1-R2-S2-C2 
+R1 = router-ul din stanga
+R2 = router-ul din dreapta
+- reteaua deservita de R1 are 45 (reteaua A)
+- reteaua deservita de R2 are 128 (reteaua B)
+Clasa de adrese: 100.80.24.0/22
+Care sunt clasele de adrese atribuite retelelor din figura a.i. divizarea clasei de adrese date sa fie minima?
+
+12) Care este adresa de retea a retelei de dimensiune minima ce contine adresa IP 71.72.73.74 si are netmask-ul 255.252.0.0? 
+Dar adresa de retea a dimensiune maxima ce contine acelasi IP si are acelasi netmask?
+
+13) Care dintre urmatoarele adrese nu reprezinta netmask-uri valide
+a) 255.255.255.0
+b) 255.255.250.0
+c) 255.254.0.0
+d) 255.192.0.0
+e) 0.0.0.0
+
+14) Care dintre urmatoarele adrese pot reprezenta o adresa IP valida care sa fie alocata unui calculator:
+a) 193.231.21.0
+b) 18.19.20.255
+c) 223.245.256.17
+Justificati
+
+15) Scrieti in format adresa de retea/netmask spatiul de adrese 63.39.191.192...63.40.192.223
+
+16) Scrieti in format adresa de retea/netmask spatiul de adrese: 91.127.223.240...92.3.128.63
+
+17) Scrieti in format adresa de retea/netmask spatiul de adrese: 91.127.63.224...93.64.129.31
+
+18) Scrieti in format adresa de retea/netmask spatiul de adrese: 126.224.247.240...128.4.8.151
+
+19) Scrieti in format adresa de retea/netmask spatiul de adrese: 75.98.115.248 ... 133.49.161.83
+
+20) Cate clase de adrese IP cu masca de retea 255.240.0.0 se pot forma din spatiul adreselor IP false (private)? Justificati raspunsul.

@@ -1,0 +1,3 @@
+https://www.ibm.com/docs/en/rational-soft-arch/9.5?topic=diagrams-relationships-in-class
+https://www.gleek.io/blog/uml-relationships.html
+https://www.javatpoint.com/uml-relationship

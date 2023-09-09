@@ -1,0 +1,38 @@
+Prima adresă IP dintr-o clasă de adrese - adresă de rețea (ex. 192.168.1.0)
+Ultima ................................ - adresă de broadcast (ex. 192.168.1.255) ==> 
+Netmask - 255.255.255.0 /24 (x biți 1 urmați de 32 - x biți 0, ex. x = 24 ==> /24)
+
+Router -de obicei, primul IP după adresa de rețea (ex. 192.168.1.1)
+
+
+IP && pe biți Netmask ==> Adresa de rețea (ex. 192.168.1.117 && 255.255.255.0 = 192.168.1.0)
+IP || pe biți not(Netmask) ==> Adresa de broadcast (ex. 192.168.1.117 && 0.0.0.255 = 192.168.1.255)
+
+2 ^ (nr. biți 0 din Netmask) = mărimea (nr. de IP-uri din) clasei de adrese (ex. 255.255.255.0 ==> 2^8 adrese IP)
+
+IP: 172.30.x.y ==> Netmask: 255.255.0.0 /16
+
+192.168.1.0/255.255.255.0 = 192.168.1.0/24
+
+0.0.0.0. - "adresa" internetului (se folosește Def. Gatew.)
+
+
+
+0 pe primul bit din primul octet - adrese de tip A / clasă A (ex. 1.0.0.0 /8)
+De la 1.0.0.0 /8 la 127.0.0.0 /8
+
+10 pe primii 2 biți din primul octet - adrese de tip B / clasă B (ex. 172.30.0.0 /16)
+De la 128.0.0.0 /16 (cu bdcast 128.0.255.255) la 191.255.0.0 /16
+
+110 pe primii 3 biți din primul octet - adrese de tip C / clasă C (ex. 192.168.1.0 /24) 
+De la 192.0.0.0 /24 la 233.255.255.255 /24 (ultima adresă folosită în mod uzual în Internet)
+
+1110 pe primii 4 biți din primul octet - adrese de tip D / clasă D (ex. 224.0.0.0 /?) 
+
+(^Clase false)
+
+
+80.0.0.0 /8 se poate "rupe" în 2^8 = 256 de clase mai mici cu Netmask 255.255.0.0 = /16
+			    în 2^16 = 65536 de clase mai mici cu Netmask 255.255.255.0 = /24)
+
+"80.81.82.83 face parte dintr-o clasă de tip C" = are Netmask de tip C = /24 ==> 80.81.82.83 /24
