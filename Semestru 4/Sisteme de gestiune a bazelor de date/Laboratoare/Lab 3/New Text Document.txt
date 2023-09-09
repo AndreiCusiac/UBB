@@ -1,0 +1,2 @@
+Select top 1 ID where nume = and autor = for 
+(Pentru tabelele de legătură, restul cu auto incrementare pentru ID).

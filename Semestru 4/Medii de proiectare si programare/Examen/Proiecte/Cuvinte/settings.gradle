@@ -1,0 +1,11 @@
+rootProject.name = "BaschetGUI"
+include 'BaschetModel'
+include 'BaschetRepository'
+include 'BaschetService'
+include 'BaschetNetworking'
+include 'BaschetServer'
+include 'BaschetClientFx'
+include 'BaschetClientFx'
+include 'BaschetUser'
+include 'RestService'
+

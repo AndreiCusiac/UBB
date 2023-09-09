@@ -1,0 +1,59 @@
+28 Feb 2021 15:31:41,150 TRACE repository.AbstractRepository 21 add - Enter Entering add with parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+28 Feb 2021 15:31:41,153 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:31:41,154 TRACE repository.AbstractRepository 21 add - Enter Entering add with parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+28 Feb 2021 15:31:41,154 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:31:52,879 TRACE repository.AbstractRepository 21 add - Enter Entering add with parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+28 Feb 2021 15:31:52,885 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:31:52,886 TRACE repository.AbstractRepository 21 add - Enter Entering add with parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+28 Feb 2021 15:31:52,887 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:32:29,739 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+28 Feb 2021 15:32:29,742 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:32:29,743 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+28 Feb 2021 15:32:29,743 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:35:01,557 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+28 Feb 2021 15:35:01,563 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:35:01,564 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+28 Feb 2021 15:35:01,564 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:35:01,565 TRACE repository.AbstractRepository 51 findById - Enter 3
+28 Feb 2021 15:35:01,565 ERROR repository.AbstractRepository 58 findById - Throwing
+java.lang.RuntimeException: Element doesn't exist
+	at repository.AbstractRepository.findById(AbstractRepository.java:58) [main/:?]
+	at ComputerShopMain.main(ComputerShopMain.java:11) [main/:?]
+28 Feb 2021 15:35:43,069 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+28 Feb 2021 15:35:43,076 TRACE repository.AbstractRepository 29 add - Exit
+28 Feb 2021 15:35:43,076 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+28 Feb 2021 15:35:43,077 TRACE repository.AbstractRepository 29 add - Exit
+26 Feb 2022 15:25:10,915 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+26 Feb 2022 15:25:10,919 TRACE repository.AbstractRepository 29 add - Exit
+26 Feb 2022 15:25:10,920 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+26 Feb 2022 15:25:10,920 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:27:18,314 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+02 Mar 2022 19:27:18,318 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:27:18,319 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+02 Mar 2022 19:27:18,320 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:27:51,073 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+02 Mar 2022 19:27:51,076 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:27:51,077 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+02 Mar 2022 19:27:51,077 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:28:10,036 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+02 Mar 2022 19:28:10,045 TRACE repository.AbstractRepository 29 add - Exit
+02 Mar 2022 19:28:10,046 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+02 Mar 2022 19:28:10,046 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:57:51,467 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+03 Mar 2022 09:57:51,477 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:57:51,478 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+03 Mar 2022 09:57:51,478 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:57:51,479 TRACE repository.AbstractRepository 63 findAll - Enter
+03 Mar 2022 09:57:51,479 TRACE repository.AbstractRepository 64 findAll - Exit with([ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display', ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'])
+03 Mar 2022 09:58:27,798 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+03 Mar 2022 09:58:27,803 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:58:27,804 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+03 Mar 2022 09:58:27,804 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:58:27,805 TRACE repository.AbstractRepository 63 findAll - Enter
+03 Mar 2022 09:58:27,805 TRACE repository.AbstractRepository 64 findAll - Exit with([ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display', ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'])
+03 Mar 2022 09:59:35,146 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display'
+03 Mar 2022 09:59:35,152 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:59:35,153 TRACE repository.AbstractRepository 21 add - Enter  parameters ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'
+03 Mar 2022 09:59:35,153 TRACE repository.AbstractRepository 29 add - Exit
+03 Mar 2022 09:59:35,154 TRACE repository.AbstractRepository 63 findAll - Enter
+03 Mar 2022 09:59:35,154 TRACE repository.AbstractRepository 64 findAll - Exit with([ID=1, ownerName='A A', model='Asus', date='13/10/2020', problemDescription='Broken display', ID=2, ownerName='B B', model='Acer', date='10/10/2020', problemDescription='Faulty keyboard'])

@@ -1,0 +1,38 @@
+1.What means the most selective access path?
+a way to reduce the number of page I/O operations during queryevaluation
+
+2.When dirty read occurs?
+when a transaction reads a database object that has been modified by another not yet commited transaction
+
+3.Which of the following isolation levels maintains locks at key range level?
+serializable
+
+4.Which of the following join methods is not specific for distributed databases?
+fetch as needed join
+
+5.Why does the System R optimizer consider only lift-deep join trees?
+left-deep join trees allow fully pipelined plans
+
+6.Which of the following is not a property o ACID
+ACID is: atomicity, consistency, isolation, durability
+
+7.Which is the main advantage of using pipelining in query optimization?
+allows us to avoid creating and reading temporary relations
+
+8.Which of the following elements is not a main objective in databases security?
+data transparency
+
+9.Name a capability that is supported by both DBMS buffer manager and typical operating system’s buffer manager:
+The usage of a replacement policy for flushing pages from buffer pool
+
+10.Who is responsible for unpinning a page in buffer pool?
+The requestor of that page
+
+11.What is a primary index?
+An index on a set of fields that includes the primary key
+
+12.Which of the following best describes ‘rotational delay’ term?
+The waiting time for the desired block to rotate under the disk head
+
+13.Which is the main advantage of using pipelining in query optimization?
+Allows us to avoid creating and reading temporary relations.

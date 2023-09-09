@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 1</title>
+    <style>
+        select {
+            font-size: 25px;
+        }
+    </style>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#cars1").dblclick(function(){
+                let v = $( "#cars1 option:selected" ).val();
+                $("#cars2").append(new Option(v, v))
+                $("#cars1 option:selected").remove();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#cars2").dblclick(function(){
+                let v = $( "#cars2 option:selected" ).val();
+                $("#cars1").append(new Option(v, v))
+                $("#cars2 option:selected").remove();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+<select id="cars1" multiple >
+    <option> Volvo1</option>
+    <option> Saab1</option>
+    <option> Mercedes1</option>
+    <option> Audi1</option>
+</select>
+
+<select id="cars2" multiple >
+    <option> Volvo2</option>
+    <option> Saab2</option>
+    <option> Mercedes2</option>
+    <option> Audi2</option>
+</select>
+
+</body>
+</html>

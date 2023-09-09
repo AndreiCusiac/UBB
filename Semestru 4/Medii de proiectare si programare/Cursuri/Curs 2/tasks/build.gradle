@@ -1,0 +1,18 @@
+group 'tasks'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+
+mainClassName='tasks.SortingFXMain'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+ implementation project ('model')
+
+}

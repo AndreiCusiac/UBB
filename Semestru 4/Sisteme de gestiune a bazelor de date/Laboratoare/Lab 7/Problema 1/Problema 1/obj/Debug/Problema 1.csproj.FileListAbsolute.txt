@@ -1,0 +1,24 @@
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\bin\Debug\Problema 1.exe.config
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\bin\Debug\Problema 1.exe
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\bin\Debug\Problema 1.pdb
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.AssemblyReference.cache
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema_1.Form1.resources
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema_1.Properties.Resources.resources
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.GenerateResource.cache
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema 1.exe
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema 1.pdb
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema_1.Form2.resources
+C:\Users\Andrei\source\repos\Problema 1\Problema 1\obj\Debug\Problema_1.Form3.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\bin\Debug\Problema 1.exe.config
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\bin\Debug\Problema 1.exe
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\bin\Debug\Problema 1.pdb
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.AssemblyReference.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema_1.Form1.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema_1.Form2.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema_1.Form3.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema_1.Properties.Resources.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.GenerateResource.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema 1.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema 1.exe
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Sisteme de gestiune a bazelor de date\Laboratoare\Lab 1\Problema 1\Problema 1\obj\Debug\Problema 1.pdb

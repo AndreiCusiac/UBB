@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 2</title>
+    <style>
+        form {
+            font-size: 23px;
+        }
+        input {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+
+        function allGood (){
+            alert('Datele sunt completate corect!');
+            dezincercuieste();
+            // or alert(this.options[this.selectedIndex].value);
+        }
+
+        function allNotSoGood (mesaj, campuri){
+            alert(mesaj);
+            incercuieste(campuri);
+            // or alert(this.options[this.selectedIndex].value);
+        }
+
+        function incercuieste(campuri) {
+            if (campuri.includes("nume")) {
+                $("input[name=nume]").css("border-color", "red");
+            } else {
+                $("input[name=nume]").css("border-color", "grey");
+            }
+
+            if (campuri.includes("varsta")) {
+                $("input[name=varsta]").css("border-color", "red");
+            } else {
+                $("input[name=varsta]").css("border-color", "grey");
+            }
+
+            if (campuri.includes("data")) {
+                $("input[name=data]").css("border-color", "red");
+            } else {
+                $("input[name=data]").css("border-color", "grey");
+            }
+
+            if (campuri.includes("email")) {
+                $("input[name=email]").css("border-color", "red");
+            } else {
+                $("input[name=email]").css("border-color", "grey");
+            }
+        }
+
+        function dezincercuieste() {
+            $("input[name=nume]").css("border-color", "black");
+            $("input[name=data]").css("border-color", "black");
+            $("input[name=varsta]").css("border-color", "black");
+            $("input[name=email]").css("border-color", "black");
+        }
+
+        $(document).ready(function(){
+            $("#submit").click(function(){
+                let mesajEroare = ""
+                let campuri = []
+
+                //let nume = $("#form #nume").val();
+                let nume = $("input[name=nume]").val()
+                //let nume = document.forms["form"]["nume"].value;
+
+                if (nume === "") {
+                    mesajEroare += ("Numele nu poate fi vid!\n");
+                    campuri.push('nume');
+                } else {
+                    if (doarLitere(nume) === false) {
+                        mesajEroare += ("Numele poate conține doar litere ale alfabetului englez!\n");
+                        campuri.push('nume');
+                    }
+                }
+
+                let data = $("input[name='data']").val();
+
+                if (data === "") {
+                    mesajEroare += ("Data nu poate fi vidă!\n");
+                    campuri.push('data');
+                } else {
+                    if (dataFormaCorecta(data) === false) {
+                        mesajEroare += ("Data nu este de forma aaaa-ll-zz!\n");
+                        campuri.push('data');
+                    }
+                }
+
+                let varsta = $("input[name='varsta']").val();
+
+                if (varsta === "") {
+                    mesajEroare += ("Vârsta nu poate fi vidă!\n");
+                    campuri.push('varsta');
+                } else {
+                    if (doarCifre(varsta) === false) {
+                        mesajEroare += ("Vârsta poate conține doar cifre!\n");
+                        campuri.push('varsta');
+                    }
+
+                    let age = Number(varsta)
+
+                    if (!(age >= 1 && age <= 122)) {
+                        mesajEroare += ("Vârsta poate fi doar în intervalul 1-122!\n");
+                        campuri.push('varsta');
+                    }
+                }
+
+                let email = $("input[name='email']").val();
+
+                if (email === "") {
+                    mesajEroare += ("Email-ul nu poate fi vid!\n");
+                    campuri.push('email');
+                } else {
+                    if (emailValid(email) === false) {
+                        mesajEroare += ("Email-ul nu este valid!\n");
+                        campuri.push('email');
+                    }
+                }
+
+                if (mesajEroare === "") {
+                    allGood();
+                    return true;
+                }
+                else {
+                    allNotSoGood(mesajEroare, campuri);
+                    return false;
+                }
+            });
+        });
+
+        function validate () {
+
+        }
+
+        function doarLitere(str) {
+            return /^[a-zA-Z]+ ?[a-zA-Z]+$/.test(str);
+        }
+
+        function doarCifre(str) {
+            return /^[0-9]+$/.test(str);
+        }
+
+        function dataFormaCorecta(str) {
+            return /^[0-9]{4,4}-[0-9]{2,2}-[0-9]{2,2}$/.test(str);
+        }
+
+        function emailValid(str) {
+            return /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/.test(str);
+        }
+
+    </script>
+
+</head>
+<body>
+
+<form name="form"  id="form">
+    <label for="nume">Nume:</label><br>
+    <input type="text" id="nume" name="nume"><br>
+    <label for="data">Data nașterii:</label><br>
+    <input type="text" id="data" name="data"><br><br>
+    <label for="varsta">Vârsta:</label><br>
+    <input type="text" id="varsta" name="varsta"><br><br>
+    <label for="email">Adresa de e-mail:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    <button type="submit" value="Trimite" id="submit"> Submit</button>
+</form>
+
+
+</body>
+</html>

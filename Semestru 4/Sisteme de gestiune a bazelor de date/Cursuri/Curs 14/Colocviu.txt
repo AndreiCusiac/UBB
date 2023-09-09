@@ -1,0 +1,8 @@
+15 grilă
+1 - 2 probleme
+Fără cursurile 11, 12
+
+Vezi:
+- curs 8/9 + sortare externă
+- undo/ redo
+- imbricate

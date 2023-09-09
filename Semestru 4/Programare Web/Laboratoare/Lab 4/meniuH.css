@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: green;
+}
+
+.header {
+    background-color: red;
+    /*top: 0;*/
+    /*left: 0;*/
+    text-align: center;
+    padding: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    /*border-left: 1px solid black;*/
+}
+
+.meniu {
+    overflow: hidden;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+}
+
+.footer {
+    background-color: pink;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    padding: 30px;
+}

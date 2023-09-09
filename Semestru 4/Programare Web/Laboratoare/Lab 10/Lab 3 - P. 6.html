@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 6</title>
+    <style>
+        table {
+            font-size: 50px;
+            border: solid 3px black;
+        }
+        td {
+            width: 2em;
+            height: 2em;
+            text-align: center;
+            border: dashed 1px black;
+        }
+        
+        td:hover {
+            opacity: 100%;
+        }
+
+
+    </style>
+
+    <script>
+
+        // Set the max length of random number
+        // and the max length
+        var maxLength = 4;
+        let start;
+
+        // Returns a random number
+        function CreateValues() {
+            let val = arrayOfNo[Math.floor(Math.random()*arrayOfNo.length)];
+
+            let index = arrayOfNo.indexOf(val);
+
+            arrayOfNo.splice(index, 1);
+
+            return val;
+        }
+
+        //create table
+        function UpdateTable() {
+            arrayOfNo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+            start = null;
+
+            for (var i = 0; i < maxLength; i++) {
+                for (var j = 0; j < maxLength; j++) {
+                    tmp = 'cell' + i + j;
+                    let valueRandom;
+
+                    document.getElementById(tmp).innerHTML = null;
+
+                    if (i === maxLength - 1 && j === maxLength - 1) {
+                        document.getElementById(tmp).innerHTML = null;
+                        document.getElementById(tmp).style.background = 'limegreen';
+                        start = document.getElementById(tmp);
+                    } else {
+                        valueRandom = CreateValues();
+                        document.getElementById(tmp).setAttribute('noValue', valueRandom);
+                        document.getElementById(tmp).innerHTML = valueRandom;
+                        document.getElementById(tmp).style.background = 'transparent';
+                    }
+                }
+            }
+        }
+
+        function dotheneedful(sibling) {
+            if (sibling != null) {
+                sibling.style.background = 'limegreen';
+                start.style.backgroundColor = 'transparent';
+
+                start.setAttribute('noValue', sibling.getAttribute('noValue'));
+                start.innerHTML = sibling.getAttribute('noValue');
+
+                sibling.setAttribute('noValue', null);
+                start = sibling;
+
+                start.innerHTML = null;
+            }
+        }
+
+        function logMessage(message) {
+            //alert(message);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (!e.repeat) {
+
+                let idx, nextrow, sibling;
+
+                logMessage(`Key "${e.key}" pressed  [event: keydown]`);
+
+                if (e.key === 'ArrowUp') {
+                    logMessage(`Arrow sus`);
+
+                    idx = start.cellIndex;
+                    nextrow = start.parentElement.previousElementSibling;
+
+                    if (nextrow != null) {
+                        sibling = nextrow.cells[idx];
+                        dotheneedful(sibling);
+                    }
+                } else if (e.key === 'ArrowDown') {
+                    // down arrow
+                    idx = start.cellIndex;
+                    nextrow = start.parentElement.nextElementSibling;
+                    if (nextrow != null) {
+                        sibling = nextrow.cells[idx];
+                        dotheneedful(sibling);
+                    }
+                } else if (e.key === 'ArrowLeft') {
+                    // left arrow
+                    sibling = start.previousElementSibling;
+                    dotheneedful(sibling);
+                } else if (e.key === 'ArrowRight') {
+                    // right arrow
+                    sibling = start.nextElementSibling;
+                    dotheneedful(sibling);
+                }
+            }
+            else
+                logMessage(`Key "${e.key}" repeating  [event: keydown]`);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.repeat) {
+
+                let idx, nextrow, sibling;
+
+                //logMessage(`Key "${e.key}" pressed  [event: keydown]`);
+
+                if (e.key === 'ArrowUp') {
+                    logMessage(`Arrow sus`);
+
+                    idx = start.cellIndex;
+                    nextrow = start.parentElement.previousElementSibling;
+
+                    if (nextrow != null) {
+                        sibling = nextrow.cells[idx];
+                        dotheneedful(sibling);
+                    }
+                } else if (e.key === 'ArrowDown') {
+                    // down arrow
+                    idx = start.cellIndex;
+                    nextrow = start.parentElement.nextElementSibling;
+                    if (nextrow != null) {
+                        sibling = nextrow.cells[idx];
+                        dotheneedful(sibling);
+                    }
+                } else if (e.key === 'ArrowLeft') {
+                    // left arrow
+                    sibling = start.previousElementSibling;
+                    dotheneedful(sibling);
+                } else if (e.key === 'ArrowRight') {
+                    // right arrow
+                    sibling = start.nextElementSibling;
+                    dotheneedful(sibling);
+                }
+            }
+            else
+                logMessage(`Key "${e.key}" repeating  [event: keydown]`);
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+        <div id="content">
+            <table border="1" id="tabel" >
+                <tbody>
+                <tr>
+                    <td class="normal" id="cell00"></td>
+                    <td class="normal" id="cell01"></td>
+                    <td class="normal" id="cell02"></td>
+                    <td class="normal" id="cell03"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell10"></td>
+                    <td class="normal" id="cell11"></td>
+                    <td class="normal" id="cell12"></td>
+                    <td class="normal" id="cell13"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell20"></td>
+                    <td class="normal" id="cell21"></td>
+                    <td class="normal" id="cell22"></td>
+                    <td class="normal" id="cell23"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell30"></td>
+                    <td class="normal" id="cell31"></td>
+                    <td class="normal" id="cell32"></td>
+                    <td class="normal" id="cell33"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<input id="btn" type="button" value="Joc nou" onclick="UpdateTable()"/>
+<!--<input id="won" type="button" value="Ai câștigat?" onclick="checkIfWon()"/>-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 4</title>
+    <style>
+
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+
+        table {
+            font-size: 30px;
+        }
+        td {
+            width: 2em;
+            height: 2em;
+            text-align: center;
+        }
+        
+        td:hover {
+            opacity: 100%;
+        }
+
+        th {
+            cursor: pointer;
+        }
+
+
+    </style>
+
+    <script>
+
+        function swap(){
+            const rows = document.querySelectorAll("#tabel1 > tbody > tr");
+            for(const row of rows){
+                row.insertBefore(row.children[2], row.children[1]);
+            }
+        }
+
+        function sortTableOriz(n, tabelCurent) {
+            var table, rows, switching, i, j, x, y, shouldSwitch, dir, switchcount = 0, allRows;
+            table = document.getElementById(tabelCurent);
+            switching = true;
+            // Set the sorting direction to ascending:
+            dir = "asc";
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows[n].getElementsByTagName("TD");
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 0; i < (rows.length - 1) ; i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    x = rows[i];
+                    y = rows[i + 1];
+                    /* Check if the two rows should switch place,
+                    based on the direction, asc or desc: */
+                    if (dir === "asc") {
+
+                        if (!isNaN(x.innerHTML)) {
+                            if(Number(x.innerHTML) > Number(y.innerHTML)) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    } else if (dir === "desc") {
+                        if (!isNaN(x.innerHTML)) {
+                            if(Number(x.innerHTML) < Number(y.innerHTML)) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+
+                    allRows = table.rows;
+
+                    for (j = 0; j < (allRows.length) ; j++) {
+                        rows = table.rows[j].getElementsByTagName("TD");
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    }
+
+                    switching = true;
+                    // Each time a switch is done, increase this count by 1:
+                    switchcount ++;
+                } else {
+                    /* If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again. */
+                    if (switchcount === 0 && dir === "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+        function sortTableVert(n, tabelCurent) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById(tabelCurent);
+            switching = true;
+            // Set the sorting direction to ascending:
+            dir = "asc";
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /* Loop through all table rows (except the
+                first, which contains table headers): */
+                for (i = 1; i < (rows.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Get the two elements you want to compare,
+                    one from current row and one from the next: */
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    /* Check if the two rows should switch place,
+                    based on the direction, asc or desc: */
+                    if (dir === "asc") {
+
+                        if (!isNaN(x.innerHTML)) {
+                            if(Number(x.innerHTML) > Number(y.innerHTML)) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    } else if (dir === "desc") {
+                        if (!isNaN(x.innerHTML)) {
+                            if(Number(x.innerHTML) < Number(y.innerHTML)) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        } else {
+                            if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                                // If so, mark as a switch and break the loop:
+                                shouldSwitch = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark that a switch has been done: */
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    // Each time a switch is done, increase this count by 1:
+                    switchcount ++;
+                } else {
+                    /* If no switching has been done AND the direction is "asc",
+                    set the direction to "desc" and run the while loop again. */
+                    if (switchcount === 0 && dir === "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+        <div id="content">
+            <table id='fructe' class="full" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th onclick="sortTableOriz(0, 'fructe')">Fructe</th>
+                    <td>Mere</td>
+                    <td>Pere</td>
+                    <td>Prune</td>
+                    <td>Cireșe</td>
+                </tr>
+                <tr>
+                    <th onclick="sortTableOriz(1, 'fructe')">Pret</th>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th onclick="sortTableOriz(2, 'fructe')">Cantitate</th>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <table id="carti" class="full" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th onclick="sortTableOriz(0, 'carti')">Cărți</th>
+                    <td>Metalurgia pulberilor</td>
+                    <td>Fotosinteza</td>
+                    <td>Cartea mecanicului de utilaje grele pentru construcții</td>
+                    <td>Cavalerii florii de cireș</td>
+                    <td>Sisteme fotovoltaice autonome performante</td>
+                </tr>
+                <tr>
+                    <th onclick="sortTableOriz(1, 'carti')">Autor</th>
+                    <td>Tudorel Ene</td>
+                    <td>Nicolae Sălăgeanu</td>
+                    <td>Valeriu Goran</td>
+                    <td>Constantin Chiriță</td>
+                    <td>Ionel Laurențiu Alboteanu</td>
+                </tr>
+                <tr>
+                    <th onclick="sortTableOriz(2, 'carti')">An</th>
+                    <td>2010</td>
+                    <td>1981</td>
+                    <td>1986</td>
+                    <td>1956</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <th onclick="sortTableOriz(3, 'carti')">Editură</th>
+                    <td>Eftimie Murgu</td>
+                    <td>Academia Republicii Socialiste România</td>
+                    <td>Tehnica</td>
+                    <td>Tineretului</td>
+                    <td>Universitaria</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table id='tari' class="full" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th onclick="sortTableVert(0, 'tari')">Țară</th>
+                    <th onclick="sortTableVert(1, 'tari')">Temperatură medie anuală (°C)</th>
+                    <th onclick="sortTableVert(2, 'tari')">Părere personală</th>
+                </tr>
+                <tr>
+                    <td>Burkina Faso</td>
+                    <td>28.29</td>
+                    <td>Destul de cald</td>
+                </tr>
+                <tr>
+                    <td>Sfântul Cristofor și Nevis</td>
+                    <td>24.50</td>
+                    <td>Nu am idee unde se află</td>
+                </tr>
+                <tr>
+                    <td>Coreea de Sud</td>
+                    <td>11.50</td>
+                    <td>Mai ridicată decât în România</td>
+                </tr>
+                <tr>
+                    <td>România</td>
+                    <td>8.80</td>
+                    <td>România</td>
+                </tr>
+                <tr>
+                    <td>Statele Unite ale Americii</td>
+                    <td>8.55</td>
+                    <td>Mai scăzută decât în România</td>
+                </tr>
+                <tr>
+                    <td>Norvegia</td>
+                    <td>-0.70</td>
+                    <td>Măcar au bani</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>-5.10</td>
+                    <td>Măcar au sirop de arțar</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

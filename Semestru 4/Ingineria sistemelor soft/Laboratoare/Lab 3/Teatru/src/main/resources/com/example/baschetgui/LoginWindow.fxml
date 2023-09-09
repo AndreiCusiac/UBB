@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #bedbd6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baschetgui.LoginController">
+   <children>
+      <TextField fx:id="textFieldName" alignment="TOP_LEFT" layoutX="216.0" layoutY="275.0" prefHeight="22.0" prefWidth="149.0" promptText="Name">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="textFieldHidePassword" layoutX="216.0" layoutY="317.0" prefHeight="22.0" prefWidth="149.0" promptText="Password">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font></PasswordField>
+      <TextField fx:id="textFieldSeePassword" layoutX="55.0" layoutY="199.0" promptText="Password" visible="false" />
+      <Button layoutX="241.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleLogInSpectator" prefHeight="37.0" prefWidth="99.0" text="Log in!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font></Button>
+      <Label alignment="TOP_CENTER" layoutX="192.0" layoutY="186.0" prefHeight="77.0" prefWidth="198.0" text="Sunt spectator:&#10;" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="-186.0" layoutX="545.0" layoutY="410.0" startX="-100.0" />
+      <TextField fx:id="textFieldNameRegizor" alignment="TOP_LEFT" layoutX="532.0" layoutY="275.0" prefHeight="22.0" prefWidth="149.0" promptText="Name">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="textFieldHidePasswordRegizor" layoutX="532.0" layoutY="317.0" prefHeight="22.0" prefWidth="149.0" promptText="Password">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="557.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleLogInRegizor" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: red;" text="Log in!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="520.0" layoutY="186.0" prefHeight="65.0" prefWidth="174.0" style="-fx-border-color: red;" text="Sunt regizor:" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

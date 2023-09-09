@@ -1,0 +1,37 @@
+14.Which of the following statements describes the atomicity transactions property?
+All transaction actions are completed fully or are not executed at all.
+
+15.Which of the following does not define a linear order on cells in Spatial Databases?
+a)Lexicographic order
+b)Hilbert Curve
+c)Z-Order
+d)Bulk loading!!
+
+16.Which of the following statements about disk components is false?
+a)!!Two or more heads can read/write data from/on disk platters in the same time
+b)Block size is a multiple of sector size
+c)All the tracks that could be read from one position of the arm is called a cylinder
+d)Each track is made up of fixed size sectors.
+
+17.Which of the following methods is not an approach for defining a hashing function?
+a)Division method
+b)!!Merge method
+c)Folding method
+d)Multiplication method
+
+18.Which of the following statements about clustered / un-clustered indexes is false?
+a)In a clustered index the order of data entries is the same as the ordering of data records
+b)An un-clustered index is an index that is not clustered.
+c)!!For a data file only one un-clustered index can be defined.
+d)A clustered index offers much better range query performance than an un-clustered index.
+s
+
+19.Which of the following definitions is not an alternative of data entries in index files?
+a)<search_key, data record>
+b)!!<search_key, primary key>
+c)search_key, record ID>
+d)<search_key, list of record IDs >
+s
+
+20.Which of the following best characterizes an optimal tree?
+Leaves are positioned on at most 2 levels

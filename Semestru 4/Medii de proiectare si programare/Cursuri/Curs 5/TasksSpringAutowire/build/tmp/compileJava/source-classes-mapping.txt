@@ -1,0 +1,83 @@
+tasks/repository/SortingTaskInMemoryRepository.java
+ tasks.repository.SortingTaskInMemoryRepository
+tasks/utils/Event.java
+ tasks.utils.Event
+tasks/AutowireMainSpring.java
+ tasks.AutowireMainSpring
+ tasks.AutowireMainSpring$1
+tasks/model/TaskExecutionException.java
+ tasks.model.TaskExecutionException
+tasks/model/SortingTask.java
+ tasks.model.SortingTask
+tasks/model/SortingOrder.java
+ tasks.model.SortingOrder
+tasks/utils/SortingTaskEvent.java
+ tasks.utils.SortingTaskEvent
+tasks/controller/TasksController.java
+ tasks.controller.TasksController
+ tasks.controller.TasksController$1
+tasks/repository/JdbcUtils.java
+ tasks.repository.JdbcUtils
+tasks/utils/ITaskRunner.java
+ tasks.utils.ITaskRunner
+tasks/repository/Validator.java
+ tasks.repository.Validator
+tasks/utils/TaskEvent.java
+ tasks.utils.TaskEvent
+tasks/repository/SortingTaskJdbcRepository.java
+ tasks.repository.SortingTaskJdbcRepository
+tasks/SortingFXMain.java
+ tasks.SortingFXMain
+ tasks.SortingFXMain$1
+tasks/repository/SortingTaskRepository.java
+ tasks.repository.SortingTaskRepository
+tasks/view/SortingTasksFXML.java
+ tasks.view.SortingTasksFXML
+ tasks.view.SortingTasksFXML$1
+ tasks.view.SortingTasksFXML$2
+ tasks.view.SortingTasksFXML$3
+ tasks.view.SortingTasksFXML$4
+ tasks.view.SortingTasksFXML$RunnerObserver
+tasks/repository/RepositoryException.java
+ tasks.repository.RepositoryException
+tasks/utils/STEType.java
+ tasks.utils.STEType
+tasks/SortingMain.java
+ tasks.SortingMain
+tasks/utils/TaskArray.java
+ tasks.utils.TaskArray
+ tasks.utils.TaskArray$ArrayIterator
+tasks/utils/Container.java
+ tasks.utils.Container
+tasks/repository/AbstractSortingTaskRepository.java
+ tasks.repository.AbstractSortingTaskRepository
+tasks/utils/HasId.java
+ tasks.utils.HasId
+tasks/repository/ValidationException.java
+ tasks.repository.ValidationException
+tasks/utils/TaskEventType.java
+ tasks.utils.TaskEventType
+tasks/utils/TaskStack.java
+ tasks.utils.TaskStack
+tasks/repository/SortingTaskFileRepository.java
+ tasks.repository.SortingTaskFileRepository
+tasks/view/SortingTasksView.java
+ tasks.view.SortingTasksView
+tasks/service/TaskService.java
+ tasks.service.TaskService
+tasks/utils/Observable.java
+ tasks.utils.Observable
+tasks/repository/ICrudRepository.java
+ tasks.repository.ICrudRepository
+tasks/model/Task.java
+ tasks.model.Task
+tasks/repository/SortingTaskValidator.java
+ tasks.repository.SortingTaskValidator
+tasks/utils/Observer.java
+ tasks.utils.Observer
+tasks/model/SortingAlgorithm.java
+ tasks.model.SortingAlgorithm
+tasks/SortingTaskAutowireConfig.java
+ tasks.SortingTaskAutowireConfig
+tasks/utils/ObservableTaskRunner.java
+ tasks.utils.ObservableTaskRunner

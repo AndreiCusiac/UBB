@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 3 Snooker</title>
+    <style>
+        table {
+            font-size: 50px;
+        }
+        td {
+            width: 2em;
+            height: 2em;
+            text-align: center;
+        }
+        
+        td:hover {
+            opacity: 100%;
+        }
+
+
+    </style>
+
+    <script>
+
+        // Set the max length of random number
+        // and the max length
+        var maxLength = 4;
+        let arrayOfNo;
+        let lastChosenCard = null;
+        let timeOutTime = 500;
+        let currentLeft;
+        let nrDePași;
+
+
+        // Returns a random number
+        function CreateValues() {
+            let val = arrayOfNo[Math.floor(Math.random()*arrayOfNo.length)];
+
+            let index = arrayOfNo.indexOf(val);
+
+            arrayOfNo.splice(index, 1);
+
+            return val;
+        }
+
+        //create table
+        function UpdateTable() {
+
+            currentLeft = maxLength * maxLength;
+            nrDePași = 0;
+            let valueRandom;
+            lastChosenCard = null;
+
+            hideCells();
+
+            arrayOfNo = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
+
+            for (var i = 0; i < maxLength; i++) {
+                for (var j = 0; j < maxLength; j++) {
+                    tmp = 'cell' + i + j;
+                    // document.getElementById(tmp).removeChild(document.createElement('img'));
+                    document.getElementById(tmp).innerHTML = null;
+
+                    valueRandom = CreateValues();
+                    document.getElementById(tmp).setAttribute('noValue', valueRandom);
+
+                    var img = document.createElement('img');
+                    // img.src = "Cropped Snooker/" + valueRandom + ".jpg";
+                    img.src = "Cropped Snooker/" + 'back' + ".jpg";
+                    document.getElementById(tmp).appendChild(img);
+                    // document.getElementById(tmp).setAttribute('img', img);
+                }
+            }
+
+            hideCells();
+        }
+
+        function checkEqual() {
+
+            // if (lastChosenCard === null) {
+            //     // lastChosenCard =
+            // }
+            // alert("clicked cell at: " + this.cellIndex + ", " + this.parentNode.rowIndex);
+        }
+
+        function hideCells() {
+            var table = document.getElementById('tabel');
+            var cells = table.getElementsByTagName('td');
+
+            for (var i = 0; i < cells.length; i++) {
+                // Take each cell
+                var cell = cells[i];
+                // do something on onclick event for cell
+                // cell.style.opacity = "1";
+
+                // var img = document.createElement('img');
+                // img.src = "question.png";
+                // cell.appendChild(img);
+
+                cell.style.background = 'transparent';
+                cell.style.color = 'white';
+
+                cell.onclick = function () {
+                    // Get the row id where the cell exists
+                    var rowId = this.parentNode.rowIndex;
+
+
+                    msg = '\nThe cell value is: ' + this.innerHTML;
+                    // alert(msg);
+                    this.style.background = 'yellow';
+                    this.style.color = 'black'
+
+                    let pic;
+                    pic = this.getAttribute('noValue');
+
+                    this.innerHTML = null;
+
+                    var img = document.createElement('img');
+                    // img.src = "Cropped Snooker/" + valueRandom + ".jpg";
+                    img.src = "Cropped Snooker/" + pic + ".jpg";
+                    this.appendChild(img);
+
+                    if (lastChosenCard === null) {
+                        lastChosenCard = this;
+                        lastChosenCard.onclick = function () {};
+                    } else {
+                        colorCards(this);
+                    }
+
+                    // this.style.display = 'none'
+                    // cell.style.opacity = "1";
+
+                }
+            }
+        }
+
+        function colorCards(cell1) {
+            nrDePași += 1;
+
+            if (lastChosenCard.getAttribute('novalue') === cell1.getAttribute('novalue')) {
+                lastChosenCard.style.background = 'lime';
+                cell1.style.background = 'lime';
+
+                lastChosenCard.readOnly = 'true';
+                cell1.readOnly = 'true';
+
+                lastChosenCard.onclick = function () {};
+                cell1.onclick = function () {};
+
+                currentLeft = currentLeft - 2;
+
+                lastChosenCard = null;
+
+                checkWin();
+
+            } else {
+                lastChosenCard.style.background = 'red';
+                cell1.style.background = 'red';
+
+                lastChosenCard.readOnly = 'true';
+                cell1.readOnly = 'true';
+
+
+
+                setTimeout(() => {
+                    lastChosenCard.style.background = 'transparent';
+                    cell1.style.background = 'transparent';
+
+                    resetTable();
+                }, timeOutTime);
+            }
+        }
+
+        function checkWin() {
+            if (currentLeft === 0) {
+                setTimeout(() => {
+                    alert('Ai câștigat! Număr de pași: ' + nrDePași);
+                    }, timeOutTime + timeOutTime)
+            }
+        }
+
+        function resetTable() {
+            lastChosenCard = null;
+
+            var table = document.getElementById('tabel');
+            var cells = table.getElementsByTagName('td');
+
+            for (var i = 0; i < cells.length; i++) {
+                // Take each cell
+                var cell = cells[i];
+                // do something on onclick event for cell
+                // cell.style.opacity = "1";
+
+                // var img = document.createElement('img');
+                // img.src = "question.png";
+                // cell.appendChild(img);
+
+                if (cell.style.background !== 'lime') {
+                    cell.style.background = 'transparent';
+                    cell.style.color = 'white';
+
+                    cell.innerHTML = null;
+
+                    var img = document.createElement('img');
+                    // img.src = "Cropped Snooker/" + valueRandom + ".jpg";
+                    img.src = "Cropped Snooker/" + 'back' + ".jpg";
+                    cell.appendChild(img);
+
+                    cell.onclick = function () {
+                        // Get the row id where the cell exists
+                        var rowId = this.parentNode.rowIndex;
+
+
+                        msg = '\nThe cell value is: ' + this.innerHTML;
+                        // alert(msg);
+                        this.style.background = 'yellow';
+                        this.style.color = 'black'
+
+                        let pic;
+                        pic = this.getAttribute('noValue');
+
+                        this.innerHTML = null;
+
+                        var img = document.createElement('img');
+                        // img.src = "Cropped Snooker/" + valueRandom + ".jpg";
+                        img.src = "Cropped Snooker/" + pic + ".jpg";
+                        this.appendChild(img);
+
+                        if (lastChosenCard === null) {
+                            lastChosenCard = this;
+                            lastChosenCard.onclick = function () {};
+                        } else {
+                            colorCards(this);
+                        }
+
+                        // this.style.display = 'none'
+                        // cell.style.opacity = "1";
+
+                    }
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+        <div id="content">
+            <table border="1" id="tabel" onclick=''>
+                <tbody>
+                <tr>
+                    <td class="normal" id="cell00"></td>
+                    <td class="normal" id="cell01"></td>
+                    <td class="normal" id="cell02"></td>
+                    <td class="normal" id="cell03"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell10"></td>
+                    <td class="normal" id="cell11"></td>
+                    <td class="normal" id="cell12"></td>
+                    <td class="normal" id="cell13"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell20"></td>
+                    <td class="normal" id="cell21"></td>
+                    <td class="normal" id="cell22"></td>
+                    <td class="normal" id="cell23"></td>
+                </tr>
+                <tr>
+                    <td class="normal" id="cell30"></td>
+                    <td class="normal" id="cell31"></td>
+                    <td class="normal" id="cell32"></td>
+                    <td class="normal" id="cell33"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<input id="btn" type="button" value="Joc nou" onclick="UpdateTable()"/>
+
+
+
+</body>
+</html>

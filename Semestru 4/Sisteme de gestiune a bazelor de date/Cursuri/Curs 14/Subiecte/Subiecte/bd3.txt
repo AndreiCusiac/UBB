@@ -1,0 +1,47 @@
+21.Which of the following statements about hash-based index files is false?
+a)!!Not recommended for equality selections
+b)Does not support data retrieval based on other fields than exact search key
+c)Cannot support range selections
+d)Not recommended when the value of the search key is changed frequently
+
+22.Which hashing method requires memory space only for storing data records (without any additional information)
+Static hashing with open addressing
+
+23.When blind write occurs?
+When a transaction writes to an object without ever reading the object 
+
+24.Which of the following approaches is not a method of indexing spatial data?
+a)R-trees
+b)Quad trees
+c)“Space filling” curves techniques
+d)!!Hash files
+
+25.What is sequential flooding of the buffer pool?
+Every scan of a file result in reading in the buffer every page of that file
+
+26.RAID is the acronym for...
+Redundant Array of Independent Disks
+
+27.Which of the following best describes ‘seek time’ term?
+The time taken to move the disk heads to the track on which a desired block is located.
+
+28.Which of the following statements about dense-sparse indexes is false?
+a)A dense index has at least one data entry for every search key which appears in the indexed file
+b)A sparse index is typically much smaller than a dense index.
+c)A sparse index is contains an entry for each page of records in a data file.
+d)!!A dense index must be clustered.
+
+29.Which of the following best characterizes a balanced tree?
+For each node the difference between its sub-trees heights is 1, 0 or -1
+
+30.Which of the following statements about tapes is false?
+a)Tapes are sequential storing devices.
+b)!!Tapes support direct access to a desired page
+c)For accessing a page stored on tape we should step through all previous pages in order.
+d)Tapes are used mainly for archiving old versions of databases.
+
+31.Which of the following statements is not a real difference between disks and main memory?
+a)Main memory is volatile; disks preserve data between two runs of the system.
+b)On average, main memory accesses are faster than disk access.
+c)The time to access a disk page depends on the location of data; the access to main memory is uniform.
+d)!!Disks support direct access to any desired page; the access to main memory is sequential.

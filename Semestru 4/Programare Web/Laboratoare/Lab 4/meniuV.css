@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: green;
+    /*margin-left: 15%;*/
+}
+
+.header {
+    background-color: red;
+    /*top: 0;*/
+    /*left: 0;*/
+    text-align: center;
+    padding: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: yellow;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.meniu {
+    /*overflow: hidden;*/
+    background-color: yellow;
+    display: inline-block;
+    height: 100vw;
+    margin: 0;
+    /*justify-content: space-between;*/
+    /*padding: 15px;*/
+    /*text-decoration: none;*/
+}
+
+.meniu a {
+    display: block;
+    /*padding: 12px; !* Add some padding *!*/
+    text-decoration: none; /* Remove underline from links */
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+.footer {
+    background-color: pink;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    padding: 30px;
+}

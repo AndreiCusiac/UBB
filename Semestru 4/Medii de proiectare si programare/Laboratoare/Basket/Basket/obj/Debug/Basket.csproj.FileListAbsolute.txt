@@ -1,0 +1,156 @@
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Basket.exe.config
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Basket.exe
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Basket.pdb
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.csproj.AssemblyReference.cache
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.Properties.Resources.resources
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.csproj.GenerateResource.cache
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.exe
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.pdb
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\log4net.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Buffers.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Memory.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\log4net.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Buffers.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Memory.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.csproj.CopyComplete
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Google.Protobuf.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\MySql.Data.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\ZstdNet.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Google.Protobuf.pdb
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Google.Protobuf.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\MySql.Data.xml
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.HomeForm.resources
+C:\Users\Andrei\source\repos\Basket\Basket\obj\Debug\Basket.LoginForm.resources
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.AWT.WinForms.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Beans.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Cldrdata.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Corba.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Jdbc.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Localedata.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Management.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Media.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Misc.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Naming.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Nashorn.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Remoting.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Tools.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Bind.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Crypto.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Parse.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Transform.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.Runtime.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\IKVM.Runtime.JNI.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\Mono.Data.Sqlite.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Data.Portable.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\System.Transactions.Portable.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Andrei\source\repos\Basket\Basket\bin\Debug\log4net.config
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\log4net.config
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Basket.exe.config
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Basket.exe
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Basket.pdb
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Google.Protobuf.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.AWT.WinForms.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Beans.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Cldrdata.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Corba.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Jdbc.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Localedata.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Management.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Media.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Misc.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Naming.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Nashorn.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Remoting.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.SwingAWT.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Tools.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Bind.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Crypto.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Parse.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.Transform.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.OpenJDK.XML.XPath.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.Runtime.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\IKVM.Runtime.JNI.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\log4net.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Mono.Data.Sqlite.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\MySql.Data.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Buffers.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Data.Portable.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Memory.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Transactions.Portable.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\ZstdNet.dll
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Google.Protobuf.pdb
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Google.Protobuf.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\log4net.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\MySql.Data.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Buffers.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Memory.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.csproj.AssemblyReference.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.LoginForm.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.HomeForm.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.Properties.Resources.resources
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.csproj.GenerateResource.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.csproj.CopyComplete
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.exe
+C:\Users\Andrei\Desktop\UBB\Semestru 4\Medii de proiectare si programare\Laboratoare\Basket\Basket\obj\Debug\Basket.pdb

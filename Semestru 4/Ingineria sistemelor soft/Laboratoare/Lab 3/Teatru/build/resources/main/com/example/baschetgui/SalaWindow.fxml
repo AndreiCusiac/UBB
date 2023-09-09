@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: #d3f3ee; -fx-border-color: #2F4858;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baschetgui.SpectatorController">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="898.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion prefHeight="95.0" prefWidth="498.0" />
+            <Label prefHeight="61.0" prefWidth="424.0" text="Terminal rezervări" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Text fx:id="fullUser" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" wrappingWidth="1.0">
+               <font>
+                  <Font name="Tw Cen MT" size="44.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Text>
+            <Accordion prefHeight="68.0" prefWidth="203.0" />
+            <Button mnemonicParsing="false" onAction="#goBackToLogin" prefHeight="68.0" prefWidth="202.0" style="-fx-background-color: brown;" text="Întoarce-te&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="499.0" prefWidth="0.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="860.0" prefWidth="927.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="36.0" layoutY="14.0" text="Locurile din sală &#10;pentru spectacolul de azi:&#10;">
+               <font>
+                  <Font name="Tw Cen MT" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="437.0" layoutY="47.0" text="Scenă&#10;" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="419.0" text="Date personale, &#10;dacă vrei să rezervi:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="spectatorNameField" layoutX="154.0" layoutY="488.0" prefHeight="31.0" prefWidth="149.0" promptText="Nume" />
+            <TextField fx:id="spectatorEmailField" layoutX="154.0" layoutY="529.0" prefHeight="31.0" prefWidth="149.0" promptText="Email" />
+            <Button layoutX="174.0" layoutY="587.0" mnemonicParsing="false" onAction="#handleMakeReservation" prefHeight="48.0" prefWidth="113.0" style="-fx-background-color: darkblue;" text="Confirmă &#10;date" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="114.0" layoutY="585.0" prefHeight="53.0" prefWidth="42.0" text="1." textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="539.0" layoutY="470.0" prefHeight="53.0" prefWidth="42.0" text="2." textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="42.0" />
+               </font>
+            </Label>
+            <Button layoutX="581.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleReservation" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Rezervă" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="581.0" layoutY="529.0" mnemonicParsing="false" onAction="#handlePayCash" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Plătește cash" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="581.0" layoutY="598.0" mnemonicParsing="false" onAction="#handlePayCard" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Plătește cu cardul" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="581.0" layoutY="652.0" mnemonicParsing="false" onAction="#handlePayPaypal" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Plătește cu Paypal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="581.0" layoutY="704.0" mnemonicParsing="false" onAction="#handlePayBitcoin" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Plătește cu Bitcoin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Group layoutX="304.0" layoutY="101.0">
+               <children>
+                  <Button fx:id="seat11" layoutX="30.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat12" layoutX="66.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat13" layoutX="101.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat14" layoutX="134.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat15" layoutX="166.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat16" layoutX="199.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat17" layoutX="234.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat18" layoutX="270.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="197.0" layoutY="148.0">
+               <children>
+                  <Button fx:id="seat21" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat22" layoutX="36.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat23" layoutX="71.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat24" layoutX="104.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat25" layoutX="136.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="5" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat26" layoutX="169.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="6" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat27" layoutX="204.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="7" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="seat28" layoutX="240.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="8" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="207.0" layoutY="158.0" />
+            <Button fx:id="seat29" layoutX="468.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="9" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat210" layoutX="502.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat211" layoutX="536.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="11" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat212" layoutX="570.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="12" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat213" layoutX="606.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="13" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat214" layoutX="640.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="14" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat215" layoutX="673.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="15" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat216" layoutX="709.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="16" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat31" layoutX="194.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat32" layoutX="230.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat33" layoutX="265.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat34" layoutX="298.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="4" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat35" layoutX="330.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat36" layoutX="363.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="6" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat37" layoutX="398.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="7" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat38" layoutX="434.0" layoutY="195.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="8" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat39" layoutX="465.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="9" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat310" layoutX="503.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat311" layoutX="537.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="11" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat312" layoutX="571.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="12" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat313" layoutX="607.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="13" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat314" layoutX="641.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="14" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat315" layoutX="674.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="15" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat316" layoutX="710.0" layoutY="194.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="16" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat41" layoutX="228.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat42" layoutX="264.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat43" layoutX="299.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat44" layoutX="332.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="4" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat45" layoutX="364.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat46" layoutX="397.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="6" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat47" layoutX="432.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="7" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat48" layoutX="466.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="8" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat49" layoutX="502.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="27.0" style="-fx-background-color: orange;" text="9" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat410" layoutX="538.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat411" layoutX="572.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="11" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat412" layoutX="606.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="12" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat413" layoutX="642.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="13" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="seat414" layoutX="676.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleReservationColor" prefHeight="38.0" prefWidth="29.0" style="-fx-background-color: orange;" text="14" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="244.0" layoutY="759.0" mnemonicParsing="false" onAction="#handleVotesAndSuggestions" prefHeight="56.0" prefWidth="163.0" style="-fx-background-color: purple;" text="Sugerează / &#10;votează spectacole" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="59.0" layoutY="761.0" prefHeight="53.0" prefWidth="194.0" text="Opțional:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT Bold" size="42.0" />
+               </font>
+            </Label>
+            <Button layoutX="174.0" layoutY="656.0" mnemonicParsing="false" onAction="#handleAbortReservation" prefHeight="48.0" prefWidth="113.0" style="-fx-background-color: black;" text="Anulează&#10;date" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

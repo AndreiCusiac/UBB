@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="baschetclient.HomeController">
+   <children>
+      <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #d3f3ee; -fx-border-color: #2F4858;">
+         <top>
+            <HBox prefHeight="82.0" prefWidth="900.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Accordion prefHeight="95.0" prefWidth="498.0" />
+                  <Text fx:id="textText" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Great to see you, !" textAlignment="CENTER" wrappingWidth="349.12890625">
+                     <font>
+                        <Font name="Tw Cen MT Italic" size="38.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fullUser" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" wrappingWidth="449.0">
+                     <font>
+                        <Font name="Tw Cen MT" size="44.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Accordion prefHeight="59.0" prefWidth="164.0" />
+                  <ImageView fx:id="logoutIcon" fitHeight="85.0" fitWidth="78.0" onMouseClicked="#handleLogOut" onMouseEntered="#handleLogoAnimationLogout" onMouseExited="#handleLogoAnimationLogoutOff" onMousePressed="#handleLogOut" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/LogOutThru.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="499.0" prefWidth="0.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="437.0" layoutY="21.0" text="Punctaj:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="textPunctaj" layoutX="563.0" layoutY="21.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="14.0" text="In game:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="textPlayers" layoutX="140.0" layoutY="14.0" text="Not in game" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableCards" layoutX="508.0" layoutY="93.0" prefHeight="165.0" prefWidth="350.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnId" prefWidth="47.0" text="id" />
+                        <TableColumn fx:id="tableColumnColor" prefWidth="143.0" text="color" />
+                        <TableColumn fx:id="tableColumnValue" prefWidth="150.0" text="value" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="startGame" layoutX="72.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleStartGame" prefHeight="50.0" prefWidth="104.0" text="Start game" />
+                  <Label fx:id="textCards" layoutX="163.0" layoutY="54.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Tw Cen MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="giveCard" layoutX="724.0" layoutY="420.0" mnemonicParsing="false" onAction="#handleGiveGuess" prefHeight="50.0" prefWidth="104.0" text="Give guess" />
+                  <Label fx:id="poz11" layoutX="81.0" layoutY="70.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz12" layoutX="103.0" layoutY="70.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz13" layoutX="124.0" layoutY="70.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz14" layoutX="146.0" layoutY="70.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz15" layoutX="171.0" layoutY="70.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz21" layoutX="79.0" layoutY="112.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz22" layoutX="101.0" layoutY="112.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz23" layoutX="122.0" layoutY="112.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz24" layoutX="144.0" layoutY="112.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz25" layoutX="169.0" layoutY="112.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz31" layoutX="79.0" layoutY="158.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz32" layoutX="101.0" layoutY="158.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz33" layoutX="122.0" layoutY="158.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz34" layoutX="144.0" layoutY="158.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz35" layoutX="169.0" layoutY="158.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz41" layoutX="77.0" layoutY="207.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz42" layoutX="99.0" layoutY="207.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz43" layoutX="120.0" layoutY="207.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz44" layoutX="142.0" layoutY="207.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz45" layoutX="167.0" layoutY="207.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz51" layoutX="77.0" layoutY="258.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz52" layoutX="99.0" layoutY="258.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz53" layoutX="120.0" layoutY="258.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz54" layoutX="142.0" layoutY="258.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poz55" layoutX="167.0" layoutY="258.0" text="_">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="guessField" layoutX="696.0" layoutY="368.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

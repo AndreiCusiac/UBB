@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="769.0" prefWidth="1154.0" style="-fx-background-color: #d3f3ee; -fx-border-color: #2F4858;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.baschetgui.RegizorController">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="898.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion prefHeight="95.0" prefWidth="498.0" />
+            <Label prefHeight="61.0" prefWidth="493.0" text="Terminal gestiune spectacole" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Text fx:id="fullUser" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" underline="true" wrappingWidth="278.0">
+               <font>
+                  <Font name="Tw Cen MT" size="44.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Text>
+            <Accordion prefHeight="59.0" prefWidth="164.0" />
+            <Button mnemonicParsing="false" onAction="#handleLogOut" prefHeight="68.0" prefWidth="248.0" style="-fx-background-color: brown;" text="Întoarce-te&#10;" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="499.0" prefWidth="0.0" style="-fx-background-color: #76bed0;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane prefHeight="568.0" prefWidth="974.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="94.0" layoutY="14.0" prefHeight="33.0" prefWidth="491.0" text="Spectacole înregistrate:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableSpectacolsApproved" layoutX="78.0" layoutY="54.0" prefHeight="165.0" prefWidth="973.0">
+               <columns>
+                  <TableColumn fx:id="tableColumnIdSpectacolApproved" prefWidth="47.0" text="id" />
+                  <TableColumn fx:id="tableColumnNameApproved" prefWidth="195.0" text="nume" />
+                  <TableColumn fx:id="tableColumnAuthorApproved" prefWidth="157.0" text="autor" />
+                  <TableColumn fx:id="tableColumnDateApproved" prefWidth="189.0" text="dată" />
+                  <TableColumn fx:id="tableColumnActorsApproved" minWidth="0.0" prefWidth="236.0" text="actori" />
+                  <TableColumn fx:id="tableColumnVotesApproved" prefWidth="148.0" text="voturi" />
+               </columns>
+            </TableView>
+            <Button layoutX="242.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleAddSuggested" prefHeight="48.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Adaugă spectacol sugerat" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="94.0" layoutY="405.0" prefHeight="33.0" prefWidth="491.0" text="Spectacole sugerate de spectatori:" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableSpectacols" layoutX="78.0" layoutY="446.0" prefHeight="165.0" prefWidth="973.0">
+               <columns>
+                  <TableColumn fx:id="tableColumnIdSpectacol" prefWidth="47.0" text="id" />
+                  <TableColumn fx:id="tableColumnName" prefWidth="211.0" text="nume" />
+                  <TableColumn fx:id="tableColumnAuthor" prefWidth="186.0" text="autor" />
+                  <TableColumn fx:id="tableColumnSuggestions" prefWidth="255.0" text="sugestii" />
+                  <TableColumn fx:id="tableColumnVotes" minWidth="0.0" prefWidth="136.0" text="voturi" />
+               </columns>
+            </TableView>
+            <Button layoutX="155.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleAddNewSpectacol" prefHeight="48.0" prefWidth="219.0" style="-fx-background-color: darkgreen;" text="Adaugă spectacol nou" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="494.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleModifySpectacol" prefHeight="48.0" prefWidth="183.0" style="-fx-background-color: darkblue;" text="Modifică spectacol" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="838.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleDeleteSpectacol" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: darkred;" text="Elimină spectacol" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

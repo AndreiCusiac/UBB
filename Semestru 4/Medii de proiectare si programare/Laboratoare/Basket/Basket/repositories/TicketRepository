@@ -1,0 +1,16 @@
+﻿using Baschet.models;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Baschet.repositories
+{
+    interface TicketRepository
+    {
+        public bool save(TicketBooth ticketBooth);
+        public bool delete(TicketBooth ticketBooth);
+
+        public ArrayList getAll();
+    }
+}

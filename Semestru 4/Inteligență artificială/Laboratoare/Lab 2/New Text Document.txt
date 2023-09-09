@@ -1,0 +1,14 @@
+Nr. aprox. al comunităților
+Garvin-Newman
+edge_betweenness = F (ce e, cum îl aflăm = noi ;( )
+e_b din [0, 1]
+
+Iau muchii, calculez e_b pt toate, apoi
+Muchia cu e_b maxim -> o ștergem, apoi
+Repetăm de n ori
+
+Date de intrare: GML
+
+Rețele mai stufoase (6 rețele, MAP, 1000 de noduri)
+
+Plot

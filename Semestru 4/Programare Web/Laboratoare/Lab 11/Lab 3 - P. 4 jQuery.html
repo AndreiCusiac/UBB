@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Lab 3 - P. 4</title>
+    <style>
+
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+
+        table {
+            font-size: 30px;
+        }
+        td {
+            width: 2em;
+            height: 2em;
+            text-align: center;
+        }
+        
+        td:hover {
+            opacity: 100%;
+        }
+
+        th {
+            cursor: pointer;
+        }
+
+
+    </style>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $("table.ver th").click(function () {
+                //alert("Hei");
+                var table = $(this).parents('table').eq(0)
+                console.log("Table: ", table);
+                console.log("Something: ", table.find('tr:gt(0)').toArray())
+                console.log("Compare by: ", $(this).index())
+
+                var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+                console.log("Rows: ", rows);
+
+                this.asc = !this.asc
+                if (!this.asc) {
+                    rows = rows.reverse()
+                }
+                for (var i = 0; i < rows.length; i++) {
+                    table.append(rows[i])
+                }
+            })
+
+            function comparer(index) {
+                return function (a, b) {
+                    var valA = getCellValue(a, index), valB = getCellValue(b, index)
+                    return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+                }
+            }
+
+            function getCellValue(row, index) {
+                console.log($(row))
+                return $(row).children('td').eq(index).text()
+            }
+
+
+            $("table.hor th").click(function() {
+                /*var rows = $("table.hor tr");
+
+                rows.eq(0).find("td").sort(function(a, b) {
+                    return $.text([a]) > $.text([b]) ? 1 : -1;
+                }).each(function(newIndex) {
+                    var originalIndex = $(this).index();
+                    rows.each(function() {
+                        var td = $(this).find("td");
+                        if (originalIndex !== newIndex)
+                            td.eq(originalIndex).insertAfter(td.eq(newIndex));
+                    });
+                });*/
+
+                var table = $(this).parents('table').eq(0)
+
+                console.log($(this).parent())
+
+            })
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div id="container">
+        <div id="content" >
+            <table class="hor" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th>Fructe</th>
+                    <td>Mere</td>
+                    <td>Pere</td>
+                    <td>Prune</td>
+                    <td>Cireșe</td>
+                </tr>
+                <tr>
+                    <th>Pret</th>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>Cantitate</th>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <table  class="hor" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th>Cărți</th>
+                    <td>Metalurgia pulberilor</td>
+                    <td>Fotosinteza</td>
+                    <td>Cartea mecanicului de utilaje grele pentru construcții</td>
+                    <td>Cavalerii florii de cireș</td>
+                    <td>Sisteme fotovoltaice autonome performante</td>
+                </tr>
+                <tr>
+                    <th>Autor</th>
+                    <td>Tudorel Ene</td>
+                    <td>Nicolae Sălăgeanu</td>
+                    <td>Valeriu Goran</td>
+                    <td>Constantin Chiriță</td>
+                    <td>Ionel Laurențiu Alboteanu</td>
+                </tr>
+                <tr>
+                    <th>An</th>
+                    <td>2010</td>
+                    <td>1981</td>
+                    <td>1986</td>
+                    <td>1956</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <th>Editură</th>
+                    <td>Eftimie Murgu</td>
+                    <td>Academia Republicii Socialiste România</td>
+                    <td>Tehnica</td>
+                    <td>Tineretului</td>
+                    <td>Universitaria</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table  class="ver" style="width: 180px; margin-top: 1em;">
+                <tbody>
+                <tr>
+                    <th>Țară</th>
+                    <th>Temperatură medie anuală (°C)</th>
+                    <th>Părere personală</th>
+                </tr>
+                <tr>
+                    <td>Burkina Faso</td>
+                    <td>28.29</td>
+                    <td>Destul de cald</td>
+                </tr>
+                <tr>
+                    <td>Sfântul Cristofor și Nevis</td>
+                    <td>24.50</td>
+                    <td>Nu am idee unde se află</td>
+                </tr>
+                <tr>
+                    <td>Coreea de Sud</td>
+                    <td>11.50</td>
+                    <td>Mai ridicată decât în România</td>
+                </tr>
+                <tr>
+                    <td>România</td>
+                    <td>8.80</td>
+                    <td>România</td>
+                </tr>
+                <tr>
+                    <td>Statele Unite ale Americii</td>
+                    <td>8.55</td>
+                    <td>Mai scăzută decât în România</td>
+                </tr>
+                <tr>
+                    <td>Norvegia</td>
+                    <td>-0.70</td>
+                    <td>Măcar au bani</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>-5.10</td>
+                    <td>Măcar au sirop de arțar</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

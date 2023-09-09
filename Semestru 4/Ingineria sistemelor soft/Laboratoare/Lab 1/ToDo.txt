@@ -1,0 +1,4 @@
+Rezervare / rezervare & plată (cash, card, paypal, bitcoin) - fiecare opț de plată un use case separat
+Vot urm. spectacol + sugerează spectacol
+Dirijor care adaugă actori/ roluri pentru spectacolele sugerate (Login dirijor + user)
+10 ~ 20 de use case-uri, 15-16 tabele

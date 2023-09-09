@@ -1,0 +1,69 @@
+O tehnică ORM pentru maparea moștenirii (322-336) 
+	-maparea ierarhiei de clase (moștenirii) într-o singură tabelă
+	-1 tabelă, coloane ptr. toate atributele claselor din ierarhie (player -> footballer, cricketer -> bowler)
+	-+1 coloană pentru tipul de clasă (reflexie la instanțiere) sau cod corespunzător
+	-1 instanță de clasă = 1 înregistrare în tabel (la coloanele/ atributele relevante)
+	-coloane irelevante -> rămân goale
+	-avantaje: 1 tabelă în baza de date, nu necesită join, schimbarea ierarhiei -/-> modif. tabelei
+	-dez.: multe câmpuri goale (confuz), blocări dese ale tabelei la volum mare de date, un singur 
+	spațiu de nume ptr. câmpuri (nume Player, nume Club) -> (player_nume, club_nume)
+
+
+/ membri statici (346-350)
+	-o tabelă cu o singură înregistrare, o singură coloană pentru fiecare propr. statică
+	-pro: simplu de implementat/ înțeles, acces rapid
+	-con: multe tabele mici
+
+
+Broker de mesaje (490, 491, 493-498, web)
+	-an intermediary computer program module that translates a message from the formal messaging protocol of the sender 
+	to the formal messaging protocol of the receiver. 
+	-elements in telecommunication or computer networks where software applications communicate by exchanging 
+	formally-defined messages
+	-architectural pattern for message validation, transformation, and routing
+	-mediates communication among applications, minimizing the mutual awareness that applications 
+	should have of each other in order to be able to exchange messages, effectively implementing decoupling
+	-take incoming messages from applications and perform some action on them
+	-route messages to one or more destinations
+	-respond to events or errors
+
+
+Șablonul Proxy distribuit (186-189, web)
+	-Remote Proxy oferă un înlocuitor local -> obiect existent (server) aflat în alt spațiu de memorie
+	-codifică cereri + parametrii acestora -> le trimite obiectului real
+	-încapsulează logica obiectului real
+	-client -> impresie comunică server
+	
+
+Constrângerea stateless a unei arhitecturi REST (381, 385, 388, 527)
+	-inspirat din HTTP
+	-interacțiuni client-server -> trb. -> stateless
+	-server -> nu păstrează info. despre ultima cerere HTTP de la client
+	-fiecare cerere -> tratată drept nouă
+	-fără sesiune, fără istoric
+	-o cerere de la client <- are toate info. necesare pentru ca serverul să o înțeleagă (nu se paote baza
+	pe contextul serverului/ cereri anterioare)
+	-starea sesiunii -> păstrată full pe client
+	-în cazul logării -> fiecare cerere de pe client -> info. legate de autentificare/ autorizare
+
+
+Inversion of control (IoC) (134, web)
+	-principiu de design ce presupune transferul controlul obiectelor unui program și al dependențelor sale către un
+	container/ framework (Spring IoC - informații despre dependențe prin XML/ adnotări & cod Java)
+	-DI este procesul prin care obiectele își definesc asocierile (dependențele) fie
+	prin parametrii constructorilor, fie prin argumentele unei metode de tip factory
+	sau prin proprietăți de tip set, care trebuie apelate imediat după crearea
+	obiectului.
+	-un container “injectează” aceste dependențe când creează obiectul. Acest
+	proces este invers celui tradițional, în care obiectul este responsabil de
+	instanțierea sau localizarea dependențelor sale. 
+	-rezultă obiecte slab cuplate între ele
+
+
+Modelul point-to-point al comunicării asincrone (491)
+	-model specific sist. de trimitere a mesajelor asincrone
+	-fiecare mesaj are exact un expeditor și un destinatar
+	-mesaj -> brk. msj -> coadă -> destinatar (la cererea urm. msj. a dest.)
+	-mesaj șters din coadă în mom. trimiterii -> garantată livrarea către un unic dest.
+	-1 mesaj aparține 1 dest., dar pot exista > 1 dest.
+	-aplicațiile măresc capacitatea de proc. a mesajelor -> ad. unui nou destinatar

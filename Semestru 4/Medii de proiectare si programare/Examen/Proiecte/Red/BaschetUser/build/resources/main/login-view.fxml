@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #bedbd6;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="baschetclient.LoginController">
+   <children>
+      <TextField fx:id="textFieldName" alignment="TOP_LEFT" layoutX="118.0" layoutY="161.0" prefHeight="22.0" prefWidth="149.0" promptText="Name">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="textFieldHidePassword" layoutX="118.0" layoutY="203.0" prefHeight="22.0" prefWidth="149.0" promptText="Password">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font></PasswordField>
+      <TextField fx:id="textFieldSeePassword" layoutX="60.0" layoutY="202.0" promptText="Password" visible="false" />
+      <Button layoutX="143.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="37.0" prefWidth="99.0" text="Log in!">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font></Button>
+      <Label alignment="TOP_CENTER" layoutX="106.0" layoutY="66.0" prefHeight="77.0" prefWidth="174.0" text="Ticket Booth&#10;log in" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

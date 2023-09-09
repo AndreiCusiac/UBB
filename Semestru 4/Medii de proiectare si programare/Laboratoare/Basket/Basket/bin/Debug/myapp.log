@@ -1,0 +1,48 @@
+2022-03-29 11:51:08,218 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-03-29 11:51:08,227 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-03-29 11:51:08,227 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-03-29 11:51:12,953 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-29 11:51:20,272 [1] INFO MatchDbRepository - Entering update match with id 2 and seats to substract 1
+2022-03-29 11:51:20,276 [1] INFO MatchDbRepository - Exiting update match with value True
+2022-03-29 11:51:24,384 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-29 11:53:03,066 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-03-29 11:53:03,076 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-03-29 11:53:03,077 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-03-29 11:53:07,168 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-29 11:53:16,033 [1] INFO MatchDbRepository - Entering update match with id 2 and seats to substract 20
+2022-03-29 11:53:16,035 [1] INFO MatchDbRepository - Exiting update match with value True
+2022-03-29 11:53:17,754 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-29 11:58:55,034 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-03-29 11:58:55,046 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-03-29 11:58:55,046 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-03-29 11:58:59,569 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-29 12:00:26,267 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-03-29 12:00:26,277 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-03-29 12:00:26,277 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-03-29 12:00:31,344 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:15:49,380 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-03-30 22:15:49,390 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-03-30 22:15:49,391 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-03-30 22:15:56,007 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:16:00,737 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:16:01,057 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:16:01,605 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:16:02,525 [1] INFO MatchDbRepository - Entering get all matches
+2022-03-30 22:16:03,205 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:47:56,723 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-04-11 00:47:56,733 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-04-11 00:47:56,733 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-04-11 00:48:02,594 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:48:06,158 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:48:07,202 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:48:07,854 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:48:08,455 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:48:09,522 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:50:32,125 [1] INFO MatchDbRepository - Creating MatchDbRepository 
+2022-04-11 00:50:32,138 [1] INFO TicketBoothDbRepository - Creating TicketBoothDbRepository 
+2022-04-11 00:50:32,138 [1] INFO TicketDbRepository - Creating TicketDbRepository 
+2022-04-11 00:50:40,560 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:50:58,449 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:51:03,643 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:51:04,883 [1] INFO MatchDbRepository - Entering get all matches
+2022-04-11 00:51:05,291 [1] INFO MatchDbRepository - Entering get all matches

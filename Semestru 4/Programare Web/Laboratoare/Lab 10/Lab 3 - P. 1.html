@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3 - P. 1</title>
+    <style>
+        select {
+            font-size: 25px;
+        }
+    </style>
+
+    <script>
+        document.getElementById('volvo1').ondblclick = function(){
+            alert(this.selectedIndex);
+            // or alert(this.options[this.selectedIndex].value);
+        };
+
+        function changeTo (idFrom, idTo, nameFrom, idToDelete) {
+            var x = document.getElementById(idTo);
+            var option = document.createElement("option");
+            // option.value = "hand";
+            console.log(option.value);
+            option.text = nameFrom;
+            x.add(option);
+
+            let y = document.getElementById(idFrom);
+            y.remove(idToDelete);
+        };
+    </script>
+
+</head>
+<body>
+
+<select name="cars" id="cars1" multiple ondblclick="changeTo('cars1', 'cars2', this.options[this.selectedIndex].value, this.selectedIndex)">
+    <option> Volvo1</option>
+    <option> Saab1</option>
+    <option> Mercedes1</option>
+    <option> Audi1</option>
+</select>
+
+<select name="cars" id="cars2" multiple ondblclick="changeTo('cars2', 'cars1', this.options[this.selectedIndex].value, this.selectedIndex)">
+    <option> Volvo2</option>
+    <option> Saab2</option>
+    <option> Mercedes2</option>
+    <option> Audi2</option>
+</select>
+
+</body>
+</html>

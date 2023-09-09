@@ -1,0 +1,11 @@
+Linkuri catre video-uri cu explicatii(Curs MPP 2020)
+
+
+
+1. Explicatii pentru clienții serviciilor REST dezvoltați în Java și C# sunt spre finalul video-ului.
+
+https://www.youtube.com/watch?v=csuWDGL9ALc
+
+Important:
+
+Codul pentru clientul Java este în arhiva încărcată la cursul 9.

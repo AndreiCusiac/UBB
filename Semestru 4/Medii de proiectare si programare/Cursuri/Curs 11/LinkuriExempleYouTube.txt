@@ -1,0 +1,12 @@
+Linkuri catre video-uri cu explicatii(Curs MPP 2020)
+
+
+
+1. Explicatii exemplu client Web folosind ReactJS
+https://www.youtube.com/watch?v=1Q7p_C7yWFk
+
+
+Important:
+
+1. Nu uitati sa adaugati adnotarea @CrossOrigin la RestController!
+2. Modul de creare a unei aplicații React s-a schimbat din 2020.
