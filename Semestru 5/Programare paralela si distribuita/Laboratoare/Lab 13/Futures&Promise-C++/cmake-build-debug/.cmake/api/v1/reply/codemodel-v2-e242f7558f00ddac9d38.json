@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Futures_Promise_C__",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Futures_Promise_C__::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Futures_Promise_C__-Debug-1151cf03ce0846b8ccac.json",
+					"name" : "Futures_Promise_C__",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Andrei/Desktop/UBB/Semestru 5/Programare paralela si distribuita/Laboratoare/Lab 13/Futures&Promise-C++/cmake-build-debug",
+		"source" : "C:/Users/Andrei/Desktop/UBB/Semestru 5/Programare paralela si distribuita/Laboratoare/Lab 13/Futures&Promise-C++"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,3 @@
+C:/Users/Andrei/Desktop/UBB/Semestru 5/Programare paralela si distribuita/Laboratoare/Lab 13/Futures&Promise-C++/cmake-build-debug/CMakeFiles/Futures_Promise_C__.dir
+C:/Users/Andrei/Desktop/UBB/Semestru 5/Programare paralela si distribuita/Laboratoare/Lab 13/Futures&Promise-C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Andrei/Desktop/UBB/Semestru 5/Programare paralela si distribuita/Laboratoare/Lab 13/Futures&Promise-C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir

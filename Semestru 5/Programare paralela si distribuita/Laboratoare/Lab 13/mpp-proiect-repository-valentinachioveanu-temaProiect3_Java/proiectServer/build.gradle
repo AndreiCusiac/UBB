@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'proiect'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':proiectModel')
+    implementation project(':proiectPersistence')
+    implementation project(':proiectServices')
+    implementation project(':proiectNetworking')
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+}
+
+application {
+    mainClass = 'StartServer'
+}

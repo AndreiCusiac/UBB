@@ -1,0 +1,5 @@
+rootProject.name = 'StatiuneBalneara'
+include 'Server'
+include 'Client'
+include 'Model'
+

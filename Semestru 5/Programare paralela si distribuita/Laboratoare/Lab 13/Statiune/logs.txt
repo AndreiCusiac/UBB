@@ -1,0 +1,5410 @@
+2023-01-13T13:34:40.395046200
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:34:45.437705600
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:34:50.447695800
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:34:55.464156
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:00.474410
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:05.490745800
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 1
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:10.495300200
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 1
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 1
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:15.509783
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 1
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 1
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:20.526745900
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 1
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 1
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
+2023-01-13T13:35:25.538720300
+LOCATIA: 1
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 1
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 1
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 1
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 2
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 3
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 1
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 1
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+LOCATIA: 3
+Sold per locatie: 0
+
+Tratament: 1
+Capacity of treatment: 6
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 1
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 2
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 3
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 4
+Capacity of treatment: 4
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+Tratament: 5
+Capacity of treatment: 2
+
+Ora start tratament: 10
+Ora sfarsit tratament: 11
+Numar rezervari: 0
+
+Ora start tratament: 11
+Ora sfarsit tratament: 12
+Numar rezervari: 0
+
+Ora start tratament: 12
+Ora sfarsit tratament: 13
+Numar rezervari: 0
+
+Ora start tratament: 13
+Ora sfarsit tratament: 14
+Numar rezervari: 0
+
+Ora start tratament: 14
+Ora sfarsit tratament: 15
+Numar rezervari: 0
+
+Ora start tratament: 15
+Ora sfarsit tratament: 16
+Numar rezervari: 0
+
+Ora start tratament: 16
+Ora sfarsit tratament: 17
+Numar rezervari: 0
+
+Ora start tratament: 17
+Ora sfarsit tratament: 18
+Numar rezervari: 0
+
+SOLD TOTAL SISTEM : 0  SOLD TOTAL CALCULAT : 0
+CORECT
+
+
+------------------------------------------------------------
+
