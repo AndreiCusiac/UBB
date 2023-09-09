@@ -1,0 +1,4 @@
+Fiecare thread va:
+1. Store values in a local buffer
+2. Barrier(p)
+3. Compute and store result using #1 (buffer, în loc de matricea de input)

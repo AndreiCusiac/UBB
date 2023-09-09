@@ -1,0 +1,201 @@
+#include <iostream>
+
+#include <vector>
+
+#include <math.h>
+
+#include <thread>
+
+#include <chrono>
+
+
+
+//#define N 10//000000
+
+#define N 10000000
+
+#define p 4
+
+
+
+using namespace std;
+
+
+
+void suma(vector<int>& a, vector<int>& b, vector<double>& c, int start, int end){
+
+//void suma(vector<int> a, vector<int> b, vector<double> c, int start, int end){
+
+
+
+    for (int i = start; i < end; i++) {
+
+//        c[i] = a[i] + b[i];
+
+        c[i] = (double)sqrt(pow(a[i],4) + pow(b[i], 4));
+
+    }
+
+}
+
+
+
+void printVector(vector<int> a){
+
+    // Afisare rezultat
+
+    for (int i = 0; i < a.size(); i++) {
+
+        cout << a[i] << " ";
+
+    }
+
+    cout << "\n";
+
+}
+
+
+
+void printVector(vector<double> a){
+
+    // Afisare rezultat
+
+    for (int i = 0; i < a.size(); i++) {
+
+        cout << a[i] << " ";
+
+    }
+
+    cout << "\n";
+
+}
+
+
+
+int main(int argc, const char * argv[]) {
+
+//    int a[] = {1,2,3,4,5,6,7,8,9,10};
+
+//    int b[] = {1,2,3,4,5,6,7,8,9,10};
+
+//    double c[10];
+
+    vector<int> a(N);
+
+    vector<int> b(N);
+
+    vector<double> c(N);
+
+    
+
+    srand(time_t(NULL));
+
+    for (int i = 0; i < N; i++) {
+
+//        a[i] = i;
+
+//        b[i] = i;
+
+        a[i] = rand() % 10;
+
+        b[i] = rand() % 20;
+
+    }
+
+    
+
+    // secvential
+
+    auto startTime = chrono::high_resolution_clock::now();
+
+    suma(a,b,c,0,N);
+
+    auto endTime = chrono::high_resolution_clock::now();
+
+    double durata = chrono::duration<double,milli>(endTime-startTime).count();
+
+    cout << "Timp secvential: " << durata << " ms\n";
+
+//    printVector(c);
+
+    
+
+    //paralel - 1 thread
+
+    startTime = chrono::high_resolution_clock::now();
+
+//    thread t = thread(suma,a,b,c,0,N);
+
+    thread t = thread(suma,ref(a),ref(b),ref(c),0,N);
+
+    t.join();
+
+    endTime = chrono::high_resolution_clock::now();
+
+    durata = chrono::duration<double,micro>(endTime-startTime).count();
+
+    cout<<"Timp paralel - 1 thread = " << durata << " us\n";
+
+//    printVector(c);
+
+
+
+    //paralel - liniar
+
+    vector<thread> threads(p);
+
+    int start = 0, end;
+
+    int chunk = N / p;
+
+    int rest = a.size() % p;
+
+    
+
+    startTime = chrono::high_resolution_clock::now();
+
+    for (int i = 0; i<p; i++) {
+
+        end = start + chunk;
+
+        if (rest>0){
+
+            rest--;
+
+            end++;
+
+        }
+
+        threads[i] = thread(suma,ref(a),ref(b),ref(c),start,end);
+
+        start = end;
+
+    }
+
+    
+
+    for (int i = 0; i<p; i++) {
+
+        threads[i].join();
+
+    }
+
+    endTime = chrono::high_resolution_clock::now();
+
+    durata = chrono::duration<double,milli>(endTime-startTime).count();
+
+    cout<<"Timp paralel - liniar = "<< durata << " ms\n";
+
+    
+
+    //Afisare vectori
+
+//    printVector(a);
+
+//    printVector(b);
+
+//    printVector(c);
+
+    return 0;
+
+}
