@@ -1,0 +1,428 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16235 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Andrei/Desktop/UBB/Semestru 5/Realitate virtuala/Lab 3/My phobia 3D
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+56482
+Successfully changed project path to: C:/Users/Andrei/Desktop/UBB/Semestru 5/Realitate virtuala/Lab 3/My phobia 3D
+C:/Users/Andrei/Desktop/UBB/Semestru 5/Realitate virtuala/Lab 3/My phobia 3D
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21536] Host "[IP] 192.168.1.104 [Port] 0 [Flags] 2 [Guid] 2493814952 [EditorId] 2493814952 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QOGGLUB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21536] Host "[IP] 192.168.1.104 [Port] 0 [Flags] 2 [Guid] 2493814952 [EditorId] 2493814952 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-QOGGLUB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 277.43 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 1.88 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Andrei/Desktop/UBB/Semestru 5/Realitate virtuala/Lab 3/My phobia 3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3640
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015435 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 61.51 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.30 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.746 seconds
+Domain Reload Profiling:
+	ReloadAssembly (747ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (486ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (113ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (286ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (60ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.033442 seconds.
+Android Extension - Scanning For ADB Devices 766 ms
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 61.82 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Andrei\Desktop\UBB\Semestru 5\Realitate virtuala\Lab 3\My phobia 3D\Library\PackageCache\com.unity.xr.oculus@3.2.3\Runtime\OculusLoader.cs:296 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Andrei\Desktop\UBB\Semestru 5\Realitate virtuala\Lab 3\My phobia 3D\Library\PackageCache\com.unity.xr.oculus@3.2.3\Runtime\OculusLoader.cs:281 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <d6232873609549b8a045fa15811a5bd3>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <d6232873609549b8a045fa15811a5bd3>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <d6232873609549b8a045fa15811a5bd3>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <63965ae56af7489797f355b7c1211ab2>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.400 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1401ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1150ms)
+			LoadAssemblies (181ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (308ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 12 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 2731 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (1.3 MB). Loaded Objects now: 3173.
+Memory consumption went from 137.1 MB to 135.8 MB.
+Total: 4.614100 ms (FindLiveObjects: 0.316300 ms CreateObjectMapping: 0.196900 ms MarkObjects: 3.459900 ms  DeleteObjects: 0.639900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 357021.042975 seconds.
+  path: Assets/HDRPFurniturePack/Sofa_SL03_Allemuir_Stirling
+  artifactKey: Guid(51a8fde25ec5ab144a34b57185818fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Sofa_SL03_Allemuir_Stirling using Guid(51a8fde25ec5ab144a34b57185818fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9ad2c3b6673400143850044bfe54ea') in 0.008869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.257637 seconds.
+  path: Assets/HDRPFurniturePack/Dining_Chair
+  artifactKey: Guid(b1229fe1710a5fd4284659ae424a945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Dining_Chair using Guid(b1229fe1710a5fd4284659ae424a945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30339dc5cc7a88f0931eff0f06747df9') in 0.005577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.160918 seconds.
+  path: Assets/HDRPFurniturePack/Dining_Chair/Dining_Chair.prefab
+  artifactKey: Guid(3ffb42c9597b9b44da7cdfb5743e88c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Dining_Chair/Dining_Chair.prefab using Guid(3ffb42c9597b9b44da7cdfb5743e88c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd67cede34b170468bede59b3f1648af9') in 0.161743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.146771 seconds.
+  path: Assets/HDRPFurniturePack/Dining_Chair/Materials
+  artifactKey: Guid(3f1de51ef1a039749a9ae66ce21796ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Dining_Chair/Materials using Guid(3f1de51ef1a039749a9ae66ce21796ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac29cc2a3952c000fae5520b21634d62') in 0.006034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.160568 seconds.
+  path: Assets/HDRPFurniturePack/Dining_Chair/Materials/Dining_Chair_Black.mat
+  artifactKey: Guid(26690ca0bebd29c4da4634d81ab26e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Dining_Chair/Materials/Dining_Chair_Black.mat using Guid(26690ca0bebd29c4da4634d81ab26e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332c9111aa47f062c6ebfcf62fcd9c86') in 0.047160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.956183 seconds.
+  path: Assets/HDRPFurniturePack/Curtain
+  artifactKey: Guid(d6e07b43eb3c9da4c9993de64af722da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Curtain using Guid(d6e07b43eb3c9da4c9993de64af722da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4697242370719ad040c98c25194f322c') in 0.006046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.169961 seconds.
+  path: Assets/HDRPFurniturePack/Curtain/Curtain_240x140.prefab
+  artifactKey: Guid(fdc1059a7ab76be4f9ded8df239e51c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Curtain/Curtain_240x140.prefab using Guid(fdc1059a7ab76be4f9ded8df239e51c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6040e833084b40cca2933f593e71200a') in 0.101273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.800294 seconds.
+  path: Assets/HDRPFurniturePack/Succulent_Planter
+  artifactKey: Guid(1c330eaad3c8e2145a9678be139e6ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Succulent_Planter using Guid(1c330eaad3c8e2145a9678be139e6ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0efbd2380a250ff6449d6015e89382') in 0.005062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.163668 seconds.
+  path: Assets/HDRPFurniturePack/Succulent_Planter/Succulent_Planter_Ceramic.prefab
+  artifactKey: Guid(9566118a308257f48b491bc9272d187c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Succulent_Planter/Succulent_Planter_Ceramic.prefab using Guid(9566118a308257f48b491bc9272d187c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b309ff0c091b1e981a0a44303446cf8') in 0.038019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.732554 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books
+  artifactKey: Guid(76472a6e2ee629640911b225f2c88fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books using Guid(76472a6e2ee629640911b225f2c88fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67362abd300ed5d0d2011cce8d59f289') in 0.006488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.160770 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Coffee_Table_Books.prefab
+  artifactKey: Guid(a330caec0c2ca384083588809213e4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Coffee_Table_Books.prefab using Guid(a330caec0c2ca384083588809213e4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea2c7ee5ebda4e9eb84744e97cc769b') in 0.036033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.158100 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Materials
+  artifactKey: Guid(1b3b78821a42f7d4db7cdc2b36c41aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Materials using Guid(1b3b78821a42f7d4db7cdc2b36c41aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6060cc35999de5e9eb0bae3762491d6') in 0.004685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.162793 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Materials/Coffee_Table_Books 1.mat
+  artifactKey: Guid(c56b2ee3f26611c4d9611d53cbafbada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Materials/Coffee_Table_Books 1.mat using Guid(c56b2ee3f26611c4d9611d53cbafbada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74444431e137d64ee77d79532a77a965') in 0.041490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Materials/Coffee_Table_Books_MaskMap.mat
+  artifactKey: Guid(5393de0f5667a94448d85bd3eb979421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Materials/Coffee_Table_Books_MaskMap.mat using Guid(5393de0f5667a94448d85bd3eb979421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cac921e3e9567a6bc26df791065c5f9') in 0.020140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.468118 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Models
+  artifactKey: Guid(74b7d374ce991f64ebb83e08bff311cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Models using Guid(74b7d374ce991f64ebb83e08bff311cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbb05352544eff443abd245991fc3cc') in 0.006418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.160407 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Models/Coffee_Table_Books.fbx
+  artifactKey: Guid(5bb3f8a9fa8f5fc4c984867835a018b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Models/Coffee_Table_Books.fbx using Guid(5bb3f8a9fa8f5fc4c984867835a018b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263fd7fed66056a54a91827bd3fc7665') in 0.036715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.117650 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_907B_Artek.prefab
+  artifactKey: Guid(2f965b3d89446084fad7110d5a0b6453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_907B_Artek.prefab using Guid(2f965b3d89446084fad7110d5a0b6453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d6bd392e0e5aa8c2cb6661d9c80101') in 0.050174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.944269 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books.png
+  artifactKey: Guid(cffb4a5e974150b4a8d230527283b80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books.png using Guid(cffb4a5e974150b4a8d230527283b80f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b6fe188fda15223d0ff56fcc435df5') in 0.022500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010565 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_MaskMap.png
+  artifactKey: Guid(30cc92ca6d35521469101169eb2605e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_MaskMap.png using Guid(30cc92ca6d35521469101169eb2605e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8552c4ff85ea6992f8d06e1beeb02fe') in 0.012290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005890 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Materials/Coffee_Table_90D_Artek_Wood_natural.mat
+  artifactKey: Guid(4f16fc50c6f89a741b6467fdbcaef3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Materials/Coffee_Table_90D_Artek_Wood_natural.mat using Guid(4f16fc50c6f89a741b6467fdbcaef3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99fe42e6b85e328255183eb4c0848e16') in 0.021150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008979 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_AO.png
+  artifactKey: Guid(b4c11f5638784ae4ab93f1b7ef557072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_AO.png using Guid(b4c11f5638784ae4ab93f1b7ef557072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4169f7b767bcf214c8ceb2602eb9b463') in 0.012280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012046 seconds.
+  path: Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_DetailMap.png
+  artifactKey: Guid(b43d2b2634e711644abdd1f967d29a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Coffee_Table_Books/Textures/Coffee_Table_Books_DetailMap.png using Guid(b43d2b2634e711644abdd1f967d29a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49c2eb76261a0c86fe71a21b025bc312') in 0.013285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015911 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_907B_Artek/Models/Coffee_Table_907B_Artek.fbx
+  artifactKey: Guid(3e36b10092da9e3468f154949204c9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_907B_Artek/Models/Coffee_Table_907B_Artek.fbx using Guid(3e36b10092da9e3468f154949204c9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762e14d4485f27c9ab9d52cb9c7c684f') in 0.020610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010744 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_Wood_Black_DetailMap.png
+  artifactKey: Guid(e09f7f1bf1e8d6149849bbba1675a763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_Wood_Black_DetailMap.png using Guid(e09f7f1bf1e8d6149849bbba1675a763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0575a81e17741c5c9c00b15d65c75595') in 0.014701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009611 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_AO.png
+  artifactKey: Guid(97b4805a19e51164c8fb7b7cdded76f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_AO.png using Guid(97b4805a19e51164c8fb7b7cdded76f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6c5f749490df48dae78a608917f246') in 0.013740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015402 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_Wood_Black_MaskMap.png
+  artifactKey: Guid(c6a8b0ec21ff2b441acc9a86d77b6b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Textures/Coffee_Table_90D_Artek_Wood_Black_MaskMap.png using Guid(c6a8b0ec21ff2b441acc9a86d77b6b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad6a345c77103b888d136ebc8d32938') in 0.012955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005999 seconds.
+  path: Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Materials/Coffee_Table_90D_Artek_Wood_Black.mat
+  artifactKey: Guid(f8b53c4ed6d84da459745f9f801d9e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Artek/Coffee_Table_90D_Artek/Materials/Coffee_Table_90D_Artek_Wood_Black.mat using Guid(f8b53c4ed6d84da459745f9f801d9e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b869ed6629762cd5e28b04e48fb518') in 0.019323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1181.470601 seconds.
+  path: Assets/Levels
+  artifactKey: Guid(79b4903f6a90ac047aef07708fdd4bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Levels using Guid(79b4903f6a90ac047aef07708fdd4bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9050e4bee62b42f0e845ae79b668d3') in 0.005130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.635377 seconds.
+  path: Assets/Levels/Level 1
+  artifactKey: Guid(5b0dbf80407c8d24e9511c058bc4b7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Levels/Level 1 using Guid(5b0dbf80407c8d24e9511c058bc4b7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9ab6deb01811086ecf4284fd52b07c') in 0.004694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.272266 seconds.
+  path: Assets/Levels/Level 1/Level0.prefab
+  artifactKey: Guid(678fcba316da8274890e44ee6466eb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Levels/Level 1/Level0.prefab using Guid(678fcba316da8274890e44ee6466eb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da6e9bdc95867aa4cd30d3a4626751c') in 0.137484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.405187 seconds.
+  path: Assets/diningRoom/diningRoom/prefabs/table/joinedLegsTable.prefab
+  artifactKey: Guid(202fb53fa581b517698e439808f034e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/diningRoom/diningRoom/prefabs/table/joinedLegsTable.prefab using Guid(202fb53fa581b517698e439808f034e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e11d58e20b06cbf1cc61edc6617d45') in 0.016729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024313 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Textures/Paint_11.png
+  artifactKey: Guid(677314914339f434d93c8f6b4d077116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Textures/Paint_11.png using Guid(677314914339f434d93c8f6b4d077116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c5d4474651a869e633f99863108fcf8') in 0.020148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.046927 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Materials/Paint_11.mat
+  artifactKey: Guid(473809026fdb3964a9f3b06c6fc965f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Materials/Paint_11.mat using Guid(473809026fdb3964a9f3b06c6fc965f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a07fcb46b8af2e5deb99255325fd6ea') in 0.020890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009088 seconds.
+  path: Assets/diningRoom/diningRoom/models/tables/joinedLegsTable/joinedLegsTable.fbx
+  artifactKey: Guid(37ce13903ec23b87f91f366271b117b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/diningRoom/diningRoom/models/tables/joinedLegsTable/joinedLegsTable.fbx using Guid(37ce13903ec23b87f91f366271b117b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae073e9c36e2518b849ef2a915061c0') in 0.017819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012385 seconds.
+  path: Assets/HDRPFurniturePack/Rug_Woven_Wool_Natural/Materials/Rug_Woven_Wool_Natural 1.mat
+  artifactKey: Guid(e159dfc9b0a81d244b7513c7acc18f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPFurniturePack/Rug_Woven_Wool_Natural/Materials/Rug_Woven_Wool_Natural 1.mat using Guid(e159dfc9b0a81d244b7513c7acc18f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec455c08b79055beb2bf6ed557a8e4b6') in 0.014261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005783 seconds.
+  path: Assets/diningRoom/diningRoom/models/tables/joinedLegsTable/editableMaterial/woodTableMaterial.001.mat
+  artifactKey: Guid(426744bdee9c905d5a8ded472713b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/diningRoom/diningRoom/models/tables/joinedLegsTable/editableMaterial/woodTableMaterial.001.mat using Guid(426744bdee9c905d5a8ded472713b54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac47de59becccc4fa7271245850ff4c') in 0.010952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1599.622590 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Materials/Paint_02.mat
+  artifactKey: Guid(129d635f36d5e9d4fa3b656a8ef75ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Materials/Paint_02.mat using Guid(129d635f36d5e9d4fa3b656a8ef75ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e723883dc55109adb3fa32038c70faee') in 0.091202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Materials/Paint_06.mat
+  artifactKey: Guid(ddc8c45e4ad44ac4b97855d23d3ecdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Materials/Paint_06.mat using Guid(ddc8c45e4ad44ac4b97855d23d3ecdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446f4a9dbadc2b8c9683be8efbb98c49') in 0.063223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Materials/Paint_09.mat
+  artifactKey: Guid(20f382ca5b67580458b454c14e57251e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Materials/Paint_09.mat using Guid(20f382ca5b67580458b454c14e57251e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d40fd997f5cee2c1946ce3e387f8953') in 0.044162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/3Dfrk/Frames with pictures/Materials/Paint_08.mat
+  artifactKey: Guid(c86cb7dd3b68e2a40a6205641e36bf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3Dfrk/Frames with pictures/Materials/Paint_08.mat using Guid(c86cb7dd3b68e2a40a6205641e36bf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe713233f26d2f0ce947849bfebe31a5') in 0.038218 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
