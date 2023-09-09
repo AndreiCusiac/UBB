@@ -1,0 +1,62 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, scanf, printf
+     4                                  import exit msvcrt.dll
+     5                                  import scanf msvcrt.dll
+     6                                  import printf msvcrt.dll
+     7                                  
+     8                                  segment data use32 class=data
+     9                                  
+    10 00000000 256400                  	pdesc db '%d', 0
+    11 00000003 256400                  	sdesc db '%d', 0
+    12 00000006 256320                  	nline db '%c', ' '
+    13 00000009 00000000                	a dd 0
+    14 0000000D 00000000                	c dd 0
+    15                                  
+    16                                  segment code use32 class=code
+    17                                  	start:
+    18 00000000 68[09000000]            		push dword a
+    19 00000005 68[03000000]            		push dword sdesc
+    20 0000000A FF15[00000000]          		call [scanf]
+    21 00000010 83C408                  		add esp, 4*2
+    22                                  
+    23 00000013 A1[09000000]            		mov eax, [a]
+    24 00000018 83C003                  		add eax, 3
+    25 0000001B A3[09000000]            		mov dword [a], eax
+    26                                  
+    27 00000020 A1[09000000]            		mov eax, [a]
+    28 00000025 83E808                  		sub eax, 8
+    29 00000028 A3[09000000]            		mov dword [a], eax
+    30                                  
+    31 0000002D A1[09000000]            		mov eax, [a]
+    32 00000032 50                      		push dword eax
+    33 00000033 68[00000000]            		push dword pdesc
+    34 00000038 FF15[00000000]          		call [printf]
+    35 0000003E 83C408                  		add esp, 4*2
+    36                                  
+    37 00000041 A1[09000000]            		mov eax, [a]
+    38 00000046 A3[0D000000]            		mov dword [c], eax
+    39                                  
+    40 0000004B A1[0D000000]            		mov eax, [c]
+    41 00000050 BB04000000              		mov ebx, 4
+    42 00000055 F7E3                    		mul ebx
+    43 00000057 A3[0D000000]            		mov dword [c], eax
+    44                                  
+    45 0000005C 66A1[0D000000]          		mov ax, word[c + 0]
+    46 00000062 668B15[0F000000]        		mov dx, word[c + 2]
+    47 00000069 66BB0200                		mov bx, 2
+    48 0000006D 66F7F3                  		div bx
+    49 00000070 66A3[0D000000]          		mov word[c + 0], ax
+    50                                  
+    51 00000076 66C705[0F000000]00-     		mov word[c + 2], 0
+    51 0000007E 00                 
+    52                                  
+    53 0000007F A1[0D000000]            		mov eax, [c]
+    54 00000084 50                      		push dword eax
+    55 00000085 68[00000000]            		push dword pdesc
+    56 0000008A FF15[00000000]          		call [printf]
+    57 00000090 83C408                  		add esp, 4*2
+    58                                  
+    59                                  
+    60 00000093 6A00                    		push dword 0
+    61 00000095 FF15[00000000]          		call [exit]

@@ -1,0 +1,60 @@
+S' -> S
+S -> A A 
+A -> a
+A -> b
+A -> D
+D -> H I
+I -> d
+H -> I d
+H -> c
+
+	
+S' -> S
+S -> A B
+A -> a A b
+A -> b
+B -> d
+
+S' -> S
+S -> A
+A -> a
+
+S' -> S
+S -> E + S
+S -> E
+E -> num
+E -> ( S )
+
+S' -> S
+S -> E
+E -> E + T
+E -> T
+T -> id ( E )
+T -> id
+
+S' -> S
+S -> E
+E -> T
+E -> ( E )
+T -> n
+T -> + T
+T -> T + n
+
+S' -> S
+S -> A C B
+S -> C b b
+S -> B a
+A -> d a
+A -> B C
+B -> g
+C -> h
+
+- non-functional-
+S' -> S
+S -> B C
+S -> D A
+B -> b
+C -> A A
+A -> a
+D -> b a
+

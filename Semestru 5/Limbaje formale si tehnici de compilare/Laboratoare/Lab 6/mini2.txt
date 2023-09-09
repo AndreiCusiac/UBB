@@ -1,0 +1,9 @@
+int a;
+cin >> a;
+a = a * 2;
+a = a + 3;
+a = a - 8;
+cout << a;
+int c;
+c = a;
+return 0;

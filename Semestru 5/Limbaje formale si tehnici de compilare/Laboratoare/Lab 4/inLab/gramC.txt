@@ -1,0 +1,49 @@
+S' -> Program
+Program -> # Include < Iostream > Using Namespace Std ; Int Main ( ) { Lista_instr Return Const ; }
+Lista_instr -> Instr
+Lista_instr -> Instr Lista_instr
+Instr -> Decl
+Instr -> Output
+Instr -> Input
+Instr -> If
+Instr -> While
+Instr -> Do_while
+Instr -> Num
+Decl -> Tip Lista_id
+Lista_id -> Num
+Num -> ID ;
+Num -> ID = Op ;
+Op -> ID
+Op -> CONST
+Op -> ID Operand Op
+Op -> CONST Operand Op
+Operand -> +
+Operand -> -
+Operand -> *
+Operand -> /
+Tip -> int
+Tip -> float
+Tip -> unsigned
+Tip -> Struct
+Struct -> struct ID { Lista_decl } ;
+Lista_decl -> Decl
+Lista_decl -> Decl Lista_decl
+Output -> cout < < Afisare ;
+Afisare -> Afis
+Afisare -> Afis < < Afisare
+Afis -> ID
+Afis -> CONST
+Input -> cin > > ID ;
+If -> if ( Cond ) { Lista_instr } else { Lista_instr }
+While -> while ( Cond ) { Lista_instr }
+Cond -> ID = = CONST
+Cond -> ID = = ID
+Cond -> ID < = CONST
+Cond -> ID < = ID
+Cond -> ID > = CONST
+Cond -> ID > = ID
+Cond -> ID < CONST
+Cond -> ID < ID
+Cond -> ID > CONST
+Cond -> ID > ID
+Do_while -> do { Lista_instr } while ( Cond ) ;

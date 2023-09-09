@@ -1,0 +1,15 @@
+unsigned n;
+unsigned nr;
+unsigned s;
+unsigned i;
+cout << "n=" ;
+cin>>n;
+i=1;
+s=0;
+while(i<=n){
+	cout<<"nr=";
+    cin>>nr;
+    s=s+nr;
+    i=i+1;
+}
+cout<<"Suma:"<<s;

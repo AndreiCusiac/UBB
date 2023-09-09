@@ -1,0 +1,258 @@
+//
+// Created by codri on 10/30/2022.
+//
+
+/*
+ Fisier de intrare:
+
+ input = matrice;
+ matrice = linie,EOL,{linie};
+ linie =  prima_linie,{linie} |a_doua_linie,{linie} | tranzitii,EOL,{linie} | "";
+ prima_linie = "%",sepataor,alfabet,EOL;
+ alfabet = sir_caracter,separator,{alfabet};
+ a_doua_linie = sir_carater(* starea initiala *),separator, functii_tranzitie, stare_finala_bool, EOL;
+ tranzitii = functii_tranzitie, stare_finala_bool, EOL;
+ functii_tranzitie = stare,separator,{functii_tranzitie};
+ stare = sir_carater,{",",stare};
+ stare_finala_bool = "0" | "1";
+
+ sir_carater = caracter,{caracter};
+ caracter = litera | cifra | simbol;
+
+ EOL = "\n";
+ litera = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+       | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | "Y" | "Z" | "a" | "b"
+       | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+       | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | "y" | "z" ;
+ cifra = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+ simbol = "[" | "]" | "{" | "}" | "(" | ")" | "<" | ">" | "'" | '"' | "=" | "|" | "." | ","
+        | ";" | "+" | "-" | "%" | "*" ;
+ separator = "|";
+ spatiu = " ";
+
+ */
+
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <tuple>
+#include <string>
+#include <cstring>
+#include "../Utils.h"
+
+using namespace std;
+
+class AF {
+private:
+    string init_state;
+    vector<string> finale_states;
+    vector<string> entry_alphabet;
+    vector<tuple<string,string,string>> transitions;
+    vector<string> states;
+
+    bool is_AFD = true;
+
+    void loadAlphabet(vector<string>& items){
+        for (int i = 1; i < items.size(); i++){
+            string item = trim(items[i]);
+            if (item.empty()) continue;
+            entry_alphabet.push_back(trim(item));
+        }
+    }
+
+    void loadTransitions(vector<string>& items, bool has_source = false){
+        for (int i = 0; i < items.size(); i++) {
+            string item = trim(items[i]);
+            if( i == 0) {
+                if (has_source) this->init_state = trim(item);
+                states.push_back(item);
+            }
+            else if ( i == items.size() - 1 && item == "1") finale_states.push_back(items[0]);
+            else{
+                if (!item.empty() && i != items.size() - 1 ){
+                    vector<string> terms;
+                    split(item, ',', terms);
+                    if(terms.size() > 1) is_AFD = false;
+                    for (auto term : terms) {
+                        term = trim(term);
+                        if (!term.empty()) {
+                            auto trans = make_tuple(items[0], entry_alphabet[i - 1], term);
+                            transitions.push_back(trans);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    void checkAFD(){
+        //bool isAFD = true;
+        for (int si =0;si< states.size() && is_AFD; si++){
+            for (int ai =0;ai< entry_alphabet.size() && is_AFD; ai++){
+                int nr_trans = 0;
+                for(auto trans: transitions){
+                    if(get<0>(trans) == states[si] && get<1>(trans) == entry_alphabet[ai])
+                        nr_trans++;
+                }
+                if( nr_trans > 1) is_AFD = false;
+            }
+        }
+    }
+
+    template<typename E>
+    void printList(vector<E>& ls, string delim){
+        cout << "Nr elem: "<< ls.size()<<endl;
+        for(auto& el: ls){
+            cout << el << delim;
+        }
+        cout <<endl;
+    }
+
+public:
+
+    explicit AF(string filename){
+        if (filename.empty()) loadConsoleAF();
+        else loadFileAF(filename);
+        checkAFD();
+        //cout << is_AFD<<endl;
+    }
+
+    void loadConsoleAF(){
+        cout << "Matrix:"<<endl;
+        string items;
+        int line = 0;
+        getline(cin,items);
+        while(items != "\n" && items != ""){
+            vector<string> terms;
+            split(items, '|', terms);
+            if (line  == 0) loadAlphabet(terms);
+            else if (line == 1) loadTransitions(terms, true);
+            else loadTransitions(terms);
+            line++;
+            getline(cin,items);
+        }
+    }
+
+    void loadFileAF(string filename) {
+        ifstream fin(filename);
+        string items;
+        int line = 0;
+        while(!fin.eof()){
+            getline(fin,items);
+            //cout << items<<" "<< line<<endl;
+            vector<string> terms;
+            split(items, '|', terms);
+            if (line  == 0) loadAlphabet(terms);
+            else if (line == 1) loadTransitions(terms, true);
+            else loadTransitions(terms,false);
+            line++;
+        }
+    }
+
+    string getLongestPrefix(string& sequence){
+        string currentState = trim(init_state);
+        if (sequence == "E" && any_of(finale_states.begin(), finale_states.end(),[currentState](string a){return strcmp(trim(a).c_str(),currentState.c_str()) == 0;}))
+            return "E";
+        string longest_prefix, currentPrefix;
+        bool done = true;
+        for(int i =0;i< sequence.size() && done;i++){
+            done = false;
+//            cout << "suntem la "<<currentState<< " cu "<< sequence[i]<<endl;
+            for(auto trans: transitions){
+                string path= string {sequence[i]};
+                string state_init = trim(get<0>(trans));
+                string state_path = trim(get<1>(trans));
+//               cout << "to cmp "<<state_init << " " << state_path <<endl;
+//               cout << "cmp "<<currentState<< " " << path<<endl;
+                //cout << strcmp(trim(get<0>(trans)).c_str(),trim(currentState).c_str()) << " " << strcmp(trim(get<1>(trans)).c_str(),trim(path).c_str()) << " " << currentState << endl;
+                if(strcmp(state_init.c_str(),currentState.c_str()) == 0 && strcmp(state_path.c_str(),path.c_str()) == 0){
+                    currentState = trim(get<2>(trans));
+                    currentPrefix += path;
+                    if (any_of(finale_states.begin(), finale_states.end(),[currentState](string& a){return strcmp(a.c_str(),currentState.c_str()) == 0;})){
+                        longest_prefix = currentPrefix;
+                    }
+                    done = true;
+                    break;
+                }
+                if (any_of(finale_states.begin(), finale_states.end(),[currentState](string a){return strcmp(trim(a).c_str(),currentState.c_str()) == 0;})){
+                    longest_prefix = currentPrefix;
+                }
+            }
+        }
+        if (!done)return "";
+        else if (longest_prefix.empty() ||
+            (currentState.empty() && any_of(finale_states.begin(), finale_states.end(),[currentState](string a){return strcmp(trim(a).c_str(),currentState.c_str()) == 0;})))
+                return "E";
+        if (any_of(finale_states.begin(), finale_states.end(),[currentState](string& a){return strcmp(trim(a).c_str(),currentState.c_str()) == 0;})){
+            longest_prefix = currentPrefix;
+        }
+//        cout << currentPrefix<< " "<<currentState<<endl;
+//        cout << any_of(finale_states.begin(), finale_states.end(),[currentState](string& a){return strcmp(trim(a).c_str(),currentState.c_str()) == 0;})<<endl;
+        return longest_prefix;
+    }
+
+    void checkSequence(){
+        if(!is_AFD) cout <<"Automatul finit nu este determinist" << endl;
+        else{
+            string sequence;
+            cout << "Secventa: ";
+            cin >> sequence;
+            auto prefix = getLongestPrefix(sequence);
+            // << prefix <<endl;
+            if (prefix.empty()) cout << "Secventa incorecta!"<<endl;
+            if (strcmp(prefix.c_str(),sequence.c_str()) == 0) cout << "Secventa valida!" << endl;
+            else cout <<"Secventa invalida!"<<endl;
+            if (!prefix.empty()) cout << "Cel mai mare prefix: "<<prefix<<endl;
+        }
+    }
+
+    void mainMenu(){
+        string mainMenu = "1 - multimea starilor\n"
+                          "2 - alfabetul\n"
+                          "3 - tranzitiile\n"
+                          "4 - multimea starilor finale\n"
+                          "5 - verifica secventa\n"
+                          "6 - iesire\n"
+                          "Optiunea: ";
+        bool done = false;
+        while(!done) {
+            cout << mainMenu;
+            int optiune = 0;
+            cin >> optiune;
+            switch (optiune) {
+                case 1:{
+                    printList(states, " ");
+                    break;
+                }
+                case 2: {
+                    printList(entry_alphabet, " ");
+                    break;
+                }
+                case 3: {
+                    printList(transitions, "\n");
+                    break;
+                }
+                case 4: {
+                    printList(finale_states, " ");
+                    break;
+                }
+                case 5: {
+                    checkSequence();
+                    break;
+                }
+                default: {
+                    done = true;
+                    break;
+                }
+            }
+        }
+    }
+};
+
+int main(){
+    //cout << "Started"<<endl;
+    auto af = AF("C:\\Users\\codri\\OneDrive\\Desktop\\C++ Applications\\LAb1-LFTC\\fis4_af.txt");
+    //auto af = AF("");
+    af.mainMenu();
+    return 0;
+}

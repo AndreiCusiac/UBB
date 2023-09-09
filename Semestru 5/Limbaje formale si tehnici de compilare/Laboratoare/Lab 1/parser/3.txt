@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main () {
+	unsigned n;
+	unsigned nr;
+	unsigned s;
+	unsigned i;
+	cin >> n;
+	i = 1;
+	s = 0;
+	while (i <= n) {
+		cin >> nr;
+		s = s + nr;
+		i = i + 1;
+	}
+	cout << s;
+	return 0;
+}

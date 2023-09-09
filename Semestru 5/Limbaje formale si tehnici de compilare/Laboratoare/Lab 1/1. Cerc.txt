@@ -1,0 +1,7 @@
+int r;
+cin>>r;
+float pi=3.1415;
+float p=2*pi*r;
+float a=pi*r*r;
+cout<<"Perimetru:"<<p;
+cout<<"Arie:"<<a;

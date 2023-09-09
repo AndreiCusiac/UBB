@@ -1,0 +1,97 @@
+int a = 0;
+if (a == 0) 
+	printf(0);
+else
+	printf(1);
+
+Spec. mini-limbaj (ce trebuia pe săpt. 2)
+
+<program> -> <lista_instr>
+<lista_instr> -> <instr> / <instr> <lista_instr>
+<instr> -> <decl> / <output> / <if>
+<decl> -> <tip> ID = CONST;
+<tip> -> int
+<output> -> printf(CONST) / printf(ID);
+<if> -> if (<cond>) <instr> else <instr>
+<cond> -> ID == CONST
+
+Săpt. 3: de făcut parsare (făcută de aplicație, orice limbaj)
+
+int 
+a 
+=
+0
+;
+if
+(
+a
+==
+0
+)
+printf
+(
+0
+)
+;
+else
+printf
+(
+1
+)
+;
+
+Manual codificăm elementele lexicale:
+ATOM CODATOM
+ID 0
+CONST 1
+= 2
+; 3
+int 4
+printf 5
+( 6
+) 7
+if 8
+else 9
+== 10
+
+Săpt. 4 (aplicația face)
+TS ID  
+ID CODTS
+a 0
+
+
+TS CONST
+CONST CODTS
+0 0 
+1 1
+
+
+FIP
+CODATOM CODTS
+4 -
+0 0
+2 -
+1 0
+3 -
+8 -
+6 -
+0 0 
+10 -
+1 0
+7 -
+5 -
+6 -
+1 0
+7 -
+3 -
+9 -
+5 -
+6 -
+1 1 
+7 -
+3 -
+
+
+
+
+

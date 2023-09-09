@@ -1,0 +1,12 @@
+<fisier_intrare> -> <stari> <stari_initiale> <stari_finale> <tranzitii>
+<stari> -> <lista_const> '\n'
+<lista_const> -> CONST | CONST <lista_const>
+<stari_initiale> -> <lista_const> '\n'
+<stari_finale> -> <lista_const> '\n'
+<tranzitii> -> <tranzitie> '\n'
+<tranzitie> -> CONST <alfabet> CONST
+<alfabet> -> <cifra> | <semn> | <litera>
+<cifra> -> 0 | .. | 9
+<semn> -> + | - | .
+<litera> -> x | X | b | B | a | A | c | C | d | D | e | E | f | F | l | L | p | P
+

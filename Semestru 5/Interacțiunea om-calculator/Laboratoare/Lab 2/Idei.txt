@@ -1,0 +1,14 @@
+Opțiune de afișat parola
+De-selectare casetă de introdus text când se 
+dă clic în afara ei
+
+Legendă scaune ocupate/ libere
+Numerotoare rânduri
+Eliminare opțiuni plată după efectuarea 
+unei plăți (eliminare plată duplicată)
+Adăugare vot unic
+Închidere panouri după confirmare 
+(de ex. adăugare spectacol sugerat)
+
+Opțiune modificare spectacol sugerat
+Casetă text separată pentru introducere dată

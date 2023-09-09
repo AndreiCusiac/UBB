@@ -1,0 +1,20 @@
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\Copy (2) of VolumeRayCasting\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\Copy (2) of VolumeRayCasting\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\Copy (2) of VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\Copy (2) of VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\Copy (2) of VolumeRayCasting\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting0\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting0\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting0\WindowsEffectCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting0\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting0\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting_Final\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting_Final\WindowsEffectCompiler\bin\x86\Debug\WindowsEffectCompiler.pdb
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting_Final\WindowsEffectCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting_Final\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.dll
+C:\Documents and Settings\KMan\My Documents\Visual Studio 2008\Projects\VolumeRayCasting_Final\WindowsEffectCompiler\obj\x86\Debug\WindowsEffectCompiler.pdb

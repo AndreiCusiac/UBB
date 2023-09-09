@@ -1,0 +1,15 @@
+1. Loghează-te ca spectator. 
+Nume: andr3i
+Parolă: parola3
+
+2. Selectează 2 locuri, introdu datele și selectează plata cash
+
+3. Votează un spectacol sugerat de alți spectatori
+
+4. Sugerează un spectacol
+
+5. Loghează-te ca regizor.
+Nume: regy
+Parolă: par0la
+
+Găsește spectacolul sugerat de tine și adaugă-l în lista de spectacole înregistrate

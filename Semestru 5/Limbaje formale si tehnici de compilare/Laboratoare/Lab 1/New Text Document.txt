@@ -1,0 +1,42 @@
+int a = 0;
+if (a == 0) 
+	printf(0);
+else
+	printf(1);
+	
+Spec. mini-limbaj (ce trebuia pe săpt. asta)
+
+<program> -> <lista_instr>
+<lista_instr> -> <instr> / <instr> <lista_instr>
+<instr> -> <decl> / <output> / <if>
+<decl> -> <tip> ID = CONST;
+<tip> -> int
+<output> -> printf(CONST) / printf(ID);
+<if> -> if (<cond>) <instr> else <instr>
+<cond> -> ID == CONST
+
+S3: de făcut parsare
+
+int 
+a 
+=
+0
+;
+if
+(
+a
+==
+0
+)
+printf
+(
+0
+)
+;
+else
+printf
+(
+1
+)
+;
+

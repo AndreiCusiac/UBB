@@ -1,0 +1,5 @@
+AutomatFinit
+    initialState: string
+    finalStates: vector<string>
+    alphabet: vector<string>
+    transitions: tuple<string, string, string>

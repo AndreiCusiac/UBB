@@ -1,0 +1,71 @@
+1. Loghează-te ca spectator. 
+Nume: andr3i
+Parolă: parola3
+
+2. Selectează 2 locuri, introdu datele 
+și selectează plata cash
+
+3. Votează un spectacol sugerat de 
+alți spectatori
+
+4. Sugerează un spectacol
+
+5. Loghează-te ca regizor.
+Nume: regy
+Parolă: par0la
+
+Găsește spectacolul sugerat de tine și 
+adaugă-l în lista de spectacole înregistrate
+
+
+
+
+Îți plac piesele de teatru. Dorești să iei 
+2 bilete la spectacolul de teatru de azi. 
+Folosești aplicația oferită de teatru. 
+Datele tale de acces sunt:
+Nume: 
+Parolă:
+
+Folosești o opțiune de plată/ rezervare 
+la alegere.
+Apoi, vrei să votezi unul din 
+spectacolele sugerate de alți spectatori 
+pentru a fi puse în scenă.
+De asemenea, dorești să sugerezi 
+și tu un spectacol.
+
+Devii brusc regizor. Folosești 
+aceeași aplicație pentru a administra 
+spectacolele curente.
+Datele de acces sunt:
+Nume: regy
+Parolă: par0la
+
+Dorești să pui în scenă spectacolul 
+sugerat anterior de spectatorul din tine. Fă-o.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

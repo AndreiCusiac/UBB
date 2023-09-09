@@ -1,0 +1,11 @@
+int a;
+cin >> a;
+a = a + 3;
+a = a - 8;
+cout << a;
+int c;
+c = a;
+c = c * 4;
+c = c / 2;
+cout << c;
+return 0;

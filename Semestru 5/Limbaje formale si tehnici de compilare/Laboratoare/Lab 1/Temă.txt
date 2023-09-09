@@ -1,0 +1,81 @@
+1.
+
+<program> -> #include \<iostream\> using namespace std; int main() { <lista_instr> return 0; }
+<lista_instr> -> <instr> / <instr> <lista_instr>
+<instr> -> <decl> / <output> / <input> / <if> / <while> / <do_while> / <num>
+<decl> -> <tip> <lista_id>
+<lista_id> -> <num>             /** / <num>, <lista_id>; **/
+<num> -> ID; / ID = <op>;
+<op> -> ID / CONST / ID <operand> <op> / CONST <operand> <op>
+<operand> = + / - / * / '/'
+<tip> -> int / float / unsigned / <struct>
+<struct> -> struct ID { <lista_decl> };
+<lista_decl> -> <decl> / <decl> <lista_decl>
+<output> -> cout<< <afisare>;
+<afisare> -> <afis> / <afis> << <afisare>
+<afis> -> ID / CONST
+<input> -> cin>>ID;
+<if> -> if (<cond>) { <lista_instr> } else { <lista_instr> }
+<while> -> while (<cond>) { <lista_instr> }
+<cond> -> ID == CONST / ID == ID / ID != CONST / ID != ID / ID <= CONST / ID <= ID 
+	/ ID >= CONST / ID >= ID / ID < CONST / ID < ID / ID > CONST / ID > ID
+<do_while> -> do { <lista_instr> } while (<cond>);
+
+2.
+
+--Cerc--
+
+int r;
+cout<<"r=";
+cin>>r;
+float pi=3.1415;
+float p=2*pi*r;
+float a=pi*r*r;
+cout<<"Perimetru:"<<p;
+cout<<"Arie:"<<a;
+
+--Cmmdc--
+unsigned a;
+unsigned b;
+cout<<"a=";
+cin>>a;
+cout<<"b=";
+cin>>b; 
+while(a!=b){
+    if(a>b){
+        a=a-b;
+    }
+    else{
+        b=b-a;
+    }
+}
+cout<<"Cmmdc:"<<a;
+
+--Suma--
+unsigned n;
+unsigned nr;
+unsigned s;
+unsigned i;
+cout<<"n=";
+cin>>n;
+i=1;
+s=0;
+while(i<=n){
+	cout<<"nr=";
+    cin>>nr;
+    s=s+nr;
+    i=i+1;
+}
+cout<<"Suma:"<<s;
+
+3.
+a)
+int r r;
+cin>>r;
+r===3;
+
+b)
+int a=1;
+if (a==2)
+	cout<"Da";
+char c;
