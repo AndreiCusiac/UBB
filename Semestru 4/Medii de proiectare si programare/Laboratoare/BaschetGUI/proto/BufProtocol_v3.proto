@@ -1,0 +1,73 @@
+syntax="proto3";
+package chat.protocol;
+
+option java_package = "protobuffprotocol";
+option java_outer_classname = "MyProtobufs";
+
+message Match{
+  string homeTeam = 1;
+  string awayTeam = 2;
+
+  double ticketPrice = 3;
+  int32 totalSeats = 4;
+
+  int32 availableSeats = 5;
+
+  string soldOut = 6;
+  string id = 7;
+}
+
+message SellTicket{
+  string homeTeam = 1;
+  string awayTeam = 2;
+
+  double ticketPrice = 3;
+  int32 totalSeats = 4;
+
+  int32 availableSeats = 5;
+
+  string soldOut = 6;
+
+  string name = 7;
+  int32 seats = 8;
+
+  string idMatch = 9;
+}
+
+message Ticket{
+  string idMatch = 1;
+
+  string name = 2;
+  int32 seats = 3;
+}
+
+message TicketBooth{
+  string name = 1;
+  string password = 2;
+}
+
+message Request {
+  enum Type {Unkown=0; Login = 1; Logout = 2; GetMatches = 3; SellTicket = 4; GetMatchesSorted = 5;}
+
+  // Identifies which request is filled in.
+   Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+   oneof payload{
+       Match match = 2;
+       TicketBooth ticketBooth = 3;
+       Ticket ticket = 4;
+       SellTicket sellTicket = 5;
+  }
+}
+
+message Response{
+   enum Type { Unknown=0; Ok = 1; Error = 2; GetMatches = 3; GetMatchesSorted = 4; SoldTicket = 5;}
+
+     // Identifies which request is filled in.
+      Type type = 1;
+
+     // One of the following will be filled in, depending on the type.
+      string error = 2;
+      repeated Match matches = 3;
+}
