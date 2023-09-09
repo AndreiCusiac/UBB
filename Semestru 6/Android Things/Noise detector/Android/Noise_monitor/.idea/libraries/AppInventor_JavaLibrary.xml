@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AppInventor-JavaLibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/AppInventor-JavaLibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

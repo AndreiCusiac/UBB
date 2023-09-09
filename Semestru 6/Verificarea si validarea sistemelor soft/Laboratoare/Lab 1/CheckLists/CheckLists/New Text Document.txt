@@ -1,0 +1,7 @@
+1. Info tasks are not met (title instead of description, can add end time only if repeated is checked)
+2. Adding tasks from the same window twice will create the same task multiple times (when editing, multiple tasks are
+edited at once)
+3. Filtering by time doesnt work
+4. List of tasks not mentioned in requirements
+5. No initial tasks (all tasks previously added are lost)
+6. 

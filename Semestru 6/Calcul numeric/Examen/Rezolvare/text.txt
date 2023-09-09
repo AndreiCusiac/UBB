@@ -1,0 +1,11 @@
+Jacobi slides
+mcmmp
+gegenbauer alpha beta egale
+inlocuim alpha si beta cu expresiile lor
+Integrala a = 1.46
+e) cu formula
+
+dezv f si f' cu taylor
+cond asupra lui lambda
+zero simplu ==> f(a) = 0, f'(a) != 0
+f''(a) = 0 ==> lambda convenabil

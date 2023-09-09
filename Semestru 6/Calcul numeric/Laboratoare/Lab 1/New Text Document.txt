@@ -1,0 +1,9 @@
+Formula lui Taylor
+
+I = interval deschis 
+
+C^k(I) = {f : I -> R: există f^(i), i = 0,k; f^(k) cont.}
+
+T1 (formula lui Taylor cu rest Lagrange)
+
+f Є C^n+1(I), a Є I => f(x) = Tnf(x) + Rnf(x), unde Tnf(x) = polinom Taylor de ordin n
