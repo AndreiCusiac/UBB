@@ -1,0 +1,10 @@
+﻿  domain.c
+  main.c
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab3\cofetarie_v2\cofetarie_v2\cofetarie_v2\main.c(120,24): warning C4566: character represented by universal-character-name '\u0103' cannot be represented in the current code page (1252)
+  myList.c
+  repository.c
+  service.c
+  sort.c
+  validator.c
+  Generating Code...
+  cofetarie_v2.vcxproj -> C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab3\cofetarie_v2\cofetarie_v2\x64\Debug\cofetarie_v2.exe

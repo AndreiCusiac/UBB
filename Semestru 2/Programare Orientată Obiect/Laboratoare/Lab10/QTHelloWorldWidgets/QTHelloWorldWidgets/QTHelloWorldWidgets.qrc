@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="QTHelloWorldWidgets">
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+﻿  Service.c
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,13): error C2220: the following warning is treated as an error
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,13): warning C4047: 'function': 'Lista *' differs in levels of indirection from 'Lista **'
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,8): warning C4024: 'save': different types for formal and actual parameter 1
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,19): error C2231: '.v': left operand points to 'struct', use '->'
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,24): error C2440: 'function': cannot convert from 'Medicament *' to 'Medicament'
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab4\Lab3-4\Lab3-4\Service.c(194,15): warning C4024: 'save': different types for formal and actual parameter 2

@@ -1,0 +1,10 @@
+﻿  main.cpp
+  Pet.cpp
+  VectDinNewDelete.cpp
+  VectDinSmartPointer.cpp
+  Running Code Analysis for C/C++...
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\VectDinSmartPointer.cpp : fatal error C1083: Cannot open compiler generated file: 'C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\x64\Debug\VectDinSmartPointer.nativecodeanalysis.xml': No error
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\VectDinNewDelete.cpp : fatal error C1083: Cannot open compiler generated file: 'C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\x64\Debug\VectDinNewDelete.nativecodeanalysis.xml': No error
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\Pet.cpp : fatal error C1083: Cannot open compiler generated file: 'C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\x64\Debug\Pet.nativecodeanalysis.xml': No error
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\main.cpp : fatal error C1083: Cannot open compiler generated file: 'C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab7\VectorDinamicCPP\VectorDinamicCPP\x64\Debug\main.nativecodeanalysis.xml': No error
+  Generating Code...

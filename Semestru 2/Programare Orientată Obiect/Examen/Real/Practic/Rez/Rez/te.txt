@@ -1,0 +1,13 @@
+1
+info
+3
+Ion
+Geo
+Vasi
+open
+10
+rom
+2
+Ion
+And
+closed

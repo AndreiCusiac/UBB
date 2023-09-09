@@ -1,0 +1,2 @@
+Mostenire polimorfism: https://youtu.be/E9qzviS1YDg
+Smart pointer, Clase abstracte, Undo: https://youtu.be/Ihmq_pgkMJg

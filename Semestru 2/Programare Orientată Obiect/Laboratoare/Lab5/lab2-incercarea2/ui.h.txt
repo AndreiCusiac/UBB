@@ -1,0 +1,24 @@
+#pragma once
+
+#include "controller.h"
+#include "domain.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define _CRT_SECURE_NO_WARNINGS
+
+void creeaza_meniu();
+
+void meniu(Lista ls);
+
+Lista adauga(Lista ls);
+
+//int valideaza(char nume[20], char prenume[20], int scor[]);
+
+Lista sterge(Lista ls);
+
+void afiseaza_toti(Lista ls);
+
+void afiseaza_date(Lista ls);
+

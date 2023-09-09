@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#include <stdbool.h>
+#include "domain.h"
+#include "controller.h"
+#include "teste.h"
+#include "ui.h"
+
+#define memorie_initializare 10
+#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
+
+
+
+
+int main() {
+	toate_testele();
+	//Lista ls;
+	//ls = creeaza_lista_participanti();
+	//meniu(ls);
+	return 0;
+}

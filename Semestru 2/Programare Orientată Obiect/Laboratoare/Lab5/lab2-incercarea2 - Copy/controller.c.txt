@@ -1,0 +1,197 @@
+#include "controller.h"
+#include "domain.h"
+
+
+Lista realocare_memorie_lista(Lista* ls, int mem_max) {
+	//printf("%d functie re \n", get_numar_participanti(*ls));
+	//printf("%d\n", ls);
+	//printf("%d functie re \n", get_memorie_maxima(*ls));
+	Lista* ls_copy;// = (Lista*)realloc(ls, mem_max);
+	ls_copy = (Lista*)malloc(sizeof(Lista));
+	ls_copy->lista_participanti = (uintptr_t*)realloc(ls->lista_participanti, mem_max * sizeof(uintptr_t));
+	//ls->lista_participanti = (uintptr_t*)calloc(mem_max, sizeof(uintptr_t));
+	//for (int i = 0; i < get_numar_participanti(*ls); i++) {
+	//	printf("%d\n", ls->lista_participanti + i);
+	//	*(ls_copy).lista_participanti[i] =*(ls).lista_participanti[i];
+	//}
+	//ls_copy->numar_elemente = (int*)realloc(ls->numar_elemente, sizeof(int));
+	ls_copy->numar_elemente = (int*)calloc(1, sizeof(int));
+	*(ls_copy->numar_elemente) = *(ls->numar_elemente);
+	ls_copy->memorie_maxima = (int*)malloc(sizeof(int));
+	*(ls_copy->memorie_maxima) = mem_max;
+	if (ls_copy != NULL)return *ls_copy;
+}
+
+Lista adauga_participant(Lista ls, Participant part) {
+	//printf("%d functie \n", get_numar_participanti(ls));
+	//printf("%d functie brut \n", *(ls.numar_elemente));
+	//printf("%d\n",&ls);
+	//printf("%d functie \n", get_memorie_maxima(ls));
+	if (get_numar_participanti(ls) + 1 > get_memorie_maxima(ls))
+		ls = realocare_memorie_lista(&ls, 2 * get_memorie_maxima(ls));
+	//printf("%d functiee \n", get_numar_participanti(ls));
+	uintptr_t* adrese;
+	adrese = (uintptr_t*)malloc(4 * sizeof(uintptr_t));
+	adrese[0] = (uintptr_t)(&part);
+	adrese[1] = (uintptr_t)(&part)->nume;
+	adrese[2] = (uintptr_t)(&part)->prenume;
+	adrese[3] = (uintptr_t)(&part)->scor;
+	//printf("adrese adaugare\n");
+	//for (int i = 0; i < 4; i++)
+	//	printf("%d\n", adrese[i]);
+	//printf("adr %d\n", &adrese);
+	ls.lista_participanti[get_numar_participanti(ls)] = adrese;
+	//printf("%d functiee \n", get_numar_participanti(ls));
+	///aparent nu merge *(ls.numar_elemente)++;
+	*(ls.numar_elemente) = *(ls.numar_elemente) + 1;
+	//printf("%d functie \n", get_numar_participanti(ls));
+	//printf("%d functie brut \n", *(ls.numar_elemente));
+	//printf("%d\n", &ls);
+	//printf("%d functie \n", get_memorie_maxima(ls));
+	return ls;
+}
+
+Participant recreeaza_participant(uintptr_t* adrese) {
+	Participant* p;
+	p = (Participant*)malloc(sizeof(Participant));
+	//*p = creeaza_participant(adrese[1], adrese[2], adrese[3]);
+	//p = adrese[0];
+	//printf("adrese reconstruite\n");
+	//for (int i = 0; i < 4; i++)
+	//	printf("%d\n", adrese[i]);
+	//char* nume,prenume;
+	//nume = adrese[1];
+	//prenume = adrese[2];
+	//printf("%d", *nume);
+	//printf("%d\n", (uintptr_t)adrese);
+	p->nume = adrese[1];
+	p->prenume = adrese[2];
+	p->scor = adrese[3];
+	//printf("%s\n", get_nume(*p));
+	//printf("%s\n", get_prenume(*p));
+	//for (int i = 0; i < 10; i++)
+	//	printf("%d\n", *(p->scor + i));
+	//printf("%d\n", get_scor_problema(*p, 1));
+	//Participant* pt;
+	//pt = p;
+	return *p;
+
+}
+
+int cauta_participant(Lista ls, char nume[20], char prenume[20]) {
+	/*
+	*Aceasta functie cauta un participant in lista de participanti
+	*ls este de tip Lista, nume si prenume de tip string
+	*Programul returnezeaza pozitia in lista a participantului in cazul in care se afla in lista sau -1 in caz contrar
+	*/
+
+	int i;
+	bool gasit = false;
+	//printf("nr ls %d\n", get_numar_participanti(ls));
+	//printf("%d\n", get_numar_participanti(ls));
+	//printf("%d\n", (uintptr_t)ls.lista_participanti[0]);
+	for (i = 0; i < get_numar_participanti(ls) && gasit == false; i++)
+	{
+		uintptr_t poz = get_participant_adresa_cu_pozitie(ls, i);
+		//printf("%d -> %d\n",i, poz);
+		//pt = poz;
+		Participant pt;
+		int* adrese;
+		adrese = ls.lista_participanti[i];
+		pt = recreeaza_participant(adrese);
+		//printf("%s\n", get_nume(pt));
+		//printf("%s\n", get_prenume(pt));
+		if (strcmp(get_nume(pt), nume) == 0 && strcmp(get_prenume(pt), prenume) == 0)
+		{
+			gasit = true;
+			return i;
+		}
+	}
+	if (gasit == false)
+		return -1;
+}
+
+Lista sterge_participant(Lista ls, Participant part) {
+	int i, poz = -1;
+	for (i = 0; i < get_numar_participanti(ls); i++)
+	{
+
+		uintptr_t* adresa;
+		adresa = ls.lista_participanti[i];
+		//printf("adr %d\n", (int)adresa);
+		Participant pt1;
+		pt1 = recreeaza_participant(adresa);
+		//printf("%s <> %s  si %s <> %s", get_nume(pt1), get_nume(part), get_prenume(pt1), get_prenume(part));
+		if (strcmp(get_nume(pt1), get_nume(part)) == 0 && strcmp(get_prenume(pt1), get_prenume(part)) == 0)
+		{
+			poz = i;
+			//printf("gasit\n");
+		}
+	}
+	if (poz != -1)
+	{
+		for (i = poz; i < get_numar_participanti(ls); i++)
+			ls.lista_participanti[i] = ls.lista_participanti[i + 1];
+		//ls.numar_elemente--;
+		*(ls.numar_elemente) = *(ls.numar_elemente) - 1;
+		//printf("sters\n");
+	}
+	//ls = sterge_participant_pozitie(&ls, poz);
+	//printf("nr %d \n", get_numar_participanti(ls));
+	if ((get_numar_participanti(ls) < (get_memorie_maxima(ls) / 2)) && (get_memorie_maxima(ls) > memorie_initializare)) {
+		ls = realocare_memorie_lista(&ls, get_memorie_maxima(ls) / 2);
+		//printf("mem1 %d \n", get_memorie_maxima(ls));
+	}
+	return ls;
+}
+
+/*
+Lista sterge_participant_pozitie(Lista* ls, int poz) {
+	int i;
+	for (i = poz; i < get_numar_participanti(*ls); i++)
+		ls->lista_participanti[i] = ls->lista_participanti[i + 1];
+	ls->numar_elemente--;
+	return *ls;
+
+
+}
+*/
+
+bool compara_vectori(int v1[10], int v2[10]) {
+	bool egal = true;
+	for (int i = 0; i < 10; i++)
+		if (v1[i] != v2[i])egal = false;
+	return egal;
+}
+
+Participant get_date_participant_cu_pozitie(Lista ls, int poz) {
+	Participant pt;
+	uintptr_t* adrese;
+	adrese = ls.lista_participanti[poz];
+	pt = recreeaza_participant(adrese);
+	return pt;
+}
+double media(int v[],int n) {
+	double suma = 0.0;
+	for (int i = 0; i < n; i++)
+		suma += v[i];
+	suma /= n;
+	return suma;
+
+}
+int valideaza(char nume[20], char prenume[20], int scor[]) {
+	///varificare litere
+	for (int i = 0; i < strlen(nume); i++)
+		if (strchr("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM", nume[i]) == NULL)
+			return 1;
+
+	for (int i = 0; i < strlen(prenume); i++)
+		if (strchr("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM- ", nume[i]) == NULL)
+			return 2;
+	return 0;
+	//if ((sizeof scor) / (sizeof * scor) != 10)
+	//	return 3;
+	//for (int i = 0; i < 10; i++)
+	//	if (scor[i]<1||scor[i]>10)
+	//		return 3;
+}

@@ -1,0 +1,13 @@
+﻿  Tema Lab1.c
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,40): warning C4101: 'x1': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(112,6): warning C4101: 'k': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,52): warning C4101: 'x4': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,48): warning C4101: 'x3': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,32): warning C4101: 'p3': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,24): warning C4101: 'p1': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,36): warning C4101: 'p4': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,28): warning C4101: 'p2': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(111,44): warning C4101: 'x2': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(448,12): warning C4101: 'm2': unreferenced local variable
+C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Tema Lab1\Tema Lab1.c(448,8): warning C4101: 'm1': unreferenced local variable
+  Tema Lab1.vcxproj -> C:\Users\Andrei\Desktop\UBB\Sem 2\Programare Orientată Obiect\Laboratoare\Lab2\Tema Lab1\Debug\Tema Lab1.exe

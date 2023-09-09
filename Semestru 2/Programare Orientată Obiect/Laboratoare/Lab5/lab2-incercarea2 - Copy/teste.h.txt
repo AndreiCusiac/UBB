@@ -1,0 +1,27 @@
+#pragma once
+#include "domain.h"
+#include "controller.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+#include <stdbool.h>
+
+void test_creeaza_participant();
+
+void test_getter_setter_participant();
+
+void test_creeaza_lista();
+
+void test_adauga_participant();
+
+void test_cauta_participant();
+
+void test_sterge_participant();
+
+void test_gat_date_participant();
+
+void test_media();
+
+void toate_testele();

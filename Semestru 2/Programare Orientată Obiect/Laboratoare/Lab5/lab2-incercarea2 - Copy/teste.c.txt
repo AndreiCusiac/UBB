@@ -1,0 +1,382 @@
+#include "teste.h"
+
+void test_creeaza_participant() {
+	Participant pt;
+	int v[] = { 10, 10, 9, 9, 8, 8, 7, 7, 6, 6 };
+	pt = creeaza_participant("maricel", "costel", v);
+	assert(strcmp(pt.nume, "maricel") == 0);
+	assert(strcmp(pt.prenume, "costel") == 0);
+	assert(compara_vectori(pt.scor, v) == true);
+	//printf("done1.1\n");
+	//printf("%s\n", get_nume(pt));
+	//printf("%s\n", get_prenume(pt));
+	//printf("%d\n", (uintptr_t)&pt.nume);
+	//printf("%d\n", (uintptr_t)&pt.prenume);
+	//printf("done1.2\n");
+	//Participant pt1;
+	//pt1 = creeaza_participant("maricela", "costela", v);
+	//distruge_participant(&pt);
+	//free(pt.nume);
+	//free(pt.prenume);
+	//free(pt.scor);
+	//free(&pt);
+}
+void test_getter_setter_participant() {
+	Participant pt;
+	int v[] = { 10, 10, 9, 9, 8, 8, 7, 7, 6, 6 };
+	pt = creeaza_participant("maricel", "costel", v);
+	//test_creeaza_participant();
+	///Getter
+	assert(strcmp((char*)(get_nume(pt)), "maricel") == 0);
+	assert(strcmp((char*)(get_prenume(pt)), "costel") == 0);
+	assert(get_scor_problema(pt, 5) == 8);
+	assert(compara_vectori(get_scor(pt), v));
+	//puts(&pt);
+	///Setter
+	pt = set_nume(&pt, "andrei");
+	assert(strcmp((char*)get_nume(pt), "andrei") == 0);
+	pt = set_prenume(&pt, "marica");
+	assert(strcmp((char*)(get_prenume(pt)), "marica") == 0);
+	pt = set_scor_problema(pt, 5, 10);
+	assert(get_scor_problema(pt, 5) == 10);
+	int v1[] = { 10,10,1,1,2,2,3,3,4,4 };
+	pt = set_scor(&pt, v1);
+	assert(compara_vectori(get_scor(pt), v1) == true);
+	//distruge_participant(&pt);
+}
+
+void test_creeaza_lista() {
+	Lista l;
+	l = creeaza_lista_participanti();
+	//printf("%d\n",*(l.numar_elemente));
+	assert(*(l.numar_elemente) == 0);
+	assert(*(l.memorie_maxima) == 10);
+	assert(l.lista_participanti[0] == 0);
+	assert(l.lista_participanti[9] == 0);
+	//printf("%d\n", l.numar_elemente);
+	//printf("%d\n", *(l.numar_elemente));
+	//printf("%d\n", &l);
+	//printf("%d\n", get_numar_participanti(l));
+	//printf("%d\n", &l);
+	assert(get_memorie_maxima(l) == 10);
+	assert(get_numar_participanti(l) == 0);
+	l = set_memorie_maxima(&l, 20);
+	assert(get_memorie_maxima(l) == 20);
+
+	distruge_lista(&l);
+
+}
+
+void test_adauga_participant() {
+	Participant pt;
+	int v[] = { 10,5,6,3,7,9,2,10,5,8 };
+	pt = creeaza_participant("marin", "cornel", v);
+	Lista ls;
+	ls = creeaza_lista_participanti();
+	//printf("%d\n", get_numar_participanti(ls));
+	ls = adauga_participant(ls, pt);
+	//printf("%d\n", get_numar_participanti(ls));
+	assert(get_numar_participanti(ls) == 1);
+	assert(ls.lista_participanti[0] != 0);
+	uintptr_t* adresa;
+	//printf("%d\n", ls.lista_participanti[0]);
+	//printf("%d\n", get_participant_adresa_cu_pozitie(ls,0));
+	adresa = ls.lista_participanti[0];
+	//printf("adr %d\n", (int)adresa);
+	Participant pt1;
+	pt1 = recreeaza_participant(adresa);
+	//puts(*(pt1->nume));
+	assert(strcmp((char*)(get_nume(pt1)), "marin") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "cornel") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+	//printf("gata\n");
+	/// adaug alt participant
+	pt = creeaza_participant("andrei", "burca", v);
+	ls = adauga_participant(ls, pt);
+	assert(get_numar_participanti(ls) == 2);
+	assert(ls.lista_participanti[0] != 0);
+	assert(ls.lista_participanti[1] != 0);
+
+	///primul participant
+	assert(strcmp((char*)(get_nume(pt1)), "marin") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "cornel") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+	///al doilea participant
+	adresa = ls.lista_participanti[1];
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "andrei") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "burca") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+
+	/// adaug alti 8 participanti
+	pt = creeaza_participant("iulia", "bira", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("carmen", "burca", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("vio", "ica", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("caine", "mort", v);
+	ls = adauga_participant(ls, pt);
+
+
+	adresa = ls.lista_participanti[get_numar_participanti(ls) - 1];
+	//printf("aici\n");
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "caine") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "mort") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+	//printf("%d\n", get_numar_participanti(ls));
+	//printf("%d\n", get_memorie_maxima(ls));
+	//printf("%d\n", (uintptr_t)ls.lista_participanti[get_numar_participanti(ls) - 1]);
+
+	pt = creeaza_participant("baba", "mea", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("maine", "nu", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("pop", "andreea", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("baciu", "lucian", v);
+	ls = adauga_participant(ls, pt);
+
+	///teste critice
+	assert(get_numar_participanti(ls) == 10);
+	assert(get_memorie_maxima(ls) == 10);
+	for (int i = 0; i < get_numar_participanti(ls); i++)
+		assert(ls.lista_participanti[i] != 0);
+
+	///date ultim participant
+	adresa = ls.lista_participanti[9];
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "baciu") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "lucian") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+
+
+	///TEST CRITIC PT ALOCARE MEMORIE
+	//printf("aici am ajuns\n");
+	pt = creeaza_participant("marcica", "vasilica", v);
+	uintptr_t vic2[12];
+	for (int i = 0; i < get_memorie_maxima(ls); i++) {
+		//printf("%d -> %d\n", i, (uintptr_t)ls.lista_participanti[i]);
+		vic2[i] = ls.lista_participanti[i];
+	}
+
+	//printf("una gata\n");
+	ls = adauga_participant(ls, pt);
+	//printf("am supravietuit\n");
+	//printf("%d\n", get_numar_participanti(ls));
+	assert(get_numar_participanti(ls) == 11);
+	assert(get_memorie_maxima(ls) == 20);
+	for (int i = 0; i < get_numar_participanti(ls); i++)
+		assert(ls.lista_participanti[i] != 0);
+
+	///date ultim participant
+	adresa = ls.lista_participanti[get_numar_participanti(ls) - 1];
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "marcica") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "vasilica") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+
+	///date participant 6
+	adresa = ls.lista_participanti[5];
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "caine") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "mort") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+
+
+	uintptr_t vic1[12];
+	for (int i = 0; i < get_numar_participanti(ls) - 1; i++) {
+		//printf("%d ", i);
+		//printf("%d\n", (uintptr_t)ls.lista_participanti[i]);
+		vic1[i] = ls.lista_participanti[i];
+		//if (vic1[i] != vic2[i])printf("eroare %d, %d nu este %d \n", i, vic1[i], vic2[i]);
+	}
+	assert(compara_vectori(vic2, vic1));
+	distruge_lista(&ls);
+}
+void test_cauta_participant() {
+	Participant pt;
+	int v[] = { 10,5,6,3,7,9,2,10,5,8 };
+	pt = creeaza_participant("marin", "cornel", v);
+	Lista ls;
+	ls = creeaza_lista_participanti();
+	ls = adauga_participant(ls, pt);
+	int poz = cauta_participant(ls, "marin", "cornel");
+	//printf("%d\n", poz);
+	assert(poz != -1);
+
+	///Cauta participant existent
+	uintptr_t* adresa;
+	adresa = ls.lista_participanti[poz];
+	//printf("adr %d\n", (int)adresa);
+	Participant pt1;
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "marin") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "cornel") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+
+	///Cauta participant inexistent
+	poz = cauta_participant(ls, "florin", "gigel");
+	assert(poz == -1);
+
+	///Adaug alti 10 participanti
+	pt = creeaza_participant("andrei", "burca", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("iulia", "bira", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("carmen", "burca", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("vio", "ica", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("caine", "mort", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("baba", "mea", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("maine", "nu", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("pop", "andreea", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("baciu", "lucian", v);
+	ls = adauga_participant(ls, pt);
+	int v1[] = { 10,10,10,10,10,10,10,10,10,1 };
+	pt = creeaza_participant("marcica", "vasilica", v1);
+	ls = adauga_participant(ls, pt);
+
+	poz = cauta_participant(ls, "marcica", "vasilica");
+	adresa = ls.lista_participanti[poz];
+	pt1 = recreeaza_participant(adresa);
+	assert(strcmp((char*)(get_nume(pt1)), "marcica") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "vasilica") == 0);
+	assert(get_scor_problema(pt1, 10) == 1);
+	assert(compara_vectori(get_scor(pt1), v1));
+	distruge_lista(&ls);
+}
+
+void test_sterge_participant() {
+	Participant pt, pt1, pt2, pt3;
+	int v[] = { 10,5,6,3,7,9,2,10,5,8 };
+	pt = creeaza_participant("marin", "cornel", v);
+	Lista ls;
+	ls = creeaza_lista_participanti();
+	ls = adauga_participant(ls, pt);
+
+	///Prima Stergere
+	//printf("gata aici\n");
+	ls = sterge_participant(ls, pt);
+	assert(get_memorie_maxima(ls) == 10);
+	//printf("%d\n", get_numar_participanti(ls));
+	assert(get_numar_participanti(ls) == 0);
+	assert(ls.lista_participanti[0] == 0);
+
+	///Adaugam 11 participanti
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("andrei", "burca", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("iulia", "bira", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("carmen", "burca", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("vio", "ica", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("caine", "mort", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("baba", "mea", v);
+	ls = adauga_participant(ls, pt);
+	pt = creeaza_participant("maine", "nu", v);
+	ls = adauga_participant(ls, pt);
+	pt1 = creeaza_participant("pop", "andreea", v);
+	ls = adauga_participant(ls, pt1);
+	pt2 = creeaza_participant("baciu", "lucian", v);
+	ls = adauga_participant(ls, pt2);
+	int v1[] = { 10,10,10,10,10,10,10,10,10,1 };
+	pt3 = creeaza_participant("marcica", "vasilica", v1);
+	ls = adauga_participant(ls, pt3);
+
+	//printf("gata aici2\n");
+	assert(get_numar_participanti(ls) == 11);
+	assert(get_memorie_maxima(ls) == 20);
+
+	
+	ls = sterge_participant(ls, pt1);
+	//printf("gata aici2.1\n");
+	assert(get_numar_participanti(ls) == 10);
+	assert(get_memorie_maxima(ls) == 20);
+	int poz = cauta_participant(ls, "pop", "andreea");
+	//printf("gata aici2.2\n");
+	assert(poz == -1);
+
+	//printf("gata aici3\n");
+	ls = sterge_participant(ls, pt2);
+	poz = cauta_participant(ls, "baciu", "lucian");
+	assert(poz == -1);
+	assert(get_numar_participanti(ls) == 9);
+	//printf("memo %d \n", get_memorie_maxima(ls));
+	assert(get_memorie_maxima(ls) == 10);
+	//printf("gata aici4\n");
+	distruge_lista(&ls);
+}
+
+void test_gat_date_participant() {
+	Participant pt,pt1;
+	int v[] = { 10,5,6,3,7,9,2,10,5,8 };
+	pt = creeaza_participant("marin", "cornel", v);
+	Lista ls;
+	ls = creeaza_lista_participanti();
+	ls = adauga_participant(ls, pt);
+	pt1=get_date_participant_cu_pozitie(ls, 0);
+
+	assert(strcmp((char*)(get_nume(pt1)), "marin") == 0);
+	assert(strcmp((char*)(get_prenume(pt1)), "cornel") == 0);
+	assert(get_scor_problema(pt1, 5) == 7);
+	assert(compara_vectori(get_scor(pt1), v));
+}
+void test_media() {
+	int v[] = { 10,10,10,10 };
+	assert((int)media(v, 4) == 10);
+	int v1[] = { 10,1,1,10 };
+	assert((int)media(v1 , 4) == 5);
+}
+
+void test_valideaza() {
+	char nume[20] = "mama";
+	char prenume[20] = "sat";
+	int v[] = { 1,1,1,1,1,1,1,1,1,1 };
+	assert(valideaza(nume, prenume, v) == 0);
+	strcpy_s(nume, sizeof(nume), "pap1");
+	assert(valideaza(nume, prenume, v) == 1);
+	strcpy_s(nume, sizeof(nume),"pap");
+	strcpy_s(prenume, sizeof(prenume), "mama1");
+	assert(valideaza(nume, prenume, v) == 2);
+	strcpy_s(nume,sizeof(nume), "pap1");
+	assert(valideaza(nume, prenume, v) == 1);
+}
+void toate_testele() {
+	test_creeaza_participant();
+	printf("done1\n");
+	test_getter_setter_participant();
+	printf("done2\n");
+	test_creeaza_lista();
+	printf("done3\n");
+	test_adauga_participant();
+	printf("done4\n");
+	test_cauta_participant();
+	printf("done5\n");
+	test_sterge_participant();
+	printf("done6\n");
+	test_gat_date_participant();
+	printf("done7\n");
+	test_media();
+	printf("done8\n");
+	test_valideaza();
+	printf("done9\n");
+
+}

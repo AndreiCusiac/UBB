@@ -1,0 +1,6 @@
+header - definitia functiilor
+c - implementarea lor
+
+Macar UI/ service
+
+Vector in struct, get, size in struct

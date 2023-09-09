@@ -1,0 +1,13 @@
+1
+ala
+2
+Ion
+Geo
+open
+2
+bala
+3
+Vasi
+Geo
+Ala
+closed

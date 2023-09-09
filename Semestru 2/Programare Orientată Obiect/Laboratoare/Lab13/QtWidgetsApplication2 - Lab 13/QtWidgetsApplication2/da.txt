@@ -1,0 +1,5 @@
+Titlu, Autor, Gen, An
+Poezii, Nichita Stanescu, Poezii, 2021
+Moara cu noroc, Ioan Slavici, Nuvela, 2020
+Dictionar, Alfa Beta, Lingvistic, 2020
+Lista contine 3 carti!

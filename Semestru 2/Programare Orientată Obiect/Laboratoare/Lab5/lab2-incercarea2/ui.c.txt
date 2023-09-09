@@ -1,0 +1,189 @@
+
+#include "ui.h"
+#define _CRT_SECURE_NO_WARNINGS
+void creeaza_meniu() {
+	printf("Introduceti una dintre optiunile de mai jos: \n");
+	printf("1- pentru a adauga un participant \n");
+	printf("2- pentru a sterge un participant \n");
+	printf("3- pentru a afisa toti participantii \n");
+	printf("4- pentru a vedea statusul unui participant \n");
+	printf("5- pentru a modifica datele unui participant \n");
+	printf("6- pentru a aplica un filtru \n");
+	printf("8- pentru a sorta dupa un criteriu \n");
+	printf("0- pentru a iesi \n");
+	printf("Optiunea dumneavoastra: ");
+}
+void meniu(Lista ls) {
+	char optiune;
+	while (1) {
+		creeaza_meniu();
+		//scanf_s("%c", &optiune, 1);
+		scanf_s("%c", &optiune,1);
+		//printf("%c\n", optiune);
+		if ((int)optiune != 10) {
+			if (optiune < '0' || optiune>'9') printf("Optiune invalida!\n");
+			else {
+				if (optiune == '1') {
+					printf("am intrat aici\n");
+					printf("adr ls1 %d\n", &ls);
+					ls = adauga(ls);
+					printf("%d \n", get_numar_participanti(ls));
+					printf("adr ls3 %d\n", &ls);
+					Participant pt;
+					int v[] = { 1,1,1,1,1,1,1,1,1,1 };
+					pt = creeaza_participant("null", "nulll", v);
+					uintptr_t* adresa;
+					///adresa = ls.lista_participanti[0];
+					///printf("adr %d\n", (int)adresa);
+					///pt = recreeaza_participant(adresa);
+					//ls = sterge_participant(ls, pt);
+					printf("%d %d\n", get_nume(pt), get_prenume(pt));
+					printf("%s %s\n", (char*)(get_nume(pt)), (char*)(get_prenume(pt)));
+				}
+				else if (optiune == '2')
+					ls = sterge(ls);
+				else if (optiune == '3')
+					afiseaza_toti(ls);
+				else if (optiune == '4')
+					afiseaza_date(ls);
+				else if (optiune == '0')
+					break;
+				else if (optiune != '\n')printf("In curs de constructie");
+			}
+		}
+	}
+}
+
+Lista adauga(Lista ls) {
+	printf("apel %d \n", get_numar_participanti(ls));
+	char nume[20],prenume[20];
+	int scor[10];
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &nume, (unsigned)_countof(nume));
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &prenume, (unsigned)_countof(prenume));
+	printf("Introduceti cele 10 note ale participantului:");
+
+	for (int i = 0; i < 10; i++) {
+		//char nota[2];
+		int nota;
+		scanf_s("%d", &nota, 1);
+		if (nota < 0 || nota>10)printf("Notele nu pot sa fie numere negative sau mai mari decat 10\n");
+		else scor[i] = nota;
+		/*
+		if (strlen(nota) == 1)
+			if (nota > '0' && nota <= '9')
+				scor[i] = (int)(nota[0]);
+			else {
+				printf("Notele nu pot sa contina litere \n");
+				break;
+			}
+		else {
+			if (strlen(nota) == 2)
+				if(strcmp(nota, "10") == 0)
+					scor[i] = (nota[0] - '0') * 10;
+				else if(nota[0]=='-')
+				{
+					printf("Notele nu pot sa fie numere negative \n");
+					break;
+				}
+				else {
+					printf("Notele nu pot sa contina litere \n");
+					break;
+				}
+		}*/
+
+	}
+	printf("adr ls2 %d\n", &ls);
+	int verdict = valideaza(nume, prenume, scor);
+	if (verdict == 1) printf("Numele nu poate sa contina cifre sau alte caractere \n");
+	else if (verdict == 1) printf("Preumele nu poate sa contina cifre sau alte caractere \n");
+	else {
+
+		int poz = cauta_participant(ls, nume, prenume);
+		if (poz != -1) printf("Participantul se afla deja in baza de date \n");
+		else {
+			Participant pt;
+			pt = creeaza_participant(nume, prenume, scor);
+			ls = adauga_participant(ls, pt);
+			printf("Participant adaugat cu succes\n");
+			printf("%s %s\n", get_nume(pt), get_prenume(pt));
+			printf("%d \n", get_numar_participanti(ls));
+			printf("%d \n", ls.lista_participanti[0]);
+			printf("%d %d\n", get_nume(pt), get_prenume(pt));
+		}
+	}
+	return ls;
+}
+/*
+int valideaza(char nume[20], char prenume[20], int scor[]) {
+	///varificare litere
+	for (int i = 0; i < strlen(nume); i++)
+		if (strchr("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM", nume[i])== NULL)
+			return 1;
+
+	for (int i = 0; i < strlen(prenume); i++)
+		if (strchr("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM- ", nume[i]) == NULL)
+			return 2;
+	return 0;
+	//if ((sizeof scor) / (sizeof * scor) != 10)
+	//	return 3;
+	//for (int i = 0; i < 10; i++)
+	//	if (scor[i]<1||scor[i]>10)
+	//		return 3;
+}
+*/
+Lista sterge(Lista ls) {
+	char nume[20], prenume[20];
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &nume, (unsigned)_countof(nume));
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &prenume, (unsigned)_countof(prenume));
+	int poz = cauta_participant(ls, nume, prenume);
+	if (poz == -1) printf("Participantul nu se afla in baza de date \n");
+	else {
+		Participant pt;
+		uintptr_t* adresa;
+		///adresa = ls.lista_participanti[poz];
+		//printf("adr %d\n", (int)adresa);
+		///pt = recreeaza_participant(adresa);
+		///ls = sterge_participant(ls, pt);
+	}
+	return ls;
+}
+
+void afiseaza_toti(Lista ls) {
+	int i,j;
+	if (get_numar_participanti(ls) != 0) {
+		printf("Sunt inscrisi %d participanti\n", get_numar_participanti(ls));
+		for (i = 0; i < get_numar_participanti(ls); i++) {
+			Participant pt = get_date_participant_cu_pozitie(ls, i);
+			printf("Participantul cu numele %s si prenumele %s are urmatoarele note ", get_nume(pt), get_prenume(pt));
+			for (j = 0; j < 10; j++)
+				printf("%d", get_scor_problema(pt, j + 1));
+			printf("\n");
+			printf("Media este %f", (float)media(get_scor(pt), 10));
+			printf("\n");
+		}
+	}
+	else printf("Nu exista participanti inscrisi\n");
+}
+void afiseaza_date(Lista ls) {
+	char nume[20], prenume[20];
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &nume, (unsigned)_countof(nume));
+	printf("Introduceti numele participantului (maxim 20 de caractere) :");
+	scanf_s("%s", &prenume, (unsigned)_countof(prenume));
+	int poz = cauta_participant(ls, nume, prenume);
+	if (poz != NULL) {
+		Participant pt = get_date_participant_cu_pozitie(ls, poz);
+		printf("Participantul cu numele %s si prenumele %s are urmatoarele note ", get_nume(pt), get_prenume(pt));
+		for (int j = 0; j < 10; j++)
+			printf("%d", get_scor_problema(pt, j + 1));
+		printf("\n");
+		printf("Media este %f", (float)media(get_scor(pt), 10));
+		printf("\n");
+	}
+	else printf("Participantul nu se afla in baza de date \n");
+
+}

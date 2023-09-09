@@ -1,0 +1,21 @@
+[2021-03-15 11:25:05] [info] Start Program:
+Path:"C:\\Users\\codri\\source\\repos\\lab2-incercarea2\\Debug\\lab2-incercarea2.exe"
+Arguments:
+Working directory: "C:\\Users\\codri\\source\\repos\\lab2-incercarea2\\lab2-incercarea2\\"
+Modules: Selected: C:\Users\codri\source\repos\lab2-incercarea2\Debug\lab2-incercarea2.exe Excluded: 
+Sources: Selected: C:\Users\codri\source\repos\lab2-incercarea2\lab2-incercarea2 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: binary C:\Users\codri\AppData\Local\Temp\xvncnuzs.ssj 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2021-03-15 11:25:05] [info] Module: C:\Users\codri\source\repos\lab2-incercarea2\Debug\lab2-incercarea2.exe is selected because it matches selected pattern: C:\Users\codri\source\repos\lab2-incercarea2\Debug\lab2-incercarea2.exe
+[2021-03-15 11:25:05] [info] ----------------------------------------------------
+[2021-03-15 11:25:05] [info] Coverage binary generated in file: C:\Users\codri\AppData\Local\Temp\xvncnuzs.ssj
+[2021-03-15 11:25:05] [info] ----------------------------------------------------

@@ -1,0 +1,24 @@
+#pragma once
+
+#include "domain.h"
+#include "domain.h"
+#include <stdbool.h>
+
+
+Lista realocare_memorie_lista(Lista* ls, int mem_max);
+
+Lista adauga_participant(Lista ls, Participant part);
+
+Participant recreeaza_participant(uintptr_t* adrese);
+
+int cauta_participant(Lista ls, char nume[20], char prenume[20]);
+
+Lista sterge_participant(Lista ls, Participant part);
+
+bool compara_vectori(int v1[10], int v2[10]);
+
+Participant get_date_participant_cu_pozitie(Lista ls, int poz);
+
+double media(int v[], int n);
+
+int valideaza(char nume[20], char prenume[20], int scor[]);

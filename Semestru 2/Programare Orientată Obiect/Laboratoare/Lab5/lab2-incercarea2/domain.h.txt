@@ -1,0 +1,58 @@
+#pragma once
+#include <stdint.h>
+#include <stdbool.h>
+
+#define memorie_initializare 10
+#define _CRT_SECURE_NO_WARNINGS
+
+/// ZONA DEFINIRE
+typedef struct {
+	//int id;
+	char* nume;
+	char* prenume;
+	int* scor;
+}Participant;
+
+typedef struct {
+	uintptr_t* lista_participanti;
+	//Participant* lista_participanti;
+	int* numar_elemente;
+	int* memorie_maxima;
+}Lista;
+
+///ZONA CONSTRUCTIE
+Participant creeaza_participant(char nume[20], char prenume[20], int scor[10]);
+
+Lista creeaza_lista_participanti();
+
+///ZONA GETTERE SI SETTERE
+char* get_nume(Participant part);
+
+Participant set_nume(Participant* part, char nume[20]);
+
+char* get_prenume(Participant part);
+
+Participant set_prenume(Participant* part, char prenume[20]);
+
+int get_scor_problema(Participant part, int problema);
+
+Participant set_scor_problema(Participant part, int problema, int scor_problema);
+
+int* get_scor(Participant part);
+
+int get_numar_participanti(Lista l);
+
+int get_memorie_maxima(Lista l);
+//Participant get_participant_adresa_cu_pozitie(Lista l, int poz);
+uintptr_t get_participant_adresa_cu_pozitie(Lista l, int poz);
+
+Participant set_scor(Participant* part, int scor[10]);
+
+Lista set_memorie_maxima(Lista* ls, int memo_max);
+
+/// ZONA DISTRUGERI
+void distruge_participant(Participant* part);
+
+void distruge_lista(Lista* list);
+
+//bool compara_vectori(int v1[10], int v2[10]); 

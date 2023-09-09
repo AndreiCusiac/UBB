@@ -1,0 +1,168 @@
+#include "domain.h"
+
+/*
+typedef struct {
+	//int id;
+	char* nume;
+	char* prenume;
+	int* scor;
+}Participant;
+
+typedef struct {
+	uintptr_t* lista_participanti;
+	int* numar_elemente;
+	int* memorie_maxima;
+}Lista;
+*/
+//typedef struct {
+//	int vector[10];
+//	int numar_el=10;
+//
+//}Vector;
+
+
+Participant creeaza_participant(char nume[20], char prenume[20], int scor[10]) {
+	Participant* participant;
+
+	//participant->id = 1;
+	//participant->nume = &nume;
+	participant = (Participant*)malloc(sizeof(Participant));
+	if (participant != NULL) {
+		participant->nume = (char*)malloc(strlen(nume) * sizeof(char));
+		//strcpy_s(participant->nume,strlen(nume), nume);
+		participant->nume = nume;
+
+		participant->prenume = (char*)calloc(strlen(prenume), sizeof(char));
+		//strcpy_s(participant->prenume, strlen(prenume),prenume);
+		participant->prenume = prenume;
+
+		printf("%d\n", (uintptr_t)participant->nume);
+		printf("%d\n", (uintptr_t)participant->prenume);
+
+		participant->scor = (int*)calloc(10, sizeof(int));
+		participant->scor = scor;
+
+		return *participant;
+	}
+
+}
+
+Lista creeaza_lista_participanti() {
+	//Participant part;
+	Lista* lista;
+	int memo, memo1;
+	//memo = (int*)malloc(sizeof(int));
+	//memo1 = (int*)malloc(sizeof(int));
+	lista = (Lista*)malloc(sizeof(Lista));
+	if (lista != NULL) {
+		//memo = (int*)malloc(sizeof(int));
+
+		//lista->lista_participanti = (Participant*)malloc(memorie_initializare*sizeof(Participant));
+		lista->lista_participanti = (uintptr_t*)calloc(memorie_initializare,sizeof(uintptr_t));
+
+		memo = 0;
+		lista->numar_elemente = (int*)calloc(1, sizeof(int));
+		*(lista->numar_elemente) = memo;
+
+
+		lista->memorie_maxima = (int*)malloc(sizeof(int));
+		if (lista->memorie_maxima != NULL) *(lista->memorie_maxima) = memorie_initializare;
+		//free(memo);
+		return *lista;
+	}
+
+	//free(memo1);
+
+}
+
+char* get_nume(Participant part) {
+	return part.nume;
+}
+
+Participant set_nume(Participant* part, char nume[20]) {
+	//free(part->nume);
+	//part->nume = (char*)calloc(strlen(nume), sizeof(char));
+	if (part->nume) //strcpy_s(part->nume, strlen(nume), nume);
+		part->nume = nume;
+	return *part;
+}
+/// ZONA GETTERI SI SETTERI
+char* get_prenume(Participant part) {
+	return part.prenume;
+}
+
+Participant set_prenume(Participant* part, char prenume[20]) {
+	//free(part->prenume);
+	//part->prenume = (char*)calloc(strlen(prenume),sizeof(char));
+	if (part->prenume) //strcpy_s(part->prenume, strlen(prenume), prenume);
+		part->prenume = prenume;
+	return *part;
+}
+int get_scor_problema(Participant part, int problema) {
+	return part.scor[problema - 1];
+}
+
+Participant set_scor_problema(Participant part, int problema, int scor_problema) {
+	part.scor[problema - 1] = scor_problema;
+	return part;
+}
+
+int* get_scor(Participant part) {
+	return part.scor;
+}
+
+int get_numar_participanti(Lista l) {
+	//printf("%d\n", &l);
+	//printf("%d\n", l.numar_elemente);
+	//printf("%d\n", *(l.numar_elemente));
+	return *(l.numar_elemente);
+}
+
+int get_memorie_maxima(Lista l) {
+	return *(l.memorie_maxima);
+}
+
+uintptr_t get_participant_adresa_cu_pozitie(Lista l, int poz) {
+	return l.lista_participanti[poz];
+}
+
+Lista set_memorie_maxima(Lista* ls, int memo_max) {
+	*(ls->memorie_maxima) = memo_max;
+	return *ls;
+}
+
+Participant set_scor(Participant* part, int scor[10]) {
+	//free(part->scor);
+	//part->scor = (int*)calloc(10, sizeof(int));
+	part->scor = scor;
+	return *part;
+}
+
+
+/// ZONA DISTRUGERI
+void distruge_participant(Participant* part) {
+	//printf("%s\n", get_nume(*part));
+	//printf("%s\n", get_prenume(*part));
+	//printf("%d\n",(uintptr_t) part->nume);
+	//printf("%d\n", (uintptr_t)part->prenume);
+	free(part->nume);
+	free(part->prenume);
+	free(part->scor);
+	//free(part);
+
+}
+
+void distruge_lista(Lista* list) {
+	free(list->lista_participanti);
+	free(list->numar_elemente);
+	free(list->memorie_maxima);
+	//free(list);
+}
+/*
+bool compara_vectori(int v1[10], int v2[10]) {
+	bool egal = true;
+	for (int i = 0; i < 10; i++)
+		if (v1[i] != v2[i])egal = false;
+	return egal;
+}
+*/

@@ -1,0 +1,3 @@
+Alocare dinamica C++: https://youtu.be/4pMgTEutU-0
+Template-Iteratori C++: https://youtu.be/PLVwhoEvmEU
+Algoritmi STL/Funcții lambda: https://youtu.be/8KEtsXaWwgc
